@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <header className="App-header">
         <p>React Todo</p>
         <TodoForm addTodo={addTodo} />
+        <TodoList todos={todos} />
       </header>
     </div>
   );
