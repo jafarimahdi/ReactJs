@@ -1,6 +1,6 @@
-## Create a simple `ToDo List` App by React.js
+## Create a simple `ToDo App` with React.js
 
-## Tools and Material for this app: 
+
 
 ## Hooks
 #### `useState`
