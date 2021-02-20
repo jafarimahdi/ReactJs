@@ -5,6 +5,7 @@
 
 #### check version
 `node -v || node --version`
+`nvm -v`
 
 #### list installed versions of node (via nvm)
 `nvm ls`
