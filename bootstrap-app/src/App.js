@@ -22,17 +22,23 @@ function App() {
                   aria-label="Toggle navigation"
                >
                   Menu
-                  <i className="fas fa-bars ml-1"></i>
+                  <i className="fa fa-bars ml-1"></i>
                </button>
                <div className="collapse navbar-collapse" id="navbarResponsive">
                   <ul className="navbar-nav text-uppercase ml-auto">
                      <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#services">
+                        <a
+                           className="nav-link js-scroll-trigger"
+                           href="#services"
+                        >
                            Services
                         </a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#portfolio">
+                        <a
+                           className="nav-link js-scroll-trigger"
+                           href="#portfolio"
+                        >
                            Portfolio
                         </a>
                      </li>
@@ -47,7 +53,10 @@ function App() {
                         </a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#contact">
+                        <a
+                           className="nav-link js-scroll-trigger"
+                           href="#contact"
+                        >
                            Contact
                         </a>
                      </li>
@@ -82,8 +91,8 @@ function App() {
                <div className="row text-center">
                   <div className="col-md-4">
                      <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i className="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                      </span>
                      <h4 className="my-3">E-Commerce</h4>
                      <p className="text-muted">
@@ -94,8 +103,8 @@ function App() {
                   </div>
                   <div className="col-md-4">
                      <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i className="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
                      </span>
                      <h4 className="my-3">Responsive Design</h4>
                      <p className="text-muted">
@@ -106,8 +115,8 @@ function App() {
                   </div>
                   <div className="col-md-4">
                      <span className="fa-stack fa-4x">
-                        <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i className="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        <i className="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
                      </span>
                      <h4 className="my-3">Web Security</h4>
                      <p className="text-muted">
@@ -138,7 +147,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -148,7 +157,9 @@ function App() {
                            />
                         </a>
                         <div className="portfolio-caption">
-                           <div className="portfolio-caption-heading">Threads</div>
+                           <div className="portfolio-caption-heading">
+                              Threads
+                           </div>
                            <div className="portfolio-caption-subheading text-muted">
                               Illustration
                            </div>
@@ -164,7 +175,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -174,7 +185,9 @@ function App() {
                            />
                         </a>
                         <div className="portfolio-caption">
-                           <div className="portfolio-caption-heading">Explore</div>
+                           <div className="portfolio-caption-heading">
+                              Explore
+                           </div>
                            <div className="portfolio-caption-subheading text-muted">
                               Graphic Design
                            </div>
@@ -190,7 +203,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -200,7 +213,9 @@ function App() {
                            />
                         </a>
                         <div className="portfolio-caption">
-                           <div className="portfolio-caption-heading">Finish</div>
+                           <div className="portfolio-caption-heading">
+                              Finish
+                           </div>
                            <div className="portfolio-caption-subheading text-muted">
                               Identity
                            </div>
@@ -216,7 +231,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -226,7 +241,9 @@ function App() {
                            />
                         </a>
                         <div className="portfolio-caption">
-                           <div className="portfolio-caption-heading">Lines</div>
+                           <div className="portfolio-caption-heading">
+                              Lines
+                           </div>
                            <div className="portfolio-caption-subheading text-muted">
                               Branding
                            </div>
@@ -242,7 +259,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -270,7 +287,7 @@ function App() {
                         >
                            <div className="portfolio-hover">
                               <div className="portfolio-hover-content">
-                                 <i className="fas fa-plus fa-3x"></i>
+                                 <i className="fa fa-plus fa-3x"></i>
                               </div>
                            </div>
                            <img
@@ -280,7 +297,9 @@ function App() {
                            />
                         </a>
                         <div className="portfolio-caption">
-                           <div className="portfolio-caption-heading">Window</div>
+                           <div className="portfolio-caption-heading">
+                              Window
+                           </div>
                            <div className="portfolio-caption-subheading text-muted">
                               Photography
                            </div>
@@ -434,13 +453,13 @@ function App() {
                         <h4>Kay Garland</h4>
                         <p className="text-muted">Lead Designer</p>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-twitter"></i>
+                           <i className="fa fa-twitter"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-facebook-f"></i>
+                           <i className="fa fa-facebook-f"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-linkedin-in"></i>
+                           <i className="fa fa-linkedin"></i>
                         </a>
                      </div>
                   </div>
@@ -454,13 +473,13 @@ function App() {
                         <h4>Larry Parker</h4>
                         <p className="text-muted">Lead Marketer</p>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-twitter"></i>
+                           <i className="fa fa-twitter"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-facebook-f"></i>
+                           <i className="fa fa-facebook-f"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-linkedin-in"></i>
+                           <i className="fa fa-linkedin"></i>
                         </a>
                      </div>
                   </div>
@@ -474,13 +493,13 @@ function App() {
                         <h4>Diana Petersen</h4>
                         <p className="text-muted">Lead Developer</p>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-twitter"></i>
+                           <i className="fa fa-twitter"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-facebook-f"></i>
+                           <i className="fa fa-facebook-f"></i>
                         </a>
                         <a className="btn btn-dark btn-social mx-2" href="#!">
-                           <i className="fab fa-linkedin-in"></i>
+                           <i className="fa fa-linkedin"></i>
                         </a>
                      </div>
                   </div>
@@ -624,13 +643,13 @@ function App() {
                   </div>
                   <div className="col-lg-4 my-3 my-lg-0">
                      <a className="btn btn-dark btn-social mx-2" href="#!">
-                        <i className="fab fa-twitter"></i>
+                        <i className="fa fa-twitter"></i>
                      </a>
                      <a className="btn btn-dark btn-social mx-2" href="#!">
-                        <i className="fab fa-facebook-f"></i>
+                        <i className="fa fa-facebook-f"></i>
                      </a>
                      <a className="btn btn-dark btn-social mx-2" href="#!">
-                        <i className="fab fa-linkedin-in"></i>
+                        <i className="fa fa-linkedin-in"></i>
                      </a>
                   </div>
                   <div className="col-lg-4 text-lg-right">
@@ -687,7 +706,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
@@ -742,7 +761,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
@@ -797,7 +816,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
@@ -852,7 +871,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
@@ -907,7 +926,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
@@ -962,7 +981,7 @@ function App() {
                                  data-dismiss="modal"
                                  type="button"
                               >
-                                 <i className="fas fa-times mr-1"></i>
+                                 <i className="fa fa-times mr-1"></i>
                                  Close Project
                               </button>
                            </div>
