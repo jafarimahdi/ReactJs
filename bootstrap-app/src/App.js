@@ -6,31 +6,18 @@ import Services from "./Components/Services";
 import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
+import Loading from "./Components/Loading";
 
 function App() {
    return (
       <div className="App">
-         <Nav />
-         <header className="masthead">
-            <div className="container">
-               <div className="masthead-subheading">Welcome To Our Studio!</div>
-               <div className="masthead-heading text-uppercase">
-                  It's Nice To Meet You
-               </div>
-               <a
-                  className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-                  href="#services"
-               >
-                  Tell Me More
-               </a>
-            </div>
-         </header>
-
+         <Nav />     
+         <Loading />
          <Services />
          <Portfolio />
          <About />
          <Team />
-      
+
          <div className="py-5">
             <div className="container">
                <div className="row">
@@ -43,6 +30,7 @@ function App() {
                         />
                      </a>
                   </div>
+
                   <div className="col-md-3 col-sm-6 my-3">
                      <a href="#!">
                         <img
@@ -52,6 +40,7 @@ function App() {
                         />
                      </a>
                   </div>
+
                   <div className="col-md-3 col-sm-6 my-3">
                      <a href="#!">
                         <img
@@ -61,6 +50,7 @@ function App() {
                         />
                      </a>
                   </div>
+
                   <div className="col-md-3 col-sm-6 my-3">
                      <a href="#!">
                         <img
@@ -74,8 +64,8 @@ function App() {
             </div>
          </div>
 
-      <Contact />
-      
+         <Contact />
+
          <footer className="footer py-4">
             <div className="container">
                <div className="row align-items-center">
@@ -103,6 +93,7 @@ function App() {
             </div>
          </footer>
 
+         {/* end of the file  */}
 
          <div
             className="portfolio-modal modal fade"
