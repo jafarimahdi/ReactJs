@@ -9,11 +9,8 @@ export default function Contact (){
                  Lorem ipsum dolor sit amet consectetur.
               </h3>
            </div>
-           <form
-              id="contactForm"
-              name="sentMessage"
-              novalidate="novalidate"
-           >
+
+           <form id="contactForm" name="sentMessage" novalidate="novalidate">
               <div className="row align-items-stretch mb-5">
                  <div className="col-md-6">
                     <div className="form-group">
@@ -65,11 +62,7 @@ export default function Contact (){
               </div>
               <div className="text-center">
                  <div id="success"></div>
-                 <button
-                    className="btn btn-primary btn-xl text-uppercase"
-                    id="sendMessageButton"
-                    type="submit"
-                 >
+                 <button className="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" >
                     Send Message
                  </button>
               </div>
