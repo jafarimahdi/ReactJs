@@ -1,6 +1,7 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css'
 
-function Nav() {
+export default function Nav() {
    const items = ["services", "portfolio", "about", "team", "contact"];
 
    return (
@@ -8,12 +9,13 @@ function Nav() {
       {/* Navigation  */}
          <nav className="navbar navbar-expand-lg navbar-dark fixed-top"  id="mainNav">
             <div className="container">
+
                <a className="navbar-brand js-scroll-trigger" href="#page-top">
                   <img src="pictures/logo-hat.png" alt="" />
                </a>
 
                <button
-                  className="navbar-toggler navbar-toggler-right"
+                  className="navbar-toggler"
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarResponsive"
@@ -25,7 +27,11 @@ function Nav() {
                   <i className="fa fa-bars ml-1"></i>
                </button>
 
+
+                  {/* collapse  */}
+
                <div className="collapse navbar-collapse" id="navbarResponsive">
+
                   <ul className="navbar-nav text-uppercase ml-auto ">
                      {items.map((item) => (
                         <li className="nav-item">
@@ -33,11 +39,11 @@ function Nav() {
                         </li>
                      ))}
                   </ul>
+                  
                </div>
+
             </div>
          </nav>
       </div>
    );
 }
-
-export default Nav;

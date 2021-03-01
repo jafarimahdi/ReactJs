@@ -10045,6 +10045,7 @@ img::-moz-selection {
   border-radius: 100%;
 }
 
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -10114,6 +10115,8 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+/* End of the Nav part  */
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
