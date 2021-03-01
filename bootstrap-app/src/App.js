@@ -12,7 +12,7 @@ import Logos from "./Components/Logos";
 
 function App() {
    return (
-      <div className="App">
+      <div className="App" >
          <Nav />
          <Loading />
          <Services />
