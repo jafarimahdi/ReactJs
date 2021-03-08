@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
 import Portfolio from "./Components/Portfolio";
 import Nav from "./Components/Nav";
 import Services from "./Components/Services";
