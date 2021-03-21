@@ -25,13 +25,15 @@ return (
       <nav className="navbar">
          <div className="navbar-container">
             <Link to="/" className="navbar-logo">
-               <img src="images/logo-hat.png" />
+               <img src="/logo-hat.png" />
             </Link>
+
             <div className="menu-icon" onClick={handelClick}>
                <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>
               {/* Menu items  */}
-            <ul className={click ? "nav-menu active" : "nva-menu"}>
+
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
                <li className="nav-item">
                   <Link to="/home" className="nav-links" onClick={closeMobileMenu}> Home </Link>
                </li>

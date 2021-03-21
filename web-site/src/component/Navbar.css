@@ -2,16 +2,19 @@
    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
    height: 80px;
    display: flex;
+   flex-direction: row;
    justify-content: center;
    align-items: center;
    font-size: 1.2rem;
    position: sticky;
    top: 0;
    z-index: 999;
+   /* margin-top: 15%; */
 }
 
 .navbar-container {
    display: flex;
+   /* flex-direction: row; */
    justify-content: center;
    align-items: center;
    height: 80px;
@@ -24,9 +27,14 @@
    margin-left: 20px;
    cursor: pointer;
    text-decoration: none;
-   font-size: 2rem;
-   display: flex;
+   
+   /* font-size: 1rem; */
+   /* display: flex; */
    align-items: center;
+}
+.navbar-logo img{
+   height:8vh;
+   margin-top: 14%;
 }
 
 .fa-typo3 {
@@ -117,7 +125,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(15%, 5%);
    }
 
    .menu-icon {
