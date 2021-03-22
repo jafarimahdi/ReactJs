@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";  
 import Navbar from "./component/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -14,6 +14,7 @@ function App() {
         </Router>
       </>
   );
+
 }
 
 export default App;
