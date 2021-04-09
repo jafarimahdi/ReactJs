@@ -19,7 +19,7 @@ function Cards() {
                         src='img-component/img-2.jpg'
                         text='Travel through the Islands of Bali in  a Private Cruise'
                         label='Luxury'
-                        path='/services'
+                        path='/service'
                     />
                     </ul>
                     <ul className="cards__items">
