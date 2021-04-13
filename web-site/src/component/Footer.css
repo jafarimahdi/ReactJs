@@ -45,8 +45,8 @@
 }
 
 .footer-links {
-   width: 100%;
-   max-width: 1000px;
+   width: 100vw;
+   /* max-width: 100%; */
    display: flex;
    justify-content: center;
 }
@@ -99,8 +99,8 @@
 }
 
 .social-media {
-   max-width: 1000px;
-   width: 100%;
+   /* max-width: 1000px; */
+   width: 100vw;
 }
 
 .social-media-wrap {
