@@ -128,8 +128,8 @@
     .navbar-logo {
         position: absolute;
         z-index: 1;
-        top: 0;
-        left: 0;
+        top: 35%;
+        left: 2%;
         transform: translate(15%, 5%);
     }
 
