@@ -3,6 +3,9 @@ import Navbar from "./component/Navbar";
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Product from './pages/Product';
+import Services from './pages/Services';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/product" exact component={Product} />
+          <Route path="/services" exact component={Services} />
+          <Route path="/signup" exact component={SignUp} />
         </Switch>
       </Router>
     </>
