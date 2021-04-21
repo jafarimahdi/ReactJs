@@ -1,8 +1,15 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css";
 
-export default function Services(){
+export default function Services() {
     return (
-        <h1 className="services">Services</h1>
-    )
+        <>
+            <div
+                className="services"
+                style={{ backgroundImage: "url(images/img-2.jpg)" }}
+            >
+                <h3>Services</h3>
+            </div>
+        </>
+    );
 }

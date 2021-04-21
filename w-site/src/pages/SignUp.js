@@ -1,8 +1,15 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css";
 
-export default function SignUp(){
+export default function SignUp() {
     return (
-        <h1 className="sign-up">Sign Up</h1>
-    )
+        <>
+        <div
+            className="sign-up"
+            style={{ backgroundImage: "url(images/img-3.jpg)" }}
+        >
+            <h3>Sing Up</h3>
+        </div>
+    </>
+    );
 }

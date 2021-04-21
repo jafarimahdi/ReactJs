@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +17,7 @@
 }
 
 .services {
-    background-image: url('/img-1.jpg');
+    /* background-image: url('/img-1.jpg'); inline css form Component because of the public folder */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,16 +26,16 @@
 }
 
 .products {
-    /* background-image:url("/images/img-2.jpg"); */
+    /* background-image:url("/images/img-2.jpg"); inline css form Component because of the public folder */
     background-position: center;
-    background-size: fill;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
 }
 
 .sign-up {
-    /* background-image: url("/images/img-3.jpg"); */
+    /* background-image: url("/images/img-3.jpg"); inline css form Component because of the public folder */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

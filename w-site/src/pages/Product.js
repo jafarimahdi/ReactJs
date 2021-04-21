@@ -1,8 +1,15 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css";
 
-export default function Products(){
+export default function Products() {
     return (
-        <h1 className="products">Product</h1>
-    )
+        <>
+            <div
+                className="products"
+                style={{ backgroundImage: "url(images/img-1.jpg)" }}
+            >
+                <h3>Product</h3>
+            </div>
+        </>
+    );
 }
