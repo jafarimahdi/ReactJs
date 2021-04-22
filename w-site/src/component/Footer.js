@@ -12,7 +12,7 @@ function Footer() {
                     deals
                 </p>
                 <p className="footer-subscription-text">
-                    You can unsubscribe at any time
+                    You can unsubscribe any time
                 </p>
                 <div className="input-areas">
                     <form action="">
@@ -69,7 +69,7 @@ function Footer() {
                             <i className="fas fa-spider" />
                         </Link>
                     </div>
-                    <small className="website-rights">Mj 2020</small>
+                    <small className="website-rights">Apr 2021</small>
                     <div className="social-icons"></div>
                         <Link
                             className="social-icon-link facebook"
