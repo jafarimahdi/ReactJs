@@ -1,6 +1,6 @@
 export default function Team() {
     const ourTeam =[
-        {
+      {
             pic:'',
             name:'Key Garland ',
             position:'Lead Designer',
