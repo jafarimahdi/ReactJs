@@ -7,9 +7,9 @@ function App() {
   useEffect(() => {
     // let canvas = document.getElementById("nokey");
     // let can_w = parseInt(canvas.getAttribute("width"));
-    let can_w = '400';
+    let can_w = '100';
     // let can_h = parseInt(canvas.getAttribute("height"));
-    let can_h = '400';
+    let can_h = '100';
     // let canvas2 = canvas.current;
     let ctx = canvas.current.getContext("2d"); 
 
@@ -273,6 +273,8 @@ function App() {
     }
     goMovie();
 
+/*
+
     // Mouse effect
     canvas.addEventListener('mouseenter', () =>{
         console.log("mouseenter");
@@ -298,7 +300,8 @@ function App() {
         mouse_ball.y = e.pageY;
         // console.log(mouse_ball);
     });
-    
+    */
+
   },[]);
     /***********************************************************/
     /***********************************************************/
@@ -307,8 +310,8 @@ function App() {
         <div className="App">
             <canvas
                 ref={canvas}
-                width={600}
-                height={600}
+                width={800}
+                height={800}
                 id="nokey"
                 // style={{ width: "80vw", height: "80vh" }}
 
