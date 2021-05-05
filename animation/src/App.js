@@ -1,10 +1,10 @@
-import React,{useRef} from 'react';
+import React,{useRef, useEffect} from 'react';
 import "./App.css";
 
 function App() {
-
   let canvas = useRef(null);
 
+  useEffect(() => {
     // let canvas = document.getElementById("nokey");
     // let can_w = parseInt(canvas.getAttribute("width"));
     let can_w = '400';
@@ -45,8 +45,8 @@ function App() {
             r: 0,
             type: "mouse",
         };
-    // -------------------------------------------------
-    // -------------------------------------------------
+        // -------------------------------------------------
+        // -------------------------------------------------
     // Random speed
     function getRandomSpeed(pos) {
         var min = -1,
@@ -130,6 +130,7 @@ function App() {
                 break;
         }
     }
+
     function randomSidePos(length) {
         return Math.ceil(Math.random() * length);
     }
@@ -253,12 +254,13 @@ function App() {
     }
     // Init Canvas
     function initCanvas() {
-        canvas.setAttribute("width", window.innerWidth);
-        canvas.setAttribute("height", window.innerHeight);
+        // canvas.setAttribute("width", window.innerWidth);
+        // canvas.setAttribute("height", window.innerHeight);
 
-        can_w = parseInt(canvas.getAttribute("width"));
-        can_h = parseInt(canvas.getAttribute("height"));
+        // can_w = parseInt(canvas.getAttribute("width"));
+        // can_h = parseInt(canvas.getAttribute("height"));
     }
+
     window.addEventListener("resize", function (e) {
         console.log("Window Resize...");
         initCanvas();
@@ -272,11 +274,12 @@ function App() {
     goMovie();
 
     // Mouse effect
-    canvas.addEventListener("mouseenter", function () {
+    canvas.addEventListener('mouseenter', () =>{
         console.log("mouseenter");
         mouse_in = true;
         balls.push(mouse_ball);
     });
+
     canvas.addEventListener("mouseleave", function () {
         console.log("mouseleave");
         mouse_in = false;
@@ -288,12 +291,15 @@ function App() {
         });
         balls = new_balls.slice(0);
     });
+
     canvas.addEventListener("mousemove", function (e) {
         var e = e || window.event;
         mouse_ball.x = e.pageX;
         mouse_ball.y = e.pageY;
         // console.log(mouse_ball);
     });
+    
+  },[]);
     /***********************************************************/
     /***********************************************************/
 
@@ -301,9 +307,9 @@ function App() {
         <div className="App">
             <canvas
                 ref={canvas}
-                width={400}
-                height={400}
-                // id="nokey"
+                width={600}
+                height={600}
+                id="nokey"
                 // style={{ width: "80vw", height: "80vh" }}
 
 
