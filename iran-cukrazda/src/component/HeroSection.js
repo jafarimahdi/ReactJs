@@ -5,8 +5,8 @@ import "./HeroSection.css";
 
 function HeroSection() {
     return (
-        <div className="hero-container">
-            <video src="/Videos/video-1.mp4" autoPlay loop muted />
+        <div className="hero-container" style={{ backgroundImage: "url(img-2/1.jpg)"}}>
+            {/* <video src="/Videos/video-1.mp4" autoPlay loop muted /> */}
             <h1>ADVENTURE AWAITS</h1>
             <p>What are you waiting for?</p>
             <div className="hero--btns">

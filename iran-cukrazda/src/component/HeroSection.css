@@ -7,10 +7,14 @@ video{
 }
 
 .hero-container{
-    /* background:url('../images/img-home.jpg') center center/cover no-repeat; */
+    /* background:url('../images/img-1.jpg') center center/cover no-repeat; */
     /* position:absolute; */
-    height:100vh;
+    height:90vh;
     width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
