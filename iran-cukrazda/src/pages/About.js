@@ -1,14 +1,14 @@
 import React from "react";
 import "../App.css";
 
-export default function Services() {
+export default function About() {
     return (
         <>
             <div
-                className="services"
+                className="about"
                 style={{ backgroundImage: "url(images/img-2.jpg)" }}
             >
-                <h3>Services</h3>
+                <h3>About</h3>
             </div>
         </>
     );

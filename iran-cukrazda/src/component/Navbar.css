@@ -1,18 +1,21 @@
 .navbar {
     position: sticky;
     background: linear-gradient(
-        4deg,
-        rgba(36, 35, 35, 0.587) 1%,
-        rgba(26, 23, 23, 0.929) 40%
+        10deg,
+        rgba(87, 87, 87, 0.788) 5%,
+        rgb(26, 23, 23) 80%
     );
-    height: 80px;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    top: 0;
-    z-index: 999;
+    z-index: 1;
+    margin: auto;
+    top: 2.5vh;
+    width: 85vw;
+    border-radius: 9px;
 }
 
 .navbar-container {

@@ -6,27 +6,31 @@
 }
 
 .home,
-.services,
+.about,
 .products,
 .sign-up {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.929);
+    z-index: -1;
+    margin-top: -8vh;
 }
-
-.services {
-    /* background-image: url('/img-1.jpg'); inline css form Component because of the public folder */
+/* 
+.about {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+    top: -14vh;
 }
 
 .products {
-    /* background-image:url("/images/img-2.jpg"); inline css form Component because of the public folder */
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,10 +39,10 @@
 }
 
 .sign-up {
-    /* background-image: url("/images/img-3.jpg"); inline css form Component because of the public folder */
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
-}
+} */
