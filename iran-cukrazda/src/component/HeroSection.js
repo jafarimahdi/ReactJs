@@ -5,28 +5,10 @@ import "./HeroSection.css";
 
 function HeroSection() {
     return (
-        <div className="hero-container" style={{ backgroundImage: "url(img-2/1.jpg)"}}>
+        <div className="hero-container" style={{ backgroundImage: "linear-gradient(80deg, rgba(0,0,0,.8), transparent), url(img-2/1.jpg)"}}>
             {/* <video src="/Videos/video-1.mp4" autoPlay loop muted /> */}
-            <h1>ADVENTURE AWAITS</h1>
-            <p>What are you waiting for?</p>
-            <div className="hero--btns">
-                <Button
-                    className="btn"
-                    buttonStyle="btn--outline"
-                    buttonSize="btn--large"
-                >
-                    GET STARTED
-                </Button>
-
-                <Button
-                    className="btn"
-                    buttonStyle="btn--primary"
-                    buttonSize="btn--large"
-                >
-                    WATCH TRAILER
-                    <i className="far fa-play-circle" />
-                </Button>
-            </div>
+            <h1>Iran Cukrazda</h1>
+            <p>DESERT SHOP</p>
         </div>
     );
 }
