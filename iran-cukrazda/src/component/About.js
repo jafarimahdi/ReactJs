@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import './About.css';
 
 export function About(){
+
+
+    
     return(
         <>
         <div className="lineBreak">
-            <img src="./img-2/2-sv.png" alt="" />
+            <img className="line-image" src="./img-2/2-sv.png" alt="" />
         <h3>About Us</h3>
         </div>
         <div className="detail">

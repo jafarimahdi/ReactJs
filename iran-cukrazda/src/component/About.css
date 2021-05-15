@@ -1,0 +1,14 @@
+.lineBreak{
+    height:8vh;
+    width: 100%;
+    margin: 2% auto;
+
+}
+
+.line-image{
+    height:9vh;
+    width:10vh;
+}
+lineBreak>h3{
+    font-size:199px;
+}
