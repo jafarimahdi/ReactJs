@@ -9,7 +9,47 @@
         filter:drop-shadow(15px 16px 3px rgb(67, 40, 40));
     }
     h3{
-        font-size:39px;
+        font-size:1rem;
         filter:drop-shadow(9px 9px 9px black);
+    }
+}
+
+.frei{
+    display:flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin:2%;
+
+    img{
+        width: 40vw;
+        height: 45vh;
+        // height: auto;
+        border-radius: 1.9rem 7rem 0 7rem;
+        filter: brightness(80%);
+        box-shadow: 13px 14px 36px rgb(50, 47, 47);
+    }
+    p{
+        font-size: 2rem;
+        margin:5%;
+    }
+}
+
+.freiStory{
+    display:flex;
+    flex-direction: row-reverse;
+    align-content: space-around;
+    margin:2%;
+    
+    img{
+        width:90%;
+        height:auto;
+        border-radius: 19px;
+        filter: brightness(70%);
+        border-radius: 9rem 1.5rem 9rem 0;
+        box-shadow: 13px 14px 36px rgb(50, 47, 47);
+    }
+    p{
+        font-size: 2rem;
+        margin:5%;
     }
 }
