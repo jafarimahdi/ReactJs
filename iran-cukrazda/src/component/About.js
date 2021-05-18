@@ -13,8 +13,8 @@ export function About(){
         </div>
         <div className="detail">
             <img src="" alt="" />
-            <img src="" alt="" />
             <p>Feri Bacsi</p>
+            <img src="" alt="" />
             <p>Freydon learned pastry in his family business as traditions way and how to prepare all the product by Hand</p>
         </div>
         
