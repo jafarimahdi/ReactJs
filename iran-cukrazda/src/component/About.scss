@@ -21,14 +21,20 @@
     margin:2%;
 
     img{
-        width: 40vw;
-        height: 45vh;
-        // height: auto;
+        width: 35vw;
+        height: auto;
         border-radius: 1.9rem 7rem 0 7rem;
         filter: brightness(80%);
         box-shadow: 13px 14px 36px rgb(50, 47, 47);
+        &:hover{
+            width:100vw;
+            transition:width 2s height auto;
+            transition-duration: .3s;
+            transform: scale(1.1);
+        }
     }
     p{
+        align-self: center;
         font-size: 2rem;
         margin:5%;
     }
@@ -38,17 +44,22 @@
     display:flex;
     flex-direction: row-reverse;
     align-content: space-around;
-    margin:2%;
+    margin:1%;
     
     img{
-        width:90%;
+        width:60vw;
         height:auto;
-        border-radius: 19px;
-        filter: brightness(70%);
         border-radius: 9rem 1.5rem 9rem 0;
+        filter: brightness(70%);
         box-shadow: 13px 14px 36px rgb(50, 47, 47);
+        &:hover{
+            width:90vw;
+            transition:width 2s height auto;
+            transition-duration: .3s;
+        }
     }
     p{
+        align-self: center;
         font-size: 2rem;
         margin:5%;
     }
