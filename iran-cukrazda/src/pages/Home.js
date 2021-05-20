@@ -1,16 +1,16 @@
-import React from 'react';
-import '../App.scss';
-import Herosection from '../component/Herosection';
-import Cards from '../component/Cards';
-import { About } from '../component/About';
+import React from "react";
+import "../App.scss";
+import Herosection from "../component/Herosection";
+import Cards from "../component/Cards";
+import { About } from "../component/About";
 
-function Home(){
+function Home() {
     return (
         <>
-            <Herosection/>
-            <About/>
-            <Cards/>
+            <Herosection />
+            <About />
+            <Cards />
         </>
-    )
+    );
 }
 export default Home;
