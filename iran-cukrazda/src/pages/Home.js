@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.scss";
-import Herosection from "../component/Herosection";
 import Cards from "../component/Cards";
 import { About } from "../component/About";
+import Herosection from "../component/Herosection";
 
 function Home() {
     return (
