@@ -11,44 +11,52 @@
 
     h1 {
         color: #fff;
-        font-size: 12rem;
-        padding-top: 22%;
-        padding-left: 1%;
-        font-family:  "Arial","sans-serif";
-        font-weight: 20;
+        font-size: 11rem;
+        padding-top: 32%;
+        padding-left: 4%;
+        font-weight: 17;
         text-shadow: 8px 4px rgba(157, 154, 154, 0.473);
     }
 
     p {
         padding-top: 3%;
-        padding-left: 13%;
+        padding-left: 27%;
         color: #fff;
-        font-size: 3rem;
-        font-family: "sans-serif";
-    }
-
-    @media screen and (max-width: 960px) {
-        .hero-container > h1 {
-            font-size: 70px;
-            margin-top: -150px;
-        }
+        font-size: 2.8rem;
     }
 
     @media screen and (max-width: 768px) {
-        .hero-container > h1 {
-            font-size: 50px;
-            margin-top: -100px;
+        h1 {
+            font-size: 6rem;
+            padding-top:52%;
+            padding-left: 5%;
+            margin-top: -1%;
         }
-        .hero-container > p {
-            font-size: 30px;
+        p {
+            font-size: 2rem;
+            margin-top: 4%;
         }
 
-        .btn-mobile {
-            display: block;
-            text-decoration: none;
+    }
+
+    @media screen and (max-width: 425px) {
+        h1 {
+            padding-left: 3%;
+            font-size: 4rem;
+            padding-top:100%;
+            margin-top: -1%;
         }
-        .btn {
-            width: 100%;
+        p {
+            margin-top: 6%;
+            font-size: 1.5rem;
         }
+
+        // .btn-mobile {
+        //     display: block;
+        //     text-decoration: none;
+        // }
+        // .btn {
+        //     width: 100%;
+        // }
     }
 }
