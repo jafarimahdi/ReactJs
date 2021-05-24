@@ -70,7 +70,7 @@
         text-decoration: none;
         padding: 0.5rem 1rem;
         height: 100%;
-        font-family: "fantasy", "sans-serif";
+        // font-family: "fantasy", "sans-serif";
 
         &:hover {
             border-bottom: 4px solid #fff;
@@ -84,6 +84,7 @@
 
     .nav-links-mobile {
         display: none;
+        
     }
 
     .menu-icon {
@@ -140,7 +141,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            transform: translate(-100%, 60%);
+            transform: translate(-100%, 30%);
             font-size: 1.8rem;
             cursor: pointer;
         }
@@ -148,27 +149,6 @@
         .fa-times {
             color: #fff;
             font-size: 2rem;
-        }
-
-        .nav-links-mobile {
-            display: block;
-            text-align: center;
-            margin: 2rem auto;
-            border-radius: 4px;
-            width: 80%;
-            text-decoration: none;
-            font-size: 1.5rem;
-            background-color: transparent;
-            color: #fff;
-            padding: 14px 20px;
-            border: 1px solid #fff;
-            transition: all 0.3s ease-out;
-
-            &:hover {
-                background: #fff;
-                color: #242424;
-                transition: 250ms;
-            }
         }
     }
 }
