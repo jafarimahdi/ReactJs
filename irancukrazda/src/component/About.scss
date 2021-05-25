@@ -41,6 +41,7 @@
             padding: 4%;
             h1 {
                 font-size: 3rem;
+                text-decoration: underline;
                 filter: drop-shadow(9px 9px 9px black);
             }
 
@@ -104,6 +105,7 @@
             }
         }
     }
+    
     @media screen and (max-width: 1024px) {
         .line-image {
             width: 5rem;
