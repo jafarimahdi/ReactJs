@@ -1,0 +1,27 @@
+.product_section {
+    width: 80vw;
+    height: auto;
+    margin: 5%;
+    text-align: center;
+
+    .text_area {
+        img{
+            width:9%;
+            height: auto;
+            filter: drop-shadow(25px 25px 9px rgb(67, 40, 40));
+
+        }
+        h1{
+            font-size:3rem;
+            padding: 4%;
+        }
+    }
+    .back_image {
+        z-index: -1;
+        // size: 30%;
+        width: 50%;
+        // height: auto;
+        margin-left: 15%;
+        filter: brightness(30%);
+    }
+}

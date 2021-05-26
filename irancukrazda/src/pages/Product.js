@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "../component/Cards";
 import "../App.scss";
 
 export default function Products() {
@@ -6,10 +7,11 @@ export default function Products() {
         <>
             <div
                 className="products"
-                style={{ backgroundImage: "url(images/img-1.jpg)" }}
+                style={{ backgroundImage: "url(img-2/26.jpg)" }}
             >
-                <h3>Product</h3>
+                <h1>Product</h1>
             </div>
+                <Cards />
         </>
     );
 }

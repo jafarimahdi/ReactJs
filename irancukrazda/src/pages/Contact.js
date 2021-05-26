@@ -8,11 +8,7 @@ export default function Contact() {
                 className="contact"
                 style={{ backgroundImage: "url(images/img-3.jpg)" }}
             >
-                <h3>Contact</h3>
-                <h3>Contact</h3>
-                <h3>Contact</h3>
-                <h3>Contact</h3>
-                <h3>Contact</h3>
+                <h1>Contact</h1>
             </div>
         </>
     );

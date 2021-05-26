@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // font-family: "sans-serif";
   scroll-behavior: smooth;
 }
 
@@ -19,6 +18,13 @@
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.929);
   z-index: -1;
   margin-top: -8vh;
+
+  h1{
+    position:absolute;
+    font-size: 6rem;
+    margin-top: 30%;
+    margin-left: 20%;
+  }
   
 }
 

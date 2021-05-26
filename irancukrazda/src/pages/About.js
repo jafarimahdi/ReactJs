@@ -6,9 +6,9 @@ export default function About() {
         <>
             <div
                 className="about"
-                style={{ backgroundImage: "url(images/img-2.jpg)" }}
+                style={{ backgroundImage: "url(img-2/16.jpg)" }}
             >
-                <h3>About</h3>
+                <h1>About</h1>
             </div>
         </>
     );

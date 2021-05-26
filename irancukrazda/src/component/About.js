@@ -5,7 +5,7 @@ export function About() {
     return (
         <>
             <div className="line-break">
-                <img className="line-image" src="./img-2/2-sv.png" />
+                <img className="line-image" src="./img-2/2.png" />
             </div>
 
             <div className="detail">
