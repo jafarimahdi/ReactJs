@@ -1,6 +1,8 @@
 import React from "react";
 import Cards from "../component/Cards";
 import "../App.scss";
+import Line_break from "../component/Line_break";
+
 
 export default function Products() {
     return (
@@ -11,6 +13,7 @@ export default function Products() {
             >
                 <h1>Product</h1>
             </div>
+                <Line_break/>
                 <Cards />
         </>
     );

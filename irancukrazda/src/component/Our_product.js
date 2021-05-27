@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Our_product.scss";
+
+
 export default function Our_product(){
     return(
         <div className="product_section" >
@@ -7,7 +9,7 @@ export default function Our_product(){
             <img src="img-2/4.png" alt="" />
             <h1>OUR Product</h1>
         </div>
-            <img src="img-2/4.png" className="back_image" alt="" />
+            {/* <img src="img-2/4.png" className="back_image" alt="" /> */}
         <div className="icons">
             <ul>
                 <li>

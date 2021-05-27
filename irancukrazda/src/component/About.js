@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./About.scss";
+import Line_break from "./Line_break"
 
 export function About() {
     return (
         <>
-            <div className="line-break">
+        <Line_break/>
+
                 <img className="line-image" src="./img-2/2.png" />
-            </div>
 
             <div className="detail">
                 <div className="frei">
