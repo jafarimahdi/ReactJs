@@ -1,13 +1,13 @@
 import React from 'react'
 import Carditem from './Carditem'
 import './Cards.scss';
-import { Link } from 'react-router-dom';
+
 
 function Cards() {
     return (
         <div className='cards'>
             <img src="./img-2/4-sv.png" className="head-svg" alt="" />
-            <h1>Our Product</h1>
+            {/* <h1>Our Product</h1> */}
 
             <div className="cards__container">
                 <div className="cards__wrapper">
@@ -50,9 +50,7 @@ function Cards() {
                     </ul>
 
                 </div>
-                <Link to="/product" className="button-more">
-                <button>More</button>
-                </Link>
+                
             </div>
         </div>
     )

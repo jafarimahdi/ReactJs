@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-.home,
+// .home,
 .about,
 .contact,
 .products {
@@ -18,12 +18,33 @@
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.929);
   z-index: -1;
   margin-top: -8vh;
+  text-align: center;
 
   h1{
     position:absolute;
     font-size: 6rem;
     margin-top: 30%;
     margin-left: 20%;
+  }
+}
+.home{
+  text-align: center;
+  
+  .button-more{
+    // margin:9%;
+
+    button{
+      padding: 1% 2.2%;
+      border-radius: 10px;
+      margin-bottom:5%;
+
+      &:hover {
+        cursor: pointer;
+        color:#fff;
+        background-color: rgb(31, 30, 30);
+        border-radius:40px;
+      }
+    }
   }
   
 }
