@@ -1,5 +1,6 @@
 import React from "react";
 import Line_break from "../component/Line_break";
+import ReactPlayer from "react-player";
 import "../App.scss";
 
 export default function About() {
@@ -11,7 +12,12 @@ export default function About() {
             >
                 <h1>About</h1>
             </div>
-            <Line_break/>
+            <Line_break />
+
+            <ReactPlayer url={["https://youtu.be/M5QY2_8704o"]}
+            playing='true' controls='true'  style={{margin:'5%'}}
+            />
+            <ReactPlayer url={["https://youtu.be/M5QY2_8704o"]} />
         </>
     );
 }

@@ -11,7 +11,6 @@ function Home() {
         <div className="home">
             <Herosection />
             <About />
-            {/* <Cards /> */}
             <Our_product />
 
             <Link to="/product" className="button-more">

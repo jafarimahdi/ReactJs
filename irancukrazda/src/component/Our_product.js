@@ -14,7 +14,7 @@ export default function Our_product() {
                     <img src="./img-2/2.svg" className="image" alt="" />
                     <h3>Freshness</h3>
                     <p>
-                        all of our product made daily by hand with fresh
+                        All of our product made daily by hand with fresh
                         ingradient.
                     </p>
                 </li>
