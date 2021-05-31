@@ -14,13 +14,10 @@ export default function Contact() {
             >
             </div>
             <Line_break />
-            <Maps/>
-                <h1>Contact</h1>
-                <h1>Contact</h1>
-                <h1>Contact</h1>
-                <h1>Contact</h1>
-                <h1>Contact</h1>
+            {/* <Maps/> */}
+                <h1>Find Us</h1>
             
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pKbwApvfK-8WvofDaLsSaPKPnkl-f1fK" width="80%" height="500"></iframe>
         </>
     );
 }
