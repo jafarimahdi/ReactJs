@@ -1,9 +1,8 @@
 import React from "react";
-import  GoogleMapReact  from  'google-maps-react';
-import Maps from '../component/Maps';
-import Line_break from '../component/Line_break'
+import GoogleMapReact from "google-maps-react";
+import Maps from "../component/Maps";
+import Line_break from "../component/Line_break";
 import "../App.scss";
-
 
 export default function Contact() {
     return (
@@ -11,13 +10,67 @@ export default function Contact() {
             <div
                 className="contact"
                 style={{ backgroundImage: "url(img-2/26.jpg)" }}
-            >
-            </div>
+            ></div>
             <Line_break />
             {/* <Maps/> */}
-                <h1>Find Us</h1>
-            
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pKbwApvfK-8WvofDaLsSaPKPnkl-f1fK" width="80%" height="500"></iframe>
+
+            <div className="find-us">
+                <h1>We Love To See You</h1>
+
+                <div className="get-in-touch">
+                    <div className="box">
+                        <h2>Get In Touch</h2>
+
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt" />
+                                <section>
+                                    <h3>Find us</h3>
+                                    <p>
+                                        Budapest, Nagy Diófa u. 32, 1072 Hungary
+                                    </p>
+                                    <p>
+                                        Budapest, Nagy Diófa u. 32, 1072 Hungary
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                            <i class="fas fa-clock"/>
+                                <section>
+                                    <h3>Working Hourse</h3>
+                                    <p>
+                                        Monday - Sunday <br/> 9 - 22
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                            <i class="fas fa-phone-volume"/>
+                                <section>
+                                    <h3>Phone</h3>
+                                    <p>
+                                    +36 1 618 6272
+                                    </p>
+                                </section>
+                            </li>
+                            <li>
+                            <i class="fas fa-mobile-alt"/>
+                                <section>
+                                    <h3>Mobile</h3>
+                                    <p>
+                                    +36 30 386 8447
+                                    </p>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1pKbwApvfK-8WvofDaLsSaPKPnkl-f1fK"
+                        width="65%"
+                        height="600"
+                    />
+                </div>
+            </div>
         </>
     );
 }

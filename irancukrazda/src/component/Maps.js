@@ -4,9 +4,7 @@ import "./Maps.scss";
 
 const mapStyles = {
     width: "60%",
-    height: "60%",
-    // margin:'10%',
-    marginBottom:'90%'
+    height: "60%"
 };
 
 export class Maps extends Component {
@@ -18,8 +16,8 @@ export class Maps extends Component {
                     zoom={12}
                     style={mapStyles}
                     initialCenter={{
-                        lat: -1.2884,
-                        lng: 36.8233,
+                        lat: 47.49801,
+                        lng: 19.03991
                     }}
                 />
             </div>

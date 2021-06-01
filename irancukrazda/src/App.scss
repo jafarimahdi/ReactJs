@@ -1,58 +1,115 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 // .home,
 .about,
 .contact,
 .products {
-  height:100vh;
-  width: 100vw;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.929);
-  z-index: -1;
-  margin-top: -8vh;
-  text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.929);
+    z-index: -1;
+    margin-top: -8vh;
+    text-align: center;
 
-  h1{
-    position:absolute;
-    font-size: 6rem;
-    margin-top: 30%;
-    margin-left: 20%;
-  }
-}
-.home{
-  text-align: center;
-  
-  .button-more{
-    // margin:9%;
-
-    button{
-      padding: 1% 2.2%;
-      border-radius: 10px;
-      margin-bottom:5%;
-      font-size: 1.2rem;
-      font-weight: 600;
-
-      &:hover {
-        cursor: pointer;
-        color:#fff;
-        background-color: rgb(31, 30, 30);
-        border-radius:40px;
-      }
+    h1 {
+        position: absolute;
+        font-size: 6rem;
+        margin-top: 30%;
+        margin-left: 20%;
     }
-  }
-  
+}
+.home {
+    text-align: center;
+
+    .button-more {
+        // margin:9%;
+
+        button {
+            padding: 1% 2.2%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+                color: #fff;
+                background-color: rgb(31, 30, 30);
+                border-radius: 40px;
+            }
+        }
+    }
 }
 
-  iframe{
-    margin-left: 10%;
-  }
+.find-us {
+    text-align: center;
+    // margin:3%;
+    h1 {
+        margin: 5%;
+        font-size: 5rem;
+    }
 
+    .get-in-touch {
+        width: 90%;
+        display: flex;
+        text-align: center;
+        margin: auto;
 
+        .box {
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 14px 14px 38px black;
+            width: 35%;
+            height: 70vh;
+            margin-top: -4%;
+            margin-bottom: 3%;
+            z-index: 1;
+
+            h2{
+              font-size:3rem;
+              padding: 7%;
+              text-decoration: underline;
+            }
+            ul{
+              display:flex;
+              flex-direction:column;
+              margin:1%;
+              li{
+                display:flex;
+                justify-content: space-evenly;
+                // flex-;
+                margin:3%;
+                i{
+                  font-size:4rem;
+                  
+                }
+                section{
+                  margin:auto;
+
+                  h3{
+                    font-size:2rem;
+                    margin-bottom:3%;
+                  }
+                  p{
+                    font-size:1.2rem;
+                  }
+                }
+              }
+            }
+        }
+    }
+    iframe {
+        z-index: -1;
+        border-radius: 15px;
+        box-shadow: 14px 14px 38px black;
+    }
+}
