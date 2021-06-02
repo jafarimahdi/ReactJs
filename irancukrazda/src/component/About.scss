@@ -1,21 +1,18 @@
-
-
-    .line-image {
-        width: 6%;
-        margin-top: 2vh;
-        // margin-left: 9%;
-        filter: drop-shadow(15px 16px 4px rgb(67, 40, 40));
-    }
-
-
 .detail {
     width: 93%;
     margin: auto;
+    margin-top: 51%;
+
+    .line-image {
+        width: 6%;
+        margin-top: 3vh;
+        // margin-left: 9%;
+        filter: drop-shadow(15px 16px 4px rgb(67, 40, 40));
+    }
     .frei {
         display: flex;
         flex-direction: row;
         align-content: space-around;
-
         margin: 2%;
 
         img {
@@ -99,7 +96,7 @@
             }
         }
     }
-    
+
     @media screen and (max-width: 1024px) {
         .line-image {
             width: 5rem;

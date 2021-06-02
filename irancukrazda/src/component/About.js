@@ -5,11 +5,9 @@ import Line_break from "./Line_break"
 export function About() {
     return (
         <>
-        <Line_break/>
-
-                <img className="line-image" src="./img-2/2.png" />
-
+        {/* <Line_break/> */}
             <div className="detail">
+                <img className="line-image" src="./img-2/2.png" />
                 <div className="frei">
                     <img src="./img-2/6.jpg" alt="" />
 
