@@ -12,6 +12,9 @@ function Home() {
         <video className="video" src="./2.mp4" autoPlay loop muted />
         <div className="home">
             {/* <Herosection /> */}
+            <h1>Iran Cukrazda</h1>
+            {/* <p>DESERT SHOP</p> */}
+
             <About />
             <Our_product />
 

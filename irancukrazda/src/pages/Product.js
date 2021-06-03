@@ -8,9 +8,11 @@ export default function Products() {
     return (
         <>
             <video className="video" src="./1.mp4" autoPlay loop muted />
-            
-            <Our_product />
-            <Cards />
+
+            <div className="product">
+                <Our_product />
+                <Cards />
+            </div>
         </>
     );
 }
