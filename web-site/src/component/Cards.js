@@ -13,7 +13,7 @@ function Cards() {
                         src='img-component/img-9.jpg'
                         text='Explore the hidden waterfall deep inside the Amazon jungle'
                         label='Adventure'
-                        path='/services'
+                        path='/service'
                     />
                     <CardItem 
                         src='img-component/img-2.jpg'
@@ -27,19 +27,19 @@ function Cards() {
                         src='img-component/img-3.jpg'
                         text='Set Sail in the Atlantic Ocea visitiong Uncharted Waters'
                         label='Mystery'
-                        path='/services'
+                        path='/service'
                     />
                     <CardItem 
                         src='img-component/img-8.jpg'
                         text='Travel through the Islands of Baali in  a Private Cruise'
                         label='Adventure'
-                        path='/services'
+                        path='/service'
                     />
                     <CardItem 
                         src='img-component/img-4.jpg'
                         text='Travel through the Islands of Baali in  a Private Cruise'
                         label='Adventure'
-                        path='/services'
+                        path='/service'
                     />
                     </ul>
                 </div>

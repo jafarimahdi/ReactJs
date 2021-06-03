@@ -70,10 +70,10 @@ function Footer() {
             <div className="social-media-wrap">
                <div className="footer-logo">
                   <Link to="/" className="social-logo">
-                     TRVL <i className="fab fa-typo3"/>
+                     MJ <i className="fab fa-typo3"/>
                   </Link>
                </div>
-               <small className="website-rights">TRVL 2020 </small>
+               <small className="website-rights">May 2021 </small>
                <div className="social-icons">
                   <Link className="social-icon-link facebook" to="/" target="_blank" aria-label='Facebook'>
                      <i class="fab fa-facebook-f" />

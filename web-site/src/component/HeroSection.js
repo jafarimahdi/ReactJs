@@ -24,7 +24,7 @@ return (
             buttonStyle="btn--primary"
             buttonSize="btn--large"
             >
-            WATCH TRAILER <i className="far fa-play-circle" />
+            SIGN UP <i className="far fa-play-circle" />
             </Button>
         </div>
     </div>

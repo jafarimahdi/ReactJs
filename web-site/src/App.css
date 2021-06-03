@@ -15,7 +15,7 @@
   justify-content: center;
   font-size: 3rem;
 }
-
+ /* ----------------------------------   */
 .services {
   background-image: url('./images/img-2.jpg');
   background-position: center;
@@ -25,6 +25,41 @@
   font-size: 100px;
 }
 
+.our-service {
+  text-align: center;
+  margin:3%;
+}
+
+.our-service h2{
+  font-size:3rem;
+  margin:2%;
+}
+.our-service >p{
+  font-size:1.2rem;
+
+}
+.text{
+  margin:3%;
+  text-decoration: none;
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+}
+.text >li{
+  width:46%;
+  margin:2%; 
+  border:2px solid #dee2e6;
+  padding: 2%;
+  border-radius: 15px;
+
+}
+.text li >h3{
+  font-size:1.5rem;
+  margin:2%;
+
+}
+
+/* --------------------------------- */
 .products {
   background-image: url('./images/img-1.jpg');
   background-position: center;
