@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    // font-size: calc( 10px + 2vw);
+    
 }
 // .video,
 .about,
@@ -52,12 +54,18 @@
     margin-top:50%; 
 
     .hero-text {
- 
     h1 {
       position: absolute;
-      font-size: 6rem;
+      font-size: 10vw;
       margin-top: -20%;
       margin-left: 20%;
+      z-index: 2;
+  }
+  h5{
+    position: absolute;
+      font-size: 3.5vw;
+      margin-top: -7%;
+      margin-left: 30%;
       z-index: 2;
   }
 }
@@ -68,7 +76,7 @@
             padding: 1% 2%;
             border-radius: 10px;
             margin-bottom: 5%;
-            font-size: 1.2rem;
+            font-size:clamp(14px, 3vw, 30px);
             font-weight: 600;
 
             &:hover {
@@ -88,7 +96,7 @@
     
     h1 {
         margin: 5%;
-        font-size: 5rem;
+        font-size: 4vw;
     }
 
     .get-in-touch {
@@ -108,7 +116,7 @@
             z-index: 1;
 
             h2{
-              font-size:3rem;
+              font-size:2.5vw;
               padding: 7%;
               text-decoration: underline;
             }
@@ -122,18 +130,18 @@
                 // flex-;
                 margin:3%;
                 i{
-                  font-size:4rem;
+                  font-size:3vw;
                   
                 }
                 section{
                   margin:auto;
 
                   h3{
-                    font-size:2rem;
+                    font-size:2vw;
                     margin-bottom:3%;
                   }
                   p{
-                    font-size:1.2rem;
+                    font-size:1.2vw;
                   }
                 }
               }
