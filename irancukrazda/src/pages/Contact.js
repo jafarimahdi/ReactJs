@@ -14,7 +14,7 @@ export default function Contact() {
             <Line_break />
             {/* <Maps/> */}
 
-            <div className="find-us">
+            <div className="contact-page">
                 <h1>We Love To See You</h1>
 
                 <div className="get-in-touch">

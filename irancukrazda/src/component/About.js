@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./About.scss";
 import Line_break from "./Line_break"
+import "./About.scss";
 
 export function About() {
     return (
@@ -8,11 +8,12 @@ export function About() {
         {/* <Line_break/> */}
             <div className="detail">
                 <img className="line-image" src="./img-2/2.png" />
+
                 <div className="frei">
                     <img src="./img-2/6.jpg" alt="" />
 
                     <section>
-                        <h1>About Us</h1>
+                        <h1>About Us to know</h1>
                         <p>
                             Iran Cukarzda is a place, where you can find
                             traditional and handmade Persian Sweets with unique
@@ -23,7 +24,9 @@ export function About() {
                 </div>
 
                 <div className="frei-story">
+
                     <img src="./img-2/27.jpg" alt="" />
+
                     <section>
                         <h1>Feri Bacsi</h1>
                         <p>

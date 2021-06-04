@@ -9,19 +9,21 @@ import "../App.scss";
 function Home() {
     return (
         <>
-        <video className="video" src="./2.mp4" autoPlay loop muted />
-        <div className="home">
-            {/* <Herosection /> */}
-            <h1>Iran Cukrazda</h1>
-            {/* <p>DESERT SHOP</p> */}
+            <video className="video" src="./2.mp4" autoPlay loop muted />
 
-            <About />
-            <Our_product />
+            <div className="home-page">
+                {/* <Herosection /> */}
+                <div className="hero-text">
+                    <h1>Iran Cukrazda</h1>
+                    <h5>DESERT SHOP</h5>
+                </div>
+                <About />
+                <Our_product />
 
-            <Link to="/product" className="button-more">
-                <button>More</button>
-            </Link>
-        </div>
+                <Link to="/product" className="button-more">
+                    <button>More</button>
+                </Link>
+            </div>
         </>
     );
 }

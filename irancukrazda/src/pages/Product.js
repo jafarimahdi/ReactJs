@@ -9,7 +9,7 @@ export default function Products() {
         <>
             <video className="video" src="./1.mp4" autoPlay loop muted />
 
-            <div className="product">
+            <div className="product-page">
                 <Our_product />
                 <Cards />
             </div>
