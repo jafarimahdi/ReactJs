@@ -5,6 +5,7 @@ import "./Our_product.scss";
 export default function Our_product() {
     return (
         <div className="product_section">
+            
             <div className="text_area">
                 <img src="img-2/2.png" alt="ourProduct" />
                 <h1>OUR Product</h1>

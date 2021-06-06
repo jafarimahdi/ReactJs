@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    // font-size: calc( 10px + 2vw);
     
 }
 // .video,
@@ -42,7 +41,8 @@
   height: 100vh;
   position: fixed;
   z-index: -1;
-  margin-top:-5%;
+  // margin-top:-14%;
+  margin:-14% 0 auto;
   
 }
 
@@ -51,20 +51,20 @@
 .home-page {
     text-align: center;
     background-color: #fff;
-    margin-top:50%; 
+    margin-top:42%; 
 
     .hero-text {
     h1 {
       position: absolute;
       font-size: 10vw;
-      margin-top: -20%;
+      margin-top: -22%;
       margin-left: 20%;
       z-index: 2;
   }
   h5{
     position: absolute;
       font-size: 3.5vw;
-      margin-top: -7%;
+      margin-top: -9%;
       margin-left: 30%;
       z-index: 2;
   }
@@ -76,7 +76,7 @@
             padding: 1% 2%;
             border-radius: 10px;
             margin-bottom: 5%;
-            font-size:clamp(14px, 3vw, 30px);
+            font-size:clamp(14px, 2vw, 30px);
             font-weight: 600;
 
             &:hover {

@@ -4,7 +4,7 @@
     // margin-top: 51%;
 
     .line-image {
-        width: 6%;
+        width: 6vw;
         margin-top: 4vh;
         // margin-left: 9%;
         filter: drop-shadow(15px 16px 4px rgb(67, 40, 40));
@@ -31,14 +31,14 @@
             margin: auto;
             padding: 4%;
             h1 {
-                font-size: 3rem;
+                font-size: clamp(30px, 3vw, 41px);
                 text-decoration: underline;
                 filter: drop-shadow(9px 9px 9px black);
             }
 
             p {
                 align-self: center;
-                font-size: 1.5rem;
+                font-size: clamp(20px, 3vw, 26px);
                 margin-top: 5%;
             }
         }
@@ -70,14 +70,14 @@
             margin: auto;
             padding: 4%;
             h1 {
-                font-size: 3rem;
+                font-size: clamp(30px, 3vw, 41px);
                 text-decoration: underline;
                 padding: 4%;
                 filter: drop-shadow(9px 9px 9px black);
             }
             p {
                 align-self: center;
-                font-size: 1.5rem;
+                font-size: clamp(20px, 3vw, 26px);
                 padding: 5%;
             }
             .links {

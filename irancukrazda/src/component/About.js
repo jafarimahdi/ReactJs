@@ -38,11 +38,8 @@ export function About() {
                             traditional trade to the Hungarian Capital ..
                         </p>
                         <div className="links">
-                            <a href="" target="_blank">
+                            <a href="https://www.facebook.com/Iran-cukr%C3%A1zda-339084550213542" target="_blank">
                                 <i class="fab fa-facebook" />
-                            </a>
-                            <a href="" target="_blank">
-                                <i class="fab fa-youtube" />
                             </a>
                         </div>
                     </section>
