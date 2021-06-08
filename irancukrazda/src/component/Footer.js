@@ -63,17 +63,14 @@ function Footer() {
                 </div>
             </div>
 
+            <div className="social-media-wrap">
+                <Link className="social-logo">
+                    Made With
+                    <i class="fab fa-gratipay" />
+                    In Apr 2021 By MJ.
+                </Link>
 
-                <div className="social-media-wrap">
-
-                    <Link className="social-logo">
-                        Made With
-                        <i class="fab fa-gratipay"/>
-                        In Apr 2021 By MJ.
-                    </Link>
-
-
-                    <div className="social-icons">
+                <div className="social-icons">
                     <Link
                         className="social-icon-link facebook"
                         to="/"
@@ -115,10 +112,8 @@ function Footer() {
                     >
                         <i className="fab fa-linkedin" />
                     </Link>
-                    </div>
-
                 </div>
-            
+            </div>
         </div>
     );
 }

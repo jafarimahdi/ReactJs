@@ -13,19 +13,25 @@ export default function About() {
             <Line_break />
 
             <div className="about-page">
-                <h1>About</h1>
+                <h1 className="hero-text">Our Shops</h1>
 
-                <ReactPlayer
-                    url={["https://youtu.be/0Ru58LXDx6Q"]}
-                    controls="true"
-                    style={{ margin: "5%" }}
-                />
-                <ReactPlayer
-                    url={["https://youtu.be/B_Qxo-wVaa4"]}
-                    autoPlay="false"
-                    controls="true"
-                    style={{ margin: "5%" }}
-                />
+                <div className="firstshop">
+                    <ReactPlayer
+                        className="youtube-video"
+                        url={["https://youtu.be/0Ru58LXDx6Q"]}
+                        controls="true"
+                        style={{ width: "50%" }}
+                    />
+                </div>
+                <div className="secondshp">
+                    <ReactPlayer
+                        className="youtube-video"
+                        url={["https://youtu.be/B_Qxo-wVaa4"]}
+                        autoPlay="false"
+                        controls="true"
+                        // style={{ margin: "5%" }}
+                    />
+                </div>
             </div>
         </>
     );

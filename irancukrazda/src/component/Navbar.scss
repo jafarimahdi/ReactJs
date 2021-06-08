@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: clamp(19px, 2vw, 40px);;
+    font-size: clamp(15px, 2vw, 25px);;
     z-index: 2;
     margin:0 auto;
     top: 2.5vh;
@@ -107,11 +107,11 @@
         }
 
         .active {
-            background: #242222;
+            background: #070707;
             left: 0;
-            opacity: 1;
+            opacity: 2;
             transition: all 0.5s ease;
-            z-index: 1;
+            z-index: 2;
         }
 
         .nav-links {
@@ -121,14 +121,15 @@
             display: table;
 
             &:hover {
-                background-color: #fff;
+                z-index: 2;
+                background-color: rgb(224, 221, 221);
                 color: #242424;
                 border-radius: 0;
             }
         }
         .navbar-logo {
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             top: 35%;
             left: 2%;
             transform: translate(15%, 5%);

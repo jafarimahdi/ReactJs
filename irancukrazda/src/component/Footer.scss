@@ -95,16 +95,16 @@
 
     .social-media-wrap {
         display: flex;
-        margin: 2%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin: 2% auto;
+        justify-content: space-evenly;
+        width:40%;
 
         .social-logo {
             color: #fff;
             cursor: pointer;
             text-decoration: none;
             font-size: clamp(12px, 2vw, 20px);
+
             .fab {
                 margin: 0 1%;
             }
@@ -112,9 +112,6 @@
 
         .social-icons {
             display: flex;
-            // justify-content: space-between;
-            align-items: center;
-            // margin: 2%;
 
             .social-icon-link {
                 color: #fff;
@@ -138,6 +135,10 @@
 
         .social-media-wrap {
             flex-direction: column;
+
+            .social-logo{
+                margin-bottom: 3%;
+            }
         }
     }
 }
