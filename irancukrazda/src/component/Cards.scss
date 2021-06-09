@@ -5,7 +5,7 @@
     .cards__items {
         max-width: 100vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
         grid-gap: 3px;
         justify-items: start;
     }
@@ -14,27 +14,28 @@
 
     .card__item {
         margin: 3%;
-        border-radius: 10px;
+        border-radius: 15px;
         list-style: none;
         box-shadow: 16px 13px 9px rgba(41, 40, 40, 0.491);
-        transition: all 0.2s linear;
+        transition: all 0.3s linear;
         &:hover {
             transform: scale(1.1);
         }
 
         .cards__item__img {
-            width: 20vw;
-            height: 15vw;
+            width: 100%;
+            height: 35vw;
             object-fit: cover;
-            border-radius: 15px;
+            border-radius:15px;
+            // box-shadow: 6px 6px 2px rgba(41, 40, 40, 0.491);
         }
 
         .cards__item__info {
             padding: 3% 4% 4%;
-            max-width:20vw;
             height:auto;
+            text-align: center;
             h5{
-                font-size:clamp(15px, 2vw, 20px);
+                font-size:clamp(15px, 2vw, 25px);
                 padding: 2%;
             }
             .cards__item__text {
