@@ -10,10 +10,10 @@ function Cards() {
                     src="img-2/5.jpg"
                     text=""
                     label="ZABAN"
-                    path="/product"
+                    // path="/product"
                 />
 
-                
+
                 <Carditem
                     src="img-2/7.jpg"
                     text=""
@@ -22,7 +22,7 @@ function Cards() {
                 />
                 <Carditem
                     src="img-2/30.jpg"
-                    text="persian cookie with Pectase "
+                    text="persian cookie with Pectase and some saffaron and more rose water and a lot of things inside of it"
                     label="pestei"
                     path="/product"
                 />
