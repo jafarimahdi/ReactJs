@@ -6,13 +6,6 @@ function Cards() {
     return (
         <div className="cards">
             <ul className="cards__items">
-                <Carditem
-                    src="img-2/5.jpg"
-                    text=""
-                    label="ZABAN"
-                    // path="/product"
-                />
-
 
                 <Carditem
                     src="img-2/7.jpg"
@@ -96,14 +89,19 @@ function Cards() {
                     src="img-2/24.jpg"
                     text=""
                     label="Baghlava"
-                    path="/product"
                 />
                 <Carditem
                     src="img-2/25.jpg"
                     text=""
                     label="Baghlava sontati"
-                    path="/product"
                 />
+                <Carditem
+                    src="img-2/5.jpg"
+                    text=""
+                    label="ZABAN"
+                    // path="/product"
+                />
+
                 <Carditem
                     src="img-2/28.jpeg"
                     text=""

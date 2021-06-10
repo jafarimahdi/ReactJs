@@ -10,7 +10,7 @@ export default function Contact() {
             <div
                 className="contact"
                 style={{ backgroundImage: "url(img-2/26.jpg)" }}
-            ></div>
+            />
             <Line_break />
             {/* <Maps/> */}
 
@@ -35,30 +35,26 @@ export default function Contact() {
                                 </section>
                             </li>
                             <li>
-                            <i class="fas fa-clock"/>
+                                <i class="fas fa-clock" />
                                 <section>
                                     <h3>Working Hourse</h3>
                                     <p>
-                                        Monday - Sunday <br/> 9 - 22
+                                        Monday - Sunday <br /> 9 - 22
                                     </p>
                                 </section>
                             </li>
                             <li>
-                            <i class="fas fa-phone-volume"/>
+                                <i class="fas fa-phone-volume" />
                                 <section>
                                     <h3>Phone</h3>
-                                    <p>
-                                    +36 1 618 6272
-                                    </p>
+                                    <p>+36 1 618 6272</p>
                                 </section>
                             </li>
                             <li>
-                            <i class="fas fa-mobile-alt"/>
+                                <i class="fas fa-mobile-alt" />
                                 <section>
                                     <h3>Mobile</h3>
-                                    <p>
-                                    +36 30 386 8447
-                                    </p>
+                                    <p>+36 30 386 8447</p>
                                 </section>
                             </li>
                         </ul>
