@@ -16,6 +16,18 @@ export default function About() {
                 <h1 className="hero-text">Our Shops</h1>
 
                 <div className="firstshop">
+                    <section>
+                        <h2>Iran Cukarszda 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Repudiandae eligendi amet maiores molestias
+                            optio laboriosam cumque. Dolor eius enim veniam
+                            totam! Corrupti quidem veniam iure exercitationem
+                            necessitatibus cum doloribus tempore nobis
+                            recusandae! Exercitationem cupiditate quia, animi
+                            harum illum doloremque voluptatum.
+                        </p>
+                    </section>
                     <ReactPlayer
                         className="youtube-video"
                         url={["https://youtu.be/0Ru58LXDx6Q"]}
@@ -23,14 +35,27 @@ export default function About() {
                         style={{ width: "50%" }}
                     />
                 </div>
-                <div className="secondshp">
+                <div className="secondshop">
                     <ReactPlayer
                         className="youtube-video"
                         url={["https://youtu.be/B_Qxo-wVaa4"]}
                         autoPlay="false"
                         controls="true"
-                        // style={{ margin: "5%" }}
+                        style={{ width: "50%" }}
                     />
+                    <section>
+                    <h2>Iran Cukarszda 1</h2>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae eligendi amet maiores molestias optio
+                        laboriosam cumque. Dolor eius enim veniam totam!
+                        Corrupti quidem veniam iure exercitationem
+                        necessitatibus cum doloribus tempore nobis recusandae!
+                        Exercitationem cupiditate quia, animi harum illum
+                        doloremque voluptatum.
+                    </p>
+                    </section>
                 </div>
             </div>
         </>

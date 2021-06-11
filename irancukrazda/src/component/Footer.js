@@ -8,8 +8,8 @@ function Footer() {
         <div className="footer-container">
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
-                    Join the Adventure newsletter to recive out best vacation
-                    deals
+                    Join the newsletter to receive our best 
+                    deals and new product!
                 </p>
                 <p className="footer-subscription-text">
                     You can unsubscribe any time
@@ -64,11 +64,13 @@ function Footer() {
             </div>
 
             <div className="social-media-wrap">
-                <Link className="social-logo">
+
+                <a className="social-logo" href="https://jafarimahdi.github.io/" target="_blank">
                     Made With
-                    <i class="fab fa-gratipay" />
+                    <i class="fab fa-gratipay"/>
                     In Apr 2021 By MJ.
-                </Link>
+                </a>
+
 
                 <div className="social-icons">
                     <Link
