@@ -48,7 +48,7 @@
             margin-top: -22%;
             margin-left: 20%;
             z-index: 1;
-            filter:drop-shadow(39px 9px 35px rgb(22, 21, 21));
+            filter: drop-shadow(39px 9px 35px rgb(22, 21, 21));
         }
         h5 {
             position: absolute;
@@ -56,7 +56,30 @@
             margin-top: -9%;
             margin-left: 30%;
             z-index: 1;
-            filter:drop-shadow(12px 12px 29px rgb(22, 21, 21));
+            filter: drop-shadow(12px 12px 29px rgb(22, 21, 21));
+        }
+    }
+    .pang {
+        margin-top: 10vh;
+        height: 30vh;
+        background-color: rgb(243, 211, 150);
+    
+        .text{
+            margin: 6% auto;  
+            width:50vw;
+            border-radius:25px;
+            border:2px solid;
+            padding:2%;
+            transform:translateY(39%);
+            h5{
+                // margin-bottom:-19%;
+                font-size:clamp(29px,2.1vw, 47px);
+                margin-bottom: -5%;
+            }
+            p{
+                margin-top: 7%;
+                font-size:clamp(14px,2.1vw, 22px);
+            }
         }
     }
 
@@ -84,7 +107,7 @@
     .hero-text {
         font-size: clamp(29px, 3vw, 52px);
         text-decoration: underline;
-        filter:drop-shadow(2px 2px 9px rgb(22, 21, 21));
+        filter: drop-shadow(2px 2px 9px rgb(22, 21, 21));
         margin-bottom: 6%;
     }
     .firstshop,
@@ -97,9 +120,9 @@
 
         section {
             h2 {
-                font-size: clamp(25px, 2vw, 48px); 
+                font-size: clamp(25px, 2vw, 48px);
                 text-decoration: underline;
-                filter:drop-shadow(2px 2px 9px rgb(22, 21, 21));
+                filter: drop-shadow(2px 2px 9px rgb(22, 21, 21));
             }
             p {
                 width: 37vw;

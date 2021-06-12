@@ -18,6 +18,17 @@ function Home() {
                     <h5>DESERT SHOP</h5>
                 </div>
                 <About />
+                <div className="pang">
+
+                    <div className="text">
+                        <h5>
+                            I Can Imagine Hell like this: Italian punctuality,
+                            German humour, English wine and a bite of Persian
+                            Sweets
+                        </h5>
+                        <p>PETER USTINOV</p>
+                    </div>
+                </div>
                 <Our_product />
 
                 <Link to="/product" className="button-more">
