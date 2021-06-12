@@ -30,7 +30,8 @@ export default function Contact() {
                                         Budapest, Nagy Diófa u. 32, 1072 Hungary
                                     </p>
                                     <p>
-                                        Budapest, Nagy Diófa u. 32, 1072 Hungary
+                                        Budapest, Wesselényi u. 33, 1077
+                                        Hungary
                                     </p>
                                 </section>
                             </li>

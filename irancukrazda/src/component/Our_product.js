@@ -1,11 +1,9 @@
 import React from "react";
 import "./Our_product.scss";
 
-
 export default function Our_product() {
     return (
         <div className="product_section">
-            
             <div className="text_area">
                 <img src="img-2/2.png" alt="ourProduct" />
                 <h1>OUR Product</h1>
@@ -23,20 +21,21 @@ export default function Our_product() {
                     <img src="./img-2/3.svg" className="image" alt="" />
                     <h3>Gluten Free</h3>
                     <p>
-                        all of our product made daily by hand with fresh
-                        ingradient.
+                        our ingredient are lactose free and with out milk and
+                        others, we our glad to make all of our customer happy
+                        and everyone can test our product
                     </p>
                 </li>
                 <li>
                     <img src="./img-2/4.svg" className="image" alt="" />
                     <h3>Tradition</h3>
                     <p>
-                        all of our product made daily by hand with fresh
-                        ingradient.
+                        having the spacial drink(TEA), make your try completely
+                        done and you tried all the things from other culture and
+                        can feel how people enjoy them sweet moments.
                     </p>
                 </li>
             </ul>
-            
         </div>
     );
 }
