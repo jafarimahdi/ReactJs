@@ -18,22 +18,16 @@
     // text-align: center;
 }
 
-// product page  ------------------------------
-.product-page {
-    margin-top: 50%;
-    background-color: #fff;
-}
-
-// ---------------------------------
 .video {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
-    margin: -4.5% auto;
+    margin-top: -10%;
 }
 
+//  ---------------------------------
 // home page  ------------------------
 
 .home-page {
@@ -63,22 +57,21 @@
         margin-top: 10vh;
         height: 30vh;
         background-color: rgb(243, 211, 150);
-    
-        .text{
-            margin: 6% auto;  
-            width:50vw;
-            border-radius:25px;
-            border:2px solid;
-            padding:2%;
-            transform:translateY(39%);
-            h5{
-                // margin-bottom:-19%;
-                font-size:clamp(29px,2.1vw, 47px);
-                margin-bottom: -5%;
+
+        .text {
+            margin: 4% auto;
+            width: 60vw;
+            border-radius: 25px;
+            border: 2px solid;
+            padding: 4%;
+            transform: translateY(39%);
+            h5 {
+                font-size: clamp(29px, 2.1vw, 47px);
+                margin-bottom: -4%;
             }
-            p{
-                margin-top: 7%;
-                font-size:clamp(14px,2.1vw, 22px);
+            p {
+                margin-top: 8%;
+                font-size: clamp(14px, 2.1vw, 22px);
             }
         }
     }
@@ -132,6 +125,15 @@
             }
         }
     }
+}
+
+// product page  ------------------------------
+.product-page {
+    // margin-top: 80%;
+    // margin-bottom: 30%;
+    background-color: #fff;
+    // z-index: 1;
+    // padding-bottom: 15%;
 }
 
 //  contact page -------------------
@@ -195,8 +197,20 @@
             box-shadow: 14px 14px 38px black;
         }
     }
+}
 
-    @media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
+    .video {
+    }
+    //    product page -------------------
+    .product-page {
+        // margin-bottom: 50%;
+        // padding-bottom: 5%;
+    }
+
+    // ------------------------ contact page
+    .contact-page {
         .get-in-touch {
             display: flex;
             flex-direction: column;

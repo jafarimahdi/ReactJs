@@ -23,7 +23,7 @@ function Home() {
                     <div className="text">
                         <h5>
                             I Can Imagine Hell like this: Italian punctuality,
-                            German humour, English wine and a bite of Persian
+                            German humour, English Wine and a bite of Persian
                             Sweets
                         </h5>
                         <p>PETER USTINOV</p>

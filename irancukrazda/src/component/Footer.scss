@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    // margin-top:13%;
+    // z-index: 1;
 
     // ---------
     .footer-subscription {
@@ -111,9 +113,9 @@
             text-decoration: none;
             font-size: clamp(12px, 2vw, 17px);
 
-            .fab {
-                // margin: 0 1%;
-            }
+            // .fab {
+            //     // margin: 0 1%;
+            // }
         }
 
         .social-icons {
