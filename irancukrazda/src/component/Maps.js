@@ -4,8 +4,9 @@ import "./Maps.scss";
 
 const mapStyles = {
     width: "60vw",
-    // height: "500px"
-    height:"50vh"
+    height: "50vh",
+    overflowX: "hidden",
+    overflowY: "hidden"
 };
 
 export class Maps extends Component {
@@ -18,7 +19,7 @@ export class Maps extends Component {
                     style={mapStyles}
                     initialCenter={{
                         lat: 47.49801,
-                        lng: 19.03991
+                        lng: 19.03991,
                     }}
                 />
             </div>
@@ -27,5 +28,5 @@ export class Maps extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey:"AIzaSyA859xnP8vozdzShqB-v4-pDdRaSN9Eaqs",
+    apiKey: "AIzaSyA859xnP8vozdzShqB-v4-pDdRaSN9Eaqs",
 })(Maps);

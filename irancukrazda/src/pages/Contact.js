@@ -17,6 +17,7 @@ export default function Contact() {
                 <h1>We Love To See You</h1>
 
                 <div className="get-in-touch">
+
                     <div className="box">
                         <h2>Get In Touch</h2>
 
@@ -59,12 +60,6 @@ export default function Contact() {
                         </ul>
                     </div>
                     <Maps />
-
-                    {/* <iframe
-                        src="https://www.google.com/maps/d/u/0/embed?mid=1pKbwApvfK-8WvofDaLsSaPKPnkl-f1fK"
-                        width="65%"
-                        height="600"
-                    /> */}
                 </div>
             </div>
         </>
