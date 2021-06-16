@@ -12,7 +12,6 @@ export default function Contact() {
                 style={{ backgroundImage: "url(img-2/26.jpg)" }}
             />
             <Line_break />
-            {/* <Maps/> */}
 
             <div className="contact-page">
                 <h1>We Love To See You</h1>
@@ -27,11 +26,10 @@ export default function Contact() {
                                 <section>
                                     <h3>Find us</h3>
                                     <p>
-                                        Budapest, Nagy Diófa u. 32, 1072 Hungary
+                                        Budapest, Nagy Diófa u. 32
                                     </p>
                                     <p>
-                                        Budapest, Wesselényi u. 33, 1077
-                                        Hungary
+                                        Budapest, Wesselényi u. 33
                                     </p>
                                 </section>
                             </li>
@@ -60,12 +58,13 @@ export default function Contact() {
                             </li>
                         </ul>
                     </div>
+                    <Maps />
 
-                    <iframe
+                    {/* <iframe
                         src="https://www.google.com/maps/d/u/0/embed?mid=1pKbwApvfK-8WvofDaLsSaPKPnkl-f1fK"
                         width="65%"
                         height="600"
-                    />
+                    /> */}
                 </div>
             </div>
         </>

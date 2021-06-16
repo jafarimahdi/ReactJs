@@ -3,8 +3,9 @@ import { Map, GoogleApiWrapper } from "google-maps-react";
 import "./Maps.scss";
 
 const mapStyles = {
-    width: "60%",
-    height: "60%"
+    width: "60vw",
+    // height: "500px"
+    height:"50vh"
 };
 
 export class Maps extends Component {

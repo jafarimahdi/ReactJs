@@ -140,6 +140,7 @@
 
 .contact-page {
     text-align: center;
+    max-width:100vw;
 
     h1 {
         margin: 5%;
@@ -147,17 +148,18 @@
     }
 
     .get-in-touch {
-        width: 98vw;
+        // width: 98vw;
         display: flex;
-        justify-content: center;
-        margin: 3% auto;
+        // justify-content: center;
+        margin: 4% 10%;
 
         .box {
             border: 1px solid black;
             border-radius: 15px;
             box-shadow: 14px 14px 38px black;
             width: 25vw;
-            height: auto;
+            // height: auto;
+            height: 53vh;
             margin-top: -2%;
             z-index: 1;
 
@@ -191,11 +193,11 @@
                 }
             }
         }
-        iframe {
-            z-index: -1;
-            border-radius: 15px;
-            box-shadow: 14px 14px 38px black;
-        }
+        // iframe {
+        //     z-index: -1;
+        //     border-radius: 15px;
+        //     box-shadow: 14px 14px 38px black;
+        // }
     }
 }
 
@@ -236,11 +238,15 @@
                     }
                 }
             }
-
-            iframe {
-                margin: 0 auto;
-                width: 80vw;
+            .map{
+                // margin:0 auto;
+                // width:66%;
             }
+
+            // iframe {
+            //     margin: 0 auto;
+            //     width: 80vw;
+            // }
         }
     }
 }
