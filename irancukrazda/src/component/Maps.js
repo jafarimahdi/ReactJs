@@ -3,26 +3,33 @@ import { Map, GoogleApiWrapper } from "google-maps-react";
 import "./Maps.scss";
 
 const mapStyles = {
-    width: "60vw",
-    height: "50vh",
-    overflowX: "hidden",
-    overflowY: "hidden"
+    // width: "100%",
+    width: "450px",
+    height: "50%"
+    // height: "350px",
+    // overflowX: "hidden",
+    // overflowY: "hidden"
+};
+const containerStyle = {
+    maxWidth: "450px",
+    height: "350px"
 };
 
 export class Maps extends Component {
     render() {
         return (
-            <div className="map">
+            
                 <Map
                     google={this.props.google}
-                    zoom={12}
+                    zoom={10}
+                    // resetBoundsOnResize={true}
                     style={mapStyles}
                     initialCenter={{
                         lat: 47.49801,
                         lng: 19.03991,
                     }}
                 />
-            </div>
+            
         );
     }
 }

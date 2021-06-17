@@ -17,7 +17,6 @@ export default function Contact() {
                 <h1>We Love To See You</h1>
 
                 <div className="get-in-touch">
-
                     <div className="box">
                         <h2>Get In Touch</h2>
 
@@ -26,12 +25,8 @@ export default function Contact() {
                                 <i class="fas fa-map-marker-alt" />
                                 <section>
                                     <h3>Find us</h3>
-                                    <p>
-                                        Budapest, Nagy Diófa u. 32
-                                    </p>
-                                    <p>
-                                        Budapest, Wesselényi u. 33
-                                    </p>
+                                    <p>Budapest, Nagy Diófa u. 32</p>
+                                    <p>Budapest, Wesselényi u. 33</p>
                                 </section>
                             </li>
                             <li>
@@ -59,7 +54,9 @@ export default function Contact() {
                             </li>
                         </ul>
                     </div>
-                    <Maps />
+                    <div className="map">
+                        <Maps />
+                    </div>
                 </div>
             </div>
         </>
