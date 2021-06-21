@@ -4,7 +4,7 @@ import "./Maps.scss";
 
 const mapStyles = {
     // width: "100%",
-    width: "450px",
+    width: "70vw",
     height: "50%"
     // height: "350px",
     // overflowX: "hidden",
@@ -22,7 +22,7 @@ export class Maps extends Component {
                 <Map
                     google={this.props.google}
                     zoom={10}
-                    // resetBoundsOnResize={true}
+                    resetBoundsOnResize={true}
                     style={mapStyles}
                     initialCenter={{
                         lat: 47.49801,
