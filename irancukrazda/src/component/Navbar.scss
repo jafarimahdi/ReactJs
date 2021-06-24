@@ -5,149 +5,84 @@
         rgba(87, 87, 87, 0.788) 5%,
         rgb(26, 23, 23) 80%
     );
+    line-height: 8vh;
     height: 8vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(15px, 2vw, 25px);;
+    font-size: clamp(15px, 2vw, 25px);
     z-index: 2;
-    margin:0 auto;
+    margin: 0 auto;
     top: 2.5vh;
     width: 95vw;
     border-radius: 9px;
 
-    .navbar-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        max-width: 1500px;
-    }
-
     .navbar-logo {
-        color: #fff;
-        justify-self: start;
-        margin-left: 2%;
-        cursor: pointer;
+        margin: 10%;
+        color: white;
+        font-weight: bold;
         text-decoration: none;
-        font-family: "fantasy", "Lucida";
-        align-items: center;
-
-        img {
-            height: 8vh;
-            margin-top: 14%;
-        }
-        &:hover {        
-            font-size:1.1rem;
-            transition: all 0.2s ease-out;
-        }
-    }
-    .fa-typo3 {
-        margin-left: 0.5rem;
-        font-size: 1.8rem;
     }
 
+    // ul
     .nav-menu {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 10px;
-        list-style: none;
-        text-align: center;
-        width: 60vw;
-        justify-content: end;
-        margin-right: 2rem;
-    }
+        float: right;
+        margin-right: 4%;
 
-    .nav-item {
-        height: 80px;
-    }
+        .nav-item {
+            display: inline-block;
+            margin-right: 19px;
 
-    .nav-links {
-        color: #fff;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        padding: 0.5rem .5rem;
-        height: 100%;
-
-        &:hover {
-            border-bottom: 3px solid #fff;
-            transition: all 0.2s ease-out;
+            .nav-links {
+                color: white;
+                text-decoration: none;
+            }
         }
-    }
-
-    .fa-bars {
-        color: #fff;
-    }
-
-    .nav-links-mobile {
-        display: none;
     }
 
     .menu-icon {
-        display: none;
+        float: right;
+        visibility: hidden;
+        color: white;
     }
-
-    @media screen and (max-width: 960px) {
-        .NavbarItems {
-            position: relative;
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        .menu-icon {
+            visibility: visible;
+            margin-right: 4%;
         }
-
         .nav-menu {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 90vh;
+            background-color: black;
+            display: static;
             position: absolute;
-            top: 80px;
-            left: -100%;
-            opacity: 1;
-            transition: all 0.5s ease;
-        }
-
-        .active {
-            background: #070707;
-            left: 0;
-            opacity: 2;
-            transition: all 0.5s ease;
-            z-index: 2;
-        }
-
-        .nav-links {
-            text-align: center;
-            padding: 2rem;
+            left: -103%;
+            top: 98%;
             width: 100%;
-            display: table;
+            text-align: center;
 
-            &:hover {
-                z-index: 2;
-                background-color: rgb(224, 221, 221);
-                color: #242424;
-                border-radius: 0;
+            .nav-item {
+                display: block;
+                line-height: 10vh;
+                width: 100%;
             }
         }
-        .navbar-logo {
+        .active {
+            background-color: black;
+            display: static;
             position: absolute;
-            z-index: 2;
-            top: 35%;
-            left: 2%;
-            transform: translate(15%, 5%);
-        }
+            left: 0;
+            top: 98%;
+            width: 100%;
+            text-align: center;
 
-        .menu-icon {
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: translate(-100%, 30%);
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        .fa-times {
-            color: #fff;
-            font-size: 2rem;
+            .nav-item {
+                &:hover {
+                    margin: 0;
+                    background-color: white;
+                    .nav-links {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }
