@@ -1,39 +1,42 @@
-import react, { Component } from "react";
-import { Map, GoogleApiWrapper } from "google-maps-react";
-import "./Maps.scss";
+import React from "react";
+import {
+    InfoWindow,
+    withScriptjs,
+    withGoogleMap,
+    GoogleMap,
+    Marker,
+} from "react-google-maps";
 
-const mapStyles = {
-    // width: "100%",
-    width: "70vw",
-    height: "50%"
-    // height: "350px",
-    // overflowX: "hidden",
-    // overflowY: "hidden"
-};
-const containerStyle = {
-    maxWidth: "450px",
-    height: "350px"
-};
-
-export class Maps extends Component {
+class Maps extends React.Component {
     render() {
+        const MapWithAMarker = withScriptjs(
+            withGoogleMap((props) => (
+                <GoogleMap
+                    defaultZoom={14} 
+                    defaultCenter={{ lat: 47.49860879695496, lng: 19.06518534465765 }}
+                >
+                    <Marker position={{ lat: 47.49881289263656, lng: 19.064279082698405 }} >
+
+                        <infoWindow>
+                            irancukrazda 
+                        </infoWindow>
+                    </Marker> 
+
+                    <Marker position={{ lat: 47.49901127842058 , lng: 19.066500127849203 }} />
+                </GoogleMap>
+            ))
+        );
+
         return (
-            
-                <Map
-                    google={this.props.google}
-                    zoom={10}
-                    resetBoundsOnResize={true}
-                    style={mapStyles}
-                    initialCenter={{
-                        lat: 47.49801,
-                        lng: 19.03991,
-                    }}
+            <div>
+                <MapWithAMarker
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY4M3D3SLG-2WJig3eUvC_fgp938vVrDE&v=3.exp&libraries=geometry,drawing,places"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `500px` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
                 />
-            
+            </div>
         );
     }
 }
-
-export default GoogleApiWrapper({
-    apiKey: "AIzaSyA859xnP8vozdzShqB-v4-pDdRaSN9Eaqs",
-})(Maps);
+export default Maps;
