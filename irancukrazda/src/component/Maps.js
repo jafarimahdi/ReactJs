@@ -4,7 +4,7 @@ import {
     withScriptjs,
     withGoogleMap,
     GoogleMap,
-    Marker,
+    Marker
 } from "react-google-maps";
 
 class Maps extends React.Component {
@@ -12,17 +12,29 @@ class Maps extends React.Component {
         const MapWithAMarker = withScriptjs(
             withGoogleMap((props) => (
                 <GoogleMap
-                    defaultZoom={14} 
-                    defaultCenter={{ lat: 47.49860879695496, lng: 19.06518534465765 }}
+                    defaultZoom={14}
+                    defaultCenter={{
+                        lat: 47.49860879695496,
+                        lng: 19.06518534465765,
+                    }}
                 >
-                    <Marker position={{ lat: 47.49881289263656, lng: 19.064279082698405 }} >
-
+                    <Marker
+                        position={{
+                            lat: 47.49881289263656,
+                            lng: 19.064279082698405,
+                        }}
+                    >
                         <infoWindow>
-                            irancukrazda 
+                            <div>irancukrazda</div>
                         </infoWindow>
-                    </Marker> 
+                    </Marker>
 
-                    <Marker position={{ lat: 47.49901127842058 , lng: 19.066500127849203 }} />
+                    <Marker
+                        position={{
+                            lat: 47.49901127842058,
+                            lng: 19.066500127849203,
+                        }}
+                    />
                 </GoogleMap>
             ))
         );
