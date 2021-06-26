@@ -43,12 +43,15 @@
             font-size: clamp(12px, 2vw, 25px);;
         }
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 900px) {
         .icons {
             display: flex;
             flex-direction: column;
-            // flex-wrap:wrap;
-            // justify-content: center;
+            
+            li{
+                
+                width:90vw;
+            }
         }
     }
 }

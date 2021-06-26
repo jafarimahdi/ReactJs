@@ -10,7 +10,6 @@ function Home() {
             <video className="video" src="./2.mp4" autoPlay loop muted />
 
             <div className="home-page">
-                {/* <Herosection /> */}
                 <div className="hero-text">
                     <h1>Iran Cukrazda</h1>
                     <h5>DESERT SHOP</h5>
