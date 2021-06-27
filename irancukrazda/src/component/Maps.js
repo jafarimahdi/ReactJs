@@ -24,9 +24,9 @@ class Maps extends React.Component {
                             lng: 19.064279082698405,
                         }}
                     >
-                        <infoWindow>
+                        {/* <infoWindow>
                             <div>irancukrazda</div>
-                        </infoWindow>
+                        </infoWindow> */}
                     </Marker>
 
                     <Marker
@@ -44,7 +44,7 @@ class Maps extends React.Component {
                 <MapWithAMarker
                     googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY4M3D3SLG-2WJig3eUvC_fgp938vVrDE&v=3.exp&libraries=geometry,drawing,places"
                     loadingElement={<div style={{ height: `100%` }} />}
-                    containerElement={<div style={{ height: `500px` }} />}
+                    containerElement={<div style={{ height: `450px` }} />}
                     mapElement={<div style={{ height: `100%` }} />}
                 />
             </div>
