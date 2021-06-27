@@ -5,9 +5,9 @@
 
     .line-image {
         width: 6vw;
+        margin: 5%;
         margin-top: 4vh;
         height: auto;
-        // margin-left: 9%;
         filter: drop-shadow(15px 16px 4px rgb(67, 40, 40));
     }
     .frei {
@@ -32,14 +32,14 @@
             margin: auto;
             padding: 4%;
             h1 {
-                font-size: clamp(30px, 3vw, 41px);
+                font-size: calc(15px + 1.4vw);
                 text-decoration: underline;
                 filter: drop-shadow(9px 9px 9px black);
             }
 
             p {
                 align-self: center;
-                font-size: clamp(20px, 3vw, 26px);
+                font-size: calc(13px + 1vw);
                 margin-top: 5%;
             }
         }
@@ -48,17 +48,18 @@
     .frei-story {
         display: flex;
         flex-direction: row-reverse;
-        align-content: space-around;
-        justify-content: center;
-        margin-top: 3%;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-top: 7%;
+        width: 100%;
 
         img {
-            width: 65vw;
-            height: auto;
+            width: 68vw;
+            height: 50vw;
             border-radius: 9rem 1.5rem 9rem 0;
             filter: brightness(80%);
             box-shadow: 13px 14px 36px rgb(50, 47, 47);
-            object-fit: cover;
+            object-fit: center;
             transition: all 0.2s ease-in-out;
 
             &:hover {
@@ -69,17 +70,17 @@
         section {
             justify-content: center;
             margin: auto;
-            padding: 4%;
+            padding: 2%;
             h1 {
-                font-size: clamp(30px, 3vw, 41px);
+                font-size: calc(15px + 1.4vw);
                 text-decoration: underline;
                 padding: 4%;
                 filter: drop-shadow(9px 9px 9px black);
             }
             p {
                 align-self: center;
-                font-size: clamp(20px, 3vw, 26px);
-                padding: 5%;
+                font-size: calc(13px + 1vw);
+                padding-top: 4%;
             }
             .links {
                 font-size: 2.5rem;
