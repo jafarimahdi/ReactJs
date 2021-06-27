@@ -15,7 +15,7 @@ export default function About() {
             <div className="about-page">
                 <h1 className="hero-text">Our Shops</h1>
 
-                <div className="firstshop">
+                <div className="shop">
                     <section>
                         <h2>Iran Cukarszda 2</h2>
                         <p>
@@ -32,20 +32,12 @@ export default function About() {
                         className="youtube-video"
                         url={["https://youtu.be/0Ru58LXDx6Q"]}
                         controls="true"
-                        style={{ width: "50%" }}
+                        style={{width:"100%"}}
                     />
                 </div>
-                <div className="secondshop">
-                    <ReactPlayer
-                        className="youtube-video"
-                        url={["https://youtu.be/B_Qxo-wVaa4"]}
-                        autoPlay="false"
-                        controls="true"
-                        style={{ width: "50%" }}
-                    />
-                    <section>
+                <div className="shop second">
+                <section>
                     <h2>Iran Cukarszda 1</h2>
-                    
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Repudiandae eligendi amet maiores molestias optio
@@ -56,7 +48,14 @@ export default function About() {
                         doloremque voluptatum.
                     </p>
                     </section>
-                </div>
+                        <ReactPlayer
+                            className="youtube-video"
+                            url={["https://youtu.be/B_Qxo-wVaa4"]}
+                            autoPlay="false"
+                            controls="true"
+                            style={{ width: "100%" }}
+                        />
+                    </div>
             </div>
         </>
     );
