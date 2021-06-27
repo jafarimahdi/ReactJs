@@ -16,6 +16,7 @@ export default function Contact() {
             <div className="contact-page">
                 <h1>We Love To See You</h1>
 
+
                 <div className="get-in-touch">
                     <div className="box">
                         <h2>Get In Touch</h2>
@@ -42,14 +43,14 @@ export default function Contact() {
                                 <i class="fas fa-phone-volume" />
                                 <section>
                                     <h3>Phone</h3>
-                                    <p>+36 1 618 6272</p>
+                                    <p>+3616186272</p>
                                 </section>
                             </li>
                             <li>
                                 <i class="fas fa-mobile-alt" />
                                 <section>
                                     <h3>Mobile</h3>
-                                    <p>+36 30 386 8447</p>
+                                    <p>+36303868447</p>
                                 </section>
                             </li>
                         </ul>
