@@ -1,4 +1,4 @@
-export default function portfolio() {
+export default function Project() {
     const portLinks = [
         {
             title: "Threads",
@@ -27,7 +27,7 @@ export default function portfolio() {
     ];
 
     return (
-        <section className="page-section bg-light" id="portfolio">
+        <section className="page-section bg-light" id="project">
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">

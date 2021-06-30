@@ -1,4 +1,4 @@
-export default function Services() {
+export default function Mission() {
    const data = [
       {
          text: "E-Commerce",
@@ -21,10 +21,10 @@ export default function Services() {
    ];
 
    return (
-      <section className="page-section" id="services">
+      <section className="page-section" id="mission">
          <div className="container">
             <div className="text-center">
-               <h2 className="section-heading text-uppercase">Services</h2>
+               <h2 className="section-heading text-uppercase">our mission</h2>
                <h3 className="section-subheading text-muted">
                   we believe in our work and product we make.
                </h3>
