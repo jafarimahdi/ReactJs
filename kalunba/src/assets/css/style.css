@@ -592,15 +592,6 @@ pre code {
     margin-left: auto;
 }
 
-/* #navContainer{
-  display: flex;
-  flex-direction: row;
-}
-.mahdi{
-  display: flex;
-  flex-direction: row;
- } */
-
 @media (min-width: 600px) {
     .container-sm,
     .container {
@@ -10570,36 +10561,34 @@ img::-moz-selection {
         margin-right: 0;
     }
 }
-/* End of the Nav part  */
+/* Loading component   ------------------------------------------ */
 
 header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    margin-top:.2%;
+    width:100vw;
     text-align: center;
-    color: #fff;
-    background-image: url("../img/header-bg.jpg");
-    background-repeat: no-repeat;
+    background: black;
     background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
 }
 header.masthead .masthead-subheading {
+    color: #fff;
     font-size: 1.5rem;
     font-style: italic;
     line-height: 1.5rem;
     margin-bottom: 25px;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
 }
 header.masthead .masthead-heading {
+    color: #fff;
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 2rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media (min-width: 768px) {
@@ -10620,17 +10609,22 @@ header.masthead .masthead-heading {
         margin-bottom: 4rem;
     }
 }
-#portfolio .portfolio-item {
+
+/* project part ----------------------------------------------------------  */
+
+#project .portfolio-item {
     max-width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
+    max-height:25rem;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin:auto;
 }
-#portfolio .portfolio-item .portfolio-link {
+#project .portfolio-item .portfolio-link {
     position: relative;
     display: block;
     margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#project .portfolio-item .portfolio-link .portfolio-hover {
     display: flex;
     position: absolute;
     width: 100%;
@@ -10641,7 +10635,12 @@ header.masthead .masthead-heading {
     opacity: 0;
     transition: opacity ease-in-out 0.25s;
 }
-#portfolio
+#project .portfolio-item .portfolio-link .img-fluid{
+    width:100%;
+    height:50%;
+}
+
+#project
     .portfolio-item
     .portfolio-link
     .portfolio-hover
@@ -10649,15 +10648,15 @@ header.masthead .masthead-heading {
     font-size: 1.25rem;
     color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+#project .portfolio-item .portfolio-link:hover .portfolio-hover {
     opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+#project .portfolio-item .portfolio-caption {
     padding: 1.5rem;
     text-align: center;
     background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+#project .portfolio-item .portfolio-caption .portfolio-caption-heading {
     font-size: 1.5rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
@@ -10665,7 +10664,7 @@ header.masthead .masthead-heading {
     font-weight: 700;
     margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+#project .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-style: italic;
     font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
@@ -10896,6 +10895,8 @@ header.masthead .masthead-heading {
     margin-bottom: 0;
 }
 
+
+/* contact component ------------------------------ */
 section#contact {
     background-color: #212529;
     background-image: url("../img/map-image.png");
