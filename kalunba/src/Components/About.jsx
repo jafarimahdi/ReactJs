@@ -1,25 +1,26 @@
 export default function About() {
     const data = [
         {
-            time: "2009 - 2011",
+            time: "2013 - 2014",
             text: "Our Humble Beginnings",
+            picture:"pictures/kalunba/17.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "March 2011",
-            text: "An Agency is Born",
+            time: "March 2014",
+            text: "A Community is Born",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "December 2012",
+            time: "December 2015",
             text: "Transition to Full Service",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "July 2014",
+            time: "July 2018",
             text: "Phase Two Expansion",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
@@ -33,12 +34,13 @@ export default function About() {
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">About</h2>
                     <h3 className="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Our Community History and How we are here
                     </h3>
                 </div>
 
                 <ul className="timeline">
                     {data.map((item) => (
+
                         <li
                             className={
                                 count % 2 === 0 ? "timeline-inverted" : ""
@@ -47,10 +49,12 @@ export default function About() {
                             <div className="timeline-image">
                                 <img
                                     className="rounded-circle img-fluid"
-                                    src="assets/img/about/1.jpg"
+                                    // src="assets/img/about/1.jpg"
+                                    src={item.picture}
                                     alt=""
                                 />
                             </div>
+
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
                                     <h4>{item.time}</h4>

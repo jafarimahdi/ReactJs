@@ -10,6 +10,7 @@ export default function Nav() {
                 id="mainNav"
             >
                 <div className="container" id="navContainer">
+
                     <a
                         className="navbar-brand js-scroll-trigger"
                         href="#page-top"
@@ -51,7 +52,9 @@ export default function Nav() {
                             ))}
                         </ul>
                     </div>
+                
                 </div>
+
             </nav>
         </div>
     );

@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
+import Break from "./Components/Break";
 
 function App() {
    return (
@@ -15,6 +16,7 @@ function App() {
          <Nav />
          <Loading />
          <Mission />
+         <Break />
          <Project />
          <About />
          <Community />

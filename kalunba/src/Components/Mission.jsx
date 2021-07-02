@@ -1,22 +1,22 @@
 export default function Mission() {
    const data = [
       {
-         text: "E-Commerce",
-         icon: "fa fa-shopping-cart fa-stack-1x fa-inverse",
+         text: "Equality",
+         icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
          caption:
-            "Design and Make E-Commerce Website with the latest tools anc Materials",
+            "We believe in Equality and Humanity",
       },
       {
-         text: "Responsive Design",
-         icon: "fa fa-laptop fa-stack-1x fa-inverse",
+         text: "Opportunity",
+         icon: "fas fa-hand-holding-heart fa-stack-1x fa-inverse",
          caption:
-            "do the latest technology and everyday movement, we try to use latest Design tools to make our product useful for any machine and work in any situation ",
+            "Giving opportunity for people, who lost behind be like, giving new life as gift to them,  ",
       },
       {
-         text: "Web Security",
-         icon: "fa fa-lock fa-stack-1x fa-inverse",
+         text: "Community",
+         icon: "fas fa-praying-hands fa-stack-1x fa-inverse",
          caption:
-            "Security is one of the important part of our work and we try to keep user safety",
+            "As Human being part of society and Community and ",
       },
    ];
 
@@ -26,7 +26,7 @@ export default function Mission() {
             <div className="text-center">
                <h2 className="section-heading text-uppercase">our mission</h2>
                <h3 className="section-subheading text-muted">
-                  we believe in our work and product we make.
+                  we believe in our work and the Change can happen.
                </h3>
             </div>
 
