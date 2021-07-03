@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##
+## React.js Trick was used in this project
+
+ 1- keep the data in state part and have for loop to show them in JSX/DOM make our code simple and less.
+
+ 2- Adding the Bootstrap CDN to root(index) and use it for our Design 
