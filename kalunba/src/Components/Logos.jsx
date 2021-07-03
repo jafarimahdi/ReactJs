@@ -1,10 +1,9 @@
 
 export default function Logos() {
    const logos = [
-      { pic: "pictures/envato.jpg" },
-      { pic: "pictures/designmodo.jpg" },
-      { pic: "pictures/themeforest.jpg" },
-      { pic: "pictures/creative-market.jpg" },
+      { pic: "pictures/kalunba/logo-rbg.png" },
+      { pic: "pictures/kalunba/scottishmission.jpg" },
+      { pic: "pictures/kalunba/reformatus.png" },
    ];
    return (
       <div className="py-5">
@@ -17,6 +16,7 @@ export default function Logos() {
                            className="img-fluid d-block mx-auto"
                            src={item.pic}
                            alt=""
+                           style={{ Width: "21rem;", height:"3vw;" }}
                         />
                      </a>
                   </div>
