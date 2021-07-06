@@ -22,6 +22,7 @@ export default function Mission() {
 
    return (
       <section className="page-section" id="mission">
+         
          <div className="container">
             <div className="text-center">
                <h2 className="section-heading text-uppercase">our mission</h2>

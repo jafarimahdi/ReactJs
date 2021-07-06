@@ -158,7 +158,7 @@ export default function Project() {
                     ))}
                 </div>
                 {/* new line ---------------------- */}
-                <h4 className=" m-5">Our Education program</h4>
+                <h4 className="text-center p-5">Our Education program</h4>
                 <div className="card-group  p-2">
                     {education.map((item) => (
                         <div className="col-lg-4 col-sm-6 mb-4">
@@ -198,8 +198,8 @@ export default function Project() {
                 </div>
                     {/* job searching part   */}
 
-                    <h4 className=" m-5">Job Market</h4>
-                <div className="card-group border border-secondary rounded-lg p-2">
+                    <h4 className="text-center p-5">Job Market</h4>
+                <div className="card-group  rounded-lg p-2">
                     {job.map((item) => (
                         <div className="col-lg-4 col-sm-6 mb-4">
                             <div
