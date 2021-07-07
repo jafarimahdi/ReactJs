@@ -3,13 +3,14 @@ export default function About() {
         {
             time: "2013 - 2014",
             text: "Our Humble Beginnings",
-            picture:"pictures/kalunba/17.jpg",
+            picture:"pictures/kalunba/15.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
             time: "March 2014",
             text: "A Community is Born",
+            picture:"pictures/kalunba/17.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },

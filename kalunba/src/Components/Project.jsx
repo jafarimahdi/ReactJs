@@ -103,9 +103,10 @@ export default function Project() {
             pic: "pictures/kalunba/5.jpg",
         },
         {
-            title: "prepping for the chrisms Market",
+            title: "chrisms Market",
             caption: "write more about this card",
-            pic: "pictures/kalunba/7.jpg",
+            pic: "pictures/kalunba/30.jpg",
+            web:"http://regi.reformatus.hu/mutat/16912/?fbclid=IwAR3ehoQDdIs3TfwYKsGvA2slIBLQXlr5-8GibpQ_66pX8iNolqK0kG37qfI",
         },
     ];
     return (
@@ -226,7 +227,7 @@ export default function Project() {
                                         <p className="card-text">
                                             {item.caption}
                                         </p>
-                                        <a href="#" class="btn btn-primary">
+                                        <a href={item.web}  target="_blank" class="btn btn-primary">
                                             Go somewhere
                                         </a>
                                         {/* </div> */}
