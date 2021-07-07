@@ -6,7 +6,7 @@ export default function Nav() {
     return (
         <div id="page-top">
             <nav
-                className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"
+                className="navbar navbar-expand-lg  fixed-top"
                 id="mainNav"
             >
                 <div className="container" id="navContainer">

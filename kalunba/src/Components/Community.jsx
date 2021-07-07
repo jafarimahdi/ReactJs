@@ -2,24 +2,24 @@ export default function Community() {
     const ourTeam = [
         {
             pic: "",
-            name: "Key Garland ",
-            position: "Lead Designer",
+            name: "Jeff ",
+            position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
             likedIn: "#!",
         },
         {
             pic: "",
-            name: "Larry Parker",
-            position: "Lead Marketer",
+            name: "Maria",
+            position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
             likedIn: "#!",
         },
         {
             pic: "",
-            name: "Diana Petersen",
-            position: "Lead Developer",
+            name: "Kincso",
+            position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
             likedIn: "#!",
@@ -36,6 +36,7 @@ export default function Community() {
                         Meet our Spacial Team and know them more
                     </h3>
                 </div>
+
 
                 <div className="row">
                     {ourTeam.map((member) => (

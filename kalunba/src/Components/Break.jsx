@@ -2,21 +2,21 @@ import React from "react";
 
 export default function Break() {
     const custom_shape = {
-        position: "absolute",
-        bottom: "3.2%",
         left: "0",
         width: "100%",
         overflow: "hidden",
         lineHeight: "0",
-        transform: 'rotate(180deg)'
+        transform: 'rotate(180deg)',
+        marginTop: "-9.9%",
+        paddingTop: "0",
 
     };
 
     const svg = {
-        position: "relative",
+
         display: "block",
         width: "calc(100% + 1.3px)",
-        height: "104px",
+        height: "10vw",
     };
 
     const shape_fill = {

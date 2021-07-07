@@ -38,6 +38,7 @@ export default function About() {
                     </h3>
                 </div>
 
+
                 <ul className="timeline">
                     {data.map((item) => (
 
@@ -49,11 +50,12 @@ export default function About() {
                             <div className="timeline-image">
                                 <img
                                     className="rounded-circle img-fluid"
-                                    // src="assets/img/about/1.jpg"
                                     src={item.picture}
                                     alt=""
+                                    style={{ width:'100%', height:'100%', backgroundSize:'cover' }}
                                 />
                             </div>
+
 
                             <div className="timeline-panel">
                                 <div className="timeline-heading">
@@ -66,12 +68,19 @@ export default function About() {
                                     </p>
                                 </div>
                             </div>
+
+
+
                             <p style={{ display: "none" }}>{(count += 1)}</p>
+
+
                         </li>
                     ))}
 
+
+
                     <li className="timeline-inverted">
-                        <div className="timeline-image">
+                        <div className="timeline-image ">
                             <h4>
                                 Be Part
                                 <br />
@@ -82,6 +91,8 @@ export default function About() {
                         </div>
                     </li>
                 </ul>
+            
+            
             </div>
         </section>
     );

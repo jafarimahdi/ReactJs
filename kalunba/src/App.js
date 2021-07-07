@@ -8,23 +8,21 @@ import Contact from "./Components/Contact";
 import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
-import Break from "./Components/Break";
 
 function App() {
-   return (
-      <div classNameroject>
-         <Nav />
-         <Loading />
-         <Mission />
-         <Break />
-         <Project />
-         <About />
-         <Community />
-         <Logos />
-         <Contact />
-         <Footer />
-      </div>
-   );
+    return (
+        <div classNam="project">
+            <Nav />
+            <Loading />
+            <Mission />
+            <Project />
+            <About />
+            <Community />
+            <Logos />
+            <Contact />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
