@@ -1,7 +1,7 @@
 export default function Project() {
     const outDoor = [
         {
-            title: "OutDoor Programing",
+            title: "OutDoor Program",
             caption: "write more about this card",
             pic: "pictures/kalunba/1.jpg",
         },
@@ -79,7 +79,7 @@ export default function Project() {
         
         {
             title: "Building on Person to Person Relationship",
-            caption: "refugee students",
+            caption: "The job is done well when refugee students are constantly starting ...",
             pic: "pictures/kalunba/22.jpg",
             web:"https://reformatus.hu/english/news/building-person-person-relationship/?fbclid=IwAR2NuEFoI3Ry6PrsUoktgkOhEWG1-dszKAdwlTYLpQzB4VGhJNFcXVpUPPE",
         },
