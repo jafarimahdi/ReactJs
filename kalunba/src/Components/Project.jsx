@@ -64,20 +64,30 @@ export default function Project() {
     ];
     const education = [
         {
-            title: "Hungarian lesson",
-            caption: "write more about this card",
+            title: "Refugee children and their psychological problems",
+            caption: "Our colleague Ákos Urbán took part in a roundtable discussion at the Verzió Film Festival.",
             pic: "pictures/kalunba/23.jpg",
+            web:"https://www.verzio.org/hu/node/3314?fbclid=IwAR2_bK5eujybKrVFu9ouUaBFNKvZ3oDKxpRBtM9P0SE8hrEDE2GT0YI5N3w",
         },
         
         {
-            title: "Lines",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/21.jpg",
+            title: "Easy Lessons",
+            caption: "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises. In the interview, she says: 'I am especially grateful to Kalunba. They cared a lot. They did not only help us to learn the language but also to find ourselves in our new surroundings.'",
+            pic: "pictures/kalunba/kafia.jpg",
+            web:"https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/?fbclid=IwAR2FhmXrUOwSFNpEKdhm5liMg770IHadtrtW5Sgces-DUb1tlVgXMawB4tY",
+        },
+        
+        {
+            title: "Building on Person to Person Relationship",
+            caption: "refugee students",
+            pic: "pictures/kalunba/22.jpg",
+            web:"https://reformatus.hu/english/news/building-person-person-relationship/?fbclid=IwAR2NuEFoI3Ry6PrsUoktgkOhEWG1-dszKAdwlTYLpQzB4VGhJNFcXVpUPPE",
         },
         {
-            title: "Lines",
-            caption: "Branding",
-            pic: "pictures/kalunba/22.jpg",
+            title: "Recognition of Kalunba Graduates",
+            caption: "In recognition of the recent graduates of the Interpretation course, ..",
+            pic: "pictures/kalunba/31.jpg",
+            web:"http://regi.reformatus.hu/mutat/15628/?fbclid=IwAR3N128THriDQNzmFf-iwpwRk42As_cpsubWIWQbqqJoWLfrQ6slLk2RsWU",
         },
         {
             title: "Lines",
@@ -88,6 +98,11 @@ export default function Project() {
             title: "8 grade in Kalunba",
             caption: "write more about this card",
             pic: "pictures/kalunba/25.jpg",
+        },
+        {
+            title: "Hungarian Lesson",
+            caption: "write more about this card",
+            pic: "pictures/kalunba/21.jpg",
         },
     ];
 
@@ -184,11 +199,11 @@ export default function Project() {
                                     </summery>
 
                                     <details>
-                                        <p className="card-text">
+                                        <p className="card-text text-muted">
                                             {item.caption}
                                         </p>
-                                        <a href="#" class="btn btn-primary">
-                                            Go somewhere
+                                        <a href={item.web}  target="_blank" class="btn btn-primary">
+                                            More
                                         </a>
                                         {/* </div> */}
                                     </details>
@@ -228,7 +243,7 @@ export default function Project() {
                                             {item.caption}
                                         </p>
                                         <a href={item.web}  target="_blank" class="btn btn-primary">
-                                            Go somewhere
+                                            More
                                         </a>
                                         {/* </div> */}
                                     </details>
