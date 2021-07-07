@@ -20,6 +20,8 @@ export default function Mission() {
       },
    ];
 
+// -------------------------------------------------- 
+
    return (
       <section className="page-section" id="mission">
          

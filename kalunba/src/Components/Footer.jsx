@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-4 text-lg-left">
-                        Copyright © Your Website 2021
+                        Copyright © KALUNBA NON-PROFIT ORG
                     </div>
                     <div className="col-lg-4 my-3 my-lg-0">
                         <a className="btn btn-dark btn-social mx-2" href="#!">
