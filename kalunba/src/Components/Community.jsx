@@ -2,7 +2,7 @@ export default function Community() {
     const ourTeam = [
         {
             pic: "",
-            name: "Jeff ",
+            name: "#E2- jeff",
             position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
@@ -10,7 +10,7 @@ export default function Community() {
         },
         {
             pic: "",
-            name: "Maria",
+            name: "#E3-  Maria",
             position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
@@ -18,7 +18,7 @@ export default function Community() {
         },
         {
             pic: "",
-            name: "Kincso",
+            name: "#E4-  Kincso",
             position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
@@ -33,7 +33,7 @@ export default function Community() {
                         Our Amazing Team
                     </h2>
                     <h3 className="section-subheading text-muted">
-                        Meet our Spacial Team and know them more
+                      #E1-   Meet our Spacial Team and know them more
                     </h3>
                 </div>
 
@@ -75,7 +75,7 @@ export default function Community() {
                 <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
                         <p className="large text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            #E5-  Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Aut eaque, laboriosam veritatis, quos non quis
                             ad perspiciatis, totam corporis ea, alias ut unde.
                         </p>

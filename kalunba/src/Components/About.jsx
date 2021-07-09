@@ -1,27 +1,27 @@
 export default function About() {
     const data = [
         {
-            time: "2013 - 2014",
+            time: "#D2-  2013 - 2014",
             text: "Our Humble Beginnings",
             picture:"pictures/kalunba/15.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "March 2014",
+            time: "#D3-  March 2014",
             text: "A Community is Born",
             picture:"pictures/kalunba/17.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "December 2015",
+            time: "#D4-  December 2015",
             text: "Transition to Full Service",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
         },
         {
-            time: "July 2018",
+            time: "#D5-  July 2018",
             text: "Phase Two Expansion",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
@@ -35,7 +35,7 @@ export default function About() {
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">About</h2>
                     <h3 className="section-subheading text-muted">
-                        Our Community History and How we are here
+                      #D1-   Our Community History and How we are here
                     </h3>
                 </div>
 

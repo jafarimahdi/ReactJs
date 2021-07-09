@@ -1,19 +1,19 @@
 export default function Mission() {
    const data = [
       {
-         text: "Equality",
+         text: " #2- Equality",
          icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
          caption:
             "We believe in Equality and Humanity",
       },
       {
-         text: "Opportunity",
+         text: "#3- Opportunity",
          icon: "fas fa-hand-holding-heart fa-stack-1x fa-inverse",
          caption:
             "Giving opportunity for people, who lost behind be like, giving new life as gift to them,  ",
       },
       {
-         text: "Community",
+         text: "#4- Community",
          icon: "fas fa-praying-hands fa-stack-1x fa-inverse",
          caption:
             "As Human being part of society and Community and ",
@@ -29,7 +29,7 @@ export default function Mission() {
             <div className="text-center">
                <h2 className="section-heading text-uppercase">our mission</h2>
                <h3 className="section-subheading text-muted">
-                  we believe in our work and the Change can happen.
+                 #1-  we believe in our work and the Change can happen.
                </h3>
             </div>
 
