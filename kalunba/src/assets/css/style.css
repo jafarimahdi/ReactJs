@@ -10478,7 +10478,7 @@ img::-moz-selection {
 /* main Nav -----------------------------------  */
 #mainNav {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     background-image:linear-gradient(325deg ,#273e50, #a39c6d
     );
 }
@@ -10559,16 +10559,15 @@ img::-moz-selection {
 /* Loading component   ------------------------------------------ */
 
 header.masthead {
-    margin-top: 12.4vh;
+    margin-top: 18vw;
+    position:static;
     margin-bottom:0;
     padding-bottom:0;
     width: 100vw;
-    /* height: 93.2vh; */
-    height: 49vw;
-    text-align: center;
-    background: black;
+    height:47vw;
+    /* text-align: center; */
     background-image: url("../img/background.jpg");
-    background-attachment: sticky;
+    /* background-attachment: sticky; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10588,7 +10587,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
     header.masthead {
-        margin-top: 12vh;
+        margin-top: 10vw;
     }
     header.masthead .masthead-heading {
         font-size: 4.5rem;
@@ -10599,12 +10598,17 @@ header.masthead .masthead-heading {
 }
 @media (min-width: 1024px) {
     header.masthead {
-        margin-top: 12.7vh;
+        margin-top: 9.4vw;
     }
 }
 @media (min-width: 1440px) {
     header.masthead {
-        margin-top: 10vh;
+        margin-top: 6vw;
+    }
+}
+@media (min-width: 2500px) {
+    header.masthead {
+        margin-top: 3vw;
     }
 }
 /* project part ----------------------------------------------------------  */
@@ -10915,10 +10919,17 @@ header.masthead .masthead-heading {
     .timeline > li .timeline-image h4 {
         font-size: 28px;
         line-height: 30px;
-        margin-top: 49px;
-        
+        margin-top: 49px;  
     }
     
+}
+@media (min-width: 1440px) {
+    .timeline > li .timeline-image {
+        width: 13vw;
+        height: 13vw;
+        /* margin-left: 70%; */
+    }
+
 }
 
 

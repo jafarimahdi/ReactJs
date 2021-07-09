@@ -19,6 +19,7 @@ export default function Contact() {
                     <div className="row align-items-stretch mb-5">
                         <div className="col-md-6">
                             <div className="form-group">
+
                                 <input
                                     className="form-control"
                                     id="name"
@@ -29,6 +30,7 @@ export default function Contact() {
                                 />
                                 <p className="help-block text-danger"></p>
                             </div>
+
                             <div className="form-group">
                                 <input
                                     className="form-control"
@@ -40,6 +42,7 @@ export default function Contact() {
                                 />
                                 <p className="help-block text-danger"></p>
                             </div>
+
                             <div className="form-group mb-md-0">
                                 <input
                                     className="form-control"
@@ -52,6 +55,7 @@ export default function Contact() {
                                 <p className="help-block text-danger"></p>
                             </div>
                         </div>
+
                         <div className="col-md-6">
                             <div className="form-group form-group-textarea mb-md-0">
                                 <textarea
@@ -65,6 +69,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
+
                     <div className="text-center">
                         <div id="success"></div>
                         <button
@@ -75,6 +80,8 @@ export default function Contact() {
                             Send Message
                         </button>
                     </div>
+
+                    
                 </form>
             </div>
         </section>
