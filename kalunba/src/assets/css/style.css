@@ -10559,6 +10559,7 @@ img::-moz-selection {
 /* Loading component   ------------------------------------------ */
 
 header.masthead {
+    background-image: url("../img/background.jpg");
     margin-top: 18vw;
     position:static;
     margin-bottom:0;
@@ -10566,11 +10567,11 @@ header.masthead {
     width: 100vw;
     height:47vw;
     /* text-align: center; */
-    background-image: url("../img/background.jpg");
     /* background-attachment: sticky; */
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(53%);
 }
 
 header.masthead .masthead-heading {
@@ -10585,6 +10586,11 @@ header.masthead .masthead-heading {
 
 
 
+@media (min-width: 580px) {
+    header.masthead {
+        margin-top: 12vw;
+    }
+}
 @media (min-width: 768px) {
     header.masthead {
         margin-top: 10vw;
