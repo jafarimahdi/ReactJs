@@ -33,10 +33,9 @@ export default function Community() {
                         Our Amazing Team
                     </h2>
                     <h3 className="section-subheading text-muted">
-                      #E1-   Meet our Spacial Team and know them more
+                        #E1- Meet our Spacial Team and know them more
                     </h3>
                 </div>
-
 
                 <div className="row">
                     {ourTeam.map((member) => (
@@ -75,9 +74,10 @@ export default function Community() {
                 <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
                         <p className="large text-muted">
-                            #E5-  Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut eaque, laboriosam veritatis, quos non quis
-                            ad perspiciatis, totam corporis ea, alias ut unde.
+                            #E5- Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Aut eaque, laboriosam veritatis,
+                            quos non quis ad perspiciatis, totam corporis ea,
+                            alias ut unde.
                         </p>
                     </div>
                 </div>

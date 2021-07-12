@@ -1,4 +1,28 @@
+import emailjs from "emailjs-com";
+
 export default function Contact() {
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_wtbcyyk",
+                "template_lsgz0ug",
+                e.target,
+                "user_CaSe2dULRsCYGXJGCKmFu"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    }
+
+
+
     return (
         <section className="page-section" id="contact">
             <div className="container">
@@ -11,18 +35,24 @@ export default function Contact() {
                     </h3>
                 </div>
 
+
+
+
                 <form
                     id="contactForm"
                     name="sentMessage"
                     novalidate="novalidate"
+                    onSubmit={sendEmail}
                 >
                     <div className="row align-items-stretch mb-5">
-                        <div className="col-md-6">
-                            <div className="form-group">
 
+                        <div className="col-md-6">
+
+                            <div className="form-group">
                                 <input
                                     className="form-control"
                                     id="name"
+                                    name="name"
                                     type="text"
                                     placeholder="Your Name *"
                                     required="required"
@@ -31,10 +61,13 @@ export default function Contact() {
                                 <p className="help-block text-danger"></p>
                             </div>
 
+
+
                             <div className="form-group">
                                 <input
                                     className="form-control"
                                     id="email"
+                                    name="email"
                                     type="email"
                                     placeholder="Your Email *"
                                     required="required"
@@ -43,24 +76,29 @@ export default function Contact() {
                                 <p className="help-block text-danger"></p>
                             </div>
 
+
+
                             <div className="form-group mb-md-0">
                                 <input
                                     className="form-control"
                                     id="phone"
+                                    name="phone"
                                     type="tel"
-                                    placeholder="Your Phone *"
-                                    required="required"
+                                    placeholder="Your Phone"
                                     data-validation-required-message="Please enter your phone number."
                                 />
                                 <p className="help-block text-danger"></p>
                             </div>
                         </div>
 
+
+
                         <div className="col-md-6">
                             <div className="form-group form-group-textarea mb-md-0">
                                 <textarea
                                     className="form-control"
                                     id="message"
+                                    name="message"
                                     placeholder="Your Message *"
                                     required="required"
                                     data-validation-required-message="Please enter a message."
@@ -69,6 +107,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
+
 
                     <div className="text-center">
                         <div id="success"></div>
@@ -80,8 +119,6 @@ export default function Contact() {
                             Send Message
                         </button>
                     </div>
-
-                    
                 </form>
             </div>
         </section>
