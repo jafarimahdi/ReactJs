@@ -1,9 +1,11 @@
+import React from "react";
 import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
+    /*use the API for the auto email back and manage the backend part */
     function sendEmail(e) {
         e.preventDefault();
-
         emailjs
             .sendForm(
                 "service_wtbcyyk",
@@ -21,8 +23,20 @@ export default function Contact() {
             );
     }
 
+    /*form and validation  react-hook-form  ----------------------*/
 
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
 
+    const onSubmit = (data) => console.log(data);
+
+    console.log(watch("example")); // watch input value by passing the name of it
+
+    //      -------------------------------------------------------------
     return (
         <section className="page-section" id="contact">
             <div className="container">
@@ -35,63 +49,65 @@ export default function Contact() {
                     </h3>
                 </div>
 
-
-
-
                 <form
                     id="contactForm"
                     name="sentMessage"
                     novalidate="novalidate"
-                    onSubmit={sendEmail}
+                    // onSubmit={sendEmail}
+                    onSubmit={handleSubmit(onSubmit)}
                 >
                     <div className="row align-items-stretch mb-5">
-
                         <div className="col-md-6">
-
                             <div className="form-group">
                                 <input
                                     className="form-control"
-                                    id="name"
+                                    // id="name"
                                     name="name"
                                     type="text"
                                     placeholder="Your Name *"
-                                    required="required"
-                                    data-validation-required-message="Please enter your name."
+                                    // data-validation-required-message="Please enter your name."
+                                    {...register("name", { required: true })}
                                 />
-                                <p className="help-block text-danger"></p>
+                                {errors.name && (
+                                    <p className="help-block text-danger">
+                                        This field is required
+                                    </p>
+                                )}
                             </div>
-
-
 
                             <div className="form-group">
                                 <input
                                     className="form-control"
-                                    id="email"
+                                    // id="email"
                                     name="email"
                                     type="email"
                                     placeholder="Your Email *"
-                                    required="required"
+                                    // required="required"
                                     data-validation-required-message="Please enter your email address."
+                                    {...register("email", { required: true })}
                                 />
-                                <p className="help-block text-danger"></p>
+                                {errors.email && (
+                                    <p className="help-block text-danger">
+                                        {" "}
+                                        This field is required
+                                    </p>
+                                )}
                             </div>
-
-
 
                             <div className="form-group mb-md-0">
                                 <input
                                     className="form-control"
                                     id="phone"
+                                    s
                                     name="phone"
                                     type="tel"
                                     placeholder="Your Phone"
                                     data-validation-required-message="Please enter your phone number."
+                                    {...register("phone")}
                                 />
                                 <p className="help-block text-danger"></p>
                             </div>
                         </div>
-
-
 
                         <div className="col-md-6">
                             <div className="form-group form-group-textarea mb-md-0">
@@ -100,14 +116,14 @@ export default function Contact() {
                                     id="message"
                                     name="message"
                                     placeholder="Your Message *"
-                                    required="required"
+                                    // required="required"
                                     data-validation-required-message="Please enter a message."
+                                    {...register("message", { required: true })}
                                 ></textarea>
                                 <p className="help-block text-danger"></p>
                             </div>
                         </div>
                     </div>
-
 
                     <div className="text-center">
                         <div id="success"></div>
