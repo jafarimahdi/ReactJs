@@ -4306,9 +4306,7 @@ input[type="button"].btn-block {
 .navbar-brand:hover,
 .navbar-brand:focus {
     text-decoration: underline;
-    
 }
-
 
 .navbar-nav {
     display: flex;
@@ -10474,13 +10472,23 @@ img::-moz-selection {
     border-radius: 100%;
 }
 
-
 /* main Nav -----------------------------------  */
 #mainNav {
     padding-top: 1rem;
-    /* padding-bottom: 1rem; */
-    background-image:linear-gradient(325deg ,#273e50, #a39c6d
-    );
+    background-size: 180% 180%;
+    background-image: linear-gradient(325deg, #273e50, #9e976a);
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 #mainNav .navbar-toggler {
     padding: 0.75rem;
@@ -10502,7 +10510,7 @@ img::-moz-selection {
 #mainNav .navbar-brand img {
     height: 2.9rem;
     margin: 0 0 0 1.7rem;
-    padding:0;
+    padding: 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -10533,7 +10541,7 @@ img::-moz-selection {
         height: 3.4rem;
         transition: height 0.3s ease-in-out;
         margin: 0 0 0 1.7rem;
-        padding:0;
+        padding: 0;
     }
     #mainNav.navbar-shrink {
         padding-top: 1rem;
@@ -10555,36 +10563,46 @@ img::-moz-selection {
     }
 }
 
-
 /* Loading component   ------------------------------------------ */
 
 header.masthead {
     background-image: url("../img/background.jpg");
     margin-top: 18vw;
-    position:static;
-    margin-bottom:0;
-    padding-bottom:0;
+    position: static;
+    margin-bottom: 0;
+    padding-bottom: 0;
     width: 100vw;
-    height:47vw;
+    height: 47vw;
     /* text-align: center; */
     /* background-attachment: sticky; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter:brightness(53%);
+    filter: brightness(53%);
+    animation: bright 13s ease infinite;
+}
+
+@keyframes bright {
+    0% {
+        filter: brightness(53%);
+    }
+    50% {
+        filter: brightness(37%);
+    }
+    100% {
+        filter: brightness(53%);
+    }
 }
 
 header.masthead .masthead-heading {
     color: #fff;
-    position:absolute;
-    top:37vw;
-    left:5%;
+    position: absolute;
+    top: 37vw;
+    left: 5%;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.25rem;
 }
-
-
 
 @media (min-width: 580px) {
     header.masthead {
@@ -10786,7 +10804,6 @@ header.masthead .masthead-heading {
     text-align: left;
 }
 
-
 .timeline > li .timeline-inverted > .timeline-panel:before {
     right: auto;
     left: -15px;
@@ -10799,9 +10816,6 @@ header.masthead .masthead-heading {
     border-right-width: 14px;
     border-left-width: 0;
 }
-
-
-
 
 .timeline > li:last-child {
     margin-bottom: 0;
@@ -10925,9 +10939,8 @@ header.masthead .masthead-heading {
     .timeline > li .timeline-image h4 {
         font-size: 28px;
         line-height: 30px;
-        margin-top: 49px;  
+        margin-top: 49px;
     }
-    
 }
 @media (min-width: 1440px) {
     .timeline > li .timeline-image {
@@ -10935,9 +10948,7 @@ header.masthead .masthead-heading {
         height: 13vw;
         /* margin-left: 70%; */
     }
-
 }
-
 
 /* team member ---------------------------------  */
 .team-member {
