@@ -1,40 +1,66 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+// 1-   add yup scheme here for the validation  ----------------------
+
+const schema = yup.object().shape({
+    Name: yup.string().required(),
+    lastName: yup.string().required(),
+    Email: yup.string().email().required(),
+    Text: yup.string().required(),
+});
 
 export default function Contact() {
-    /*use the API for the auto email back and manage the backend part */
-    function sendEmail(e) {
-        e.preventDefault();
-        emailjs
-            .sendForm(
-                "service_wtbcyyk",
-                "template_lsgz0ug",
-                e.target,
-                "user_CaSe2dULRsCYGXJGCKmFu"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-    }
-
-    /*form and validation  react-hook-form  ----------------------*/
+    /*2-  form and validation  react-hook-form  -------------------------------------*/
 
     const {
         register,
         handleSubmit,
         watch,
         formState: { errors },
-    } = useForm();
+        reset,
+    } = useForm({
+        resolver: yupResolver(schema),
+    });
 
-    const onSubmit = (data) => console.log(data);
+    /* 3-  use the API for the auto email back and manage the backend part -------------------------- */
 
-    console.log(watch("example")); // watch input value by passing the name of it
+    // function sendEmail(e) {
+    //     e.preventDefault();
+    //     emailjs
+    //         .sendForm(
+    //             "service_wtbcyyk",
+    //             "template_lsgz0ug",
+    //             e.target,
+    //             "user_CaSe2dULRsCYGXJGCKmFu"
+    //         )
+    //         .then(
+    //             (result) => {
+    //                 console.log(result.text);
+    //             },
+    //             (error) => {
+    //                 console.log(error.text);
+    //             }
+    //         );
+    // }
+
+    const Submit = (data) => {
+        console.log(data);
+        // Add data from our FORM to the api or dataBase target
+        // sendEmail(data);
+        emailjs.sendForm("service_wtbcyyk", "template_lsgz0ug", "data").then(
+            function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+            },
+            function (error) {
+                console.log("FAILED...", error);
+            }
+        );
+        reset();
+    };
 
     //      -------------------------------------------------------------
     return (
@@ -53,59 +79,48 @@ export default function Contact() {
                     id="contactForm"
                     name="sentMessage"
                     novalidate="novalidate"
-                    // onSubmit={sendEmail}
-                    onSubmit={handleSubmit(onSubmit)}
+                    onSubmit={handleSubmit(Submit)}
                 >
                     <div className="row align-items-stretch mb-5">
                         <div className="col-md-6">
                             <div className="form-group">
                                 <input
                                     className="form-control"
-                                    // id="name"
-                                    name="name"
+                                    name="Name"
                                     type="text"
                                     placeholder="Your Name *"
-                                    // data-validation-required-message="Please enter your name."
-                                    {...register("name", { required: true })}
+                                    {...register("Name")}
                                 />
-                                {errors.name && (
-                                    <p className="help-block text-danger">
-                                        This field is required
-                                    </p>
-                                )}
+                                <p className="help-block text-danger">
+                                    {errors.Name?.message}
+                                </p>
                             </div>
 
-                            <div className="form-group">
+                            <div className="form-group ">
                                 <input
                                     className="form-control"
-                                    // id="email"
-                                    name="email"
-                                    type="email"
-                                    placeholder="Your Email *"
-                                    // required="required"
-                                    data-validation-required-message="Please enter your email address."
-                                    {...register("email", { required: true })}
+                                    id="text"
+                                    name="lastName"
+                                    type="text"
+                                    placeholder="Last Name"
+                                    {...register("lastName")}
                                 />
-                                {errors.email && (
-                                    <p className="help-block text-danger">
-                                        {" "}
-                                        This field is required
-                                    </p>
-                                )}
+                                <p className="help-block text-danger">
+                                    {errors.lastName?.message}
+                                </p>
                             </div>
 
                             <div className="form-group mb-md-0">
                                 <input
                                     className="form-control"
-                                    id="phone"
-                                    s
-                                    name="phone"
-                                    type="tel"
-                                    placeholder="Your Phone"
-                                    data-validation-required-message="Please enter your phone number."
-                                    {...register("phone")}
+                                    name="Email"
+                                    type="email"
+                                    placeholder="Your Email *"
+                                    {...register("Email")}
                                 />
-                                <p className="help-block text-danger"></p>
+                                <p className="help-block text-danger">
+                                    {errors.Email?.message}
+                                </p>
                             </div>
                         </div>
 
@@ -114,13 +129,13 @@ export default function Contact() {
                                 <textarea
                                     className="form-control"
                                     id="message"
-                                    name="message"
+                                    name="Text"
                                     placeholder="Your Message *"
-                                    // required="required"
-                                    data-validation-required-message="Please enter a message."
-                                    {...register("message", { required: true })}
+                                    {...register("Text")}
                                 ></textarea>
-                                <p className="help-block text-danger"></p>
+                                <p className="help-block text-danger">
+                                    {errors.Text?.message}
+                                </p>
                             </div>
                         </div>
                     </div>
