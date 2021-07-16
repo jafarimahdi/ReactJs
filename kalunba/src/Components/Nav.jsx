@@ -16,7 +16,7 @@ export default function Nav() {
                         href="#page-top"
                     >
                         <img
-                            src="pictures/kalunba/logo-rbg.png"
+                            src="pictures/kalunba/logo-rbg1.png"
                             alt="kalunba logo"
                         />
                     </a>
