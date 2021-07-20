@@ -1,64 +1,45 @@
-import React from "react";
-import emailjs from "emailjs-com";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from "emailjs-com";
+// import { init, sendForm } from 'emailjs-com';
+// init('user_CaSe2dULRsCYGXJGCKmFu');
 
 // 1-   add yup scheme here for the validation  ----------------------
-
 const schema = yup.object().shape({
-    Name: yup.string().required(),
-    lastName: yup.string().required(),
-    Email: yup.string().email().required(),
-    Text: yup.string().required(),
+    name: yup.string().required(),
+    lastname: yup.string().required(),
+    email: yup.string().email().required(),
+    text: yup.string().required()
 });
 
 export default function Contact() {
     /*2-  form and validation  react-hook-form  -------------------------------------*/
-
-    const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-        reset,
-    } = useForm({
-        resolver: yupResolver(schema),
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
+        resolver: yupResolver(schema)
     });
 
-    /* 3-  use the API for the auto email back and manage the backend part -------------------------- */
+    /* 3-  use the API for the auto email or manage the backend part -------------------------- */
 
-    // function sendEmail(e) {
-    //     e.preventDefault();
-    //     emailjs
-    //         .sendForm(
-    //             "service_wtbcyyk",
-    //             "template_lsgz0ug",
-    //             e.target,
-    //             "user_CaSe2dULRsCYGXJGCKmFu"
-    //         )
-    //         .then(
-    //             (result) => {
-    //                 console.log(result.text);
-    //             },
-    //             (error) => {
-    //                 console.log(error.text);
-    //             }
-    //         );
-    // }
-
-    const Submit = (data) => {
+    const onSubmit = (data) => {  
         console.log(data);
-        // Add data from our FORM to the api or dataBase target
-        // sendEmail(data);
-        emailjs.sendForm("service_wtbcyyk", "template_lsgz0ug", "data").then(
-            function (response) {
-                console.log("SUCCESS!", response.status, response.text);
-            },
-            function (error) {
-                console.log("FAILED...", error);
-            }
-        );
+    
+        emailjs
+            .sendForm(
+                "service_wtbcyyk",
+                "template_lsgz0ug",
+                "#contactForm",
+                "user_CaSe2dULRsCYGXJGCKmFu"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
         reset();
     };
 
@@ -79,47 +60,49 @@ export default function Contact() {
                     id="contactForm"
                     name="sentMessage"
                     novalidate="novalidate"
-                    onSubmit={handleSubmit(Submit)}
+                    onSubmit={handleSubmit(onSubmit)}
                 >
                     <div className="row align-items-stretch mb-5">
                         <div className="col-md-6">
                             <div className="form-group">
+                            </div>
+
+                            <div className="form-group">
                                 <input
                                     className="form-control"
-                                    name="Name"
+                                    name="name"
                                     type="text"
                                     placeholder="Your Name *"
-                                    {...register("Name")}
+                                    {...register("name")}
                                 />
                                 <p className="help-block text-danger">
-                                    {errors.Name?.message}
+                                {errors.name?.message}
                                 </p>
                             </div>
 
                             <div className="form-group ">
                                 <input
                                     className="form-control"
-                                    id="text"
-                                    name="lastName"
+                                    name="lastname"
                                     type="text"
                                     placeholder="Last Name"
-                                    {...register("lastName")}
+                                    {...register("lastname")}
                                 />
                                 <p className="help-block text-danger">
-                                    {errors.lastName?.message}
+                                    {errors.lastname?.message}
                                 </p>
                             </div>
 
                             <div className="form-group mb-md-0">
                                 <input
                                     className="form-control"
-                                    name="Email"
+                                    name="email"
                                     type="email"
                                     placeholder="Your Email *"
-                                    {...register("Email")}
+                                    {...register("email")}
                                 />
                                 <p className="help-block text-danger">
-                                    {errors.Email?.message}
+                                    {errors.email?.message}
                                 </p>
                             </div>
                         </div>
@@ -128,13 +111,12 @@ export default function Contact() {
                             <div className="form-group form-group-textarea mb-md-0">
                                 <textarea
                                     className="form-control"
-                                    id="message"
-                                    name="Text"
+                                    name="text"
                                     placeholder="Your Message *"
-                                    {...register("Text")}
+                                    {...register("text")}
                                 ></textarea>
                                 <p className="help-block text-danger">
-                                    {errors.Text?.message}
+                                    {errors.text?.message}
                                 </p>
                             </div>
                         </div>
