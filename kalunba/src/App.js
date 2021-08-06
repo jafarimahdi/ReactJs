@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
+import Cards from "./Components/Cards";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Nav />
             <Loading />
             <Mission />
+            {/* <Cards/> */}
             <Project />
             <About />
             <Community />

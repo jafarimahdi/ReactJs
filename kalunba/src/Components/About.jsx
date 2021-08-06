@@ -1,3 +1,5 @@
+import './style/About.css';
+
 export default function About() {
     const data = [
         {

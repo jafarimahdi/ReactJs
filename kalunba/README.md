@@ -1,17 +1,18 @@
 # Tools been used in this React.js App
 
-
 ## Create A New Project
-. npx create-react-app my-project 
 
+. npx create-react-app my-project
 
 ##
+
 . keep the data in state part and have for loop to show them in JSX/DOM make our code simple and less.
 
 . Adding the Bootstrap CDN to root(index) and use it for our Design
+
 ## Form and Validation
 
-. using the react-hook-form for managing the  data and input form user
+. using the react-hook-form for managing the data and input form user
 
     1- npm install react-hook-form
 
@@ -25,9 +26,6 @@
             and in input {...register("input-name")}
                  <p>{errors.name?.message} </p>
 
-
-
-
 . Validation for our Form and check the inputs are correct with YUP api
 
     1- npm i yup
@@ -37,8 +35,7 @@
 
     3- add yub steps here
 
-
-. use hookform/resolvers/yup 
+. use hookform/resolvers/yup
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema)
@@ -48,23 +45,19 @@
 
     1- create EmailJs account
 
-    2- make template and auto replay for templates and
+    2- make template and auto replay for templates and get user-id & template-id &
 
     3- npm install emailjs-com --save
 
-    4- mport { init, sendForm } from 'emailjs-com';
-        
-        init('YOUR_USER_ID');
+    4- import to Component
 
-    5- import { useState } from 'react';
-        having contact number randomly for our Emailjs data
+    5- give to Form an id: for EmailJs function add "#id-form" to <form >
 
-    6- make contact function to have random random for each Email
+    6- use #id Instead of e.target for keep the data in EmailJs
 
-    7- add <input type='hidden' name='contact_number' value={contactNumber} />
+    7- import useState Hook for the popup and showing message after send button to user
 
-
-
-## Animation 
+    8- make place for tag to show the message for user <p>message sent</p>
+## Animation
 
 . Animation with spring-react for the tags

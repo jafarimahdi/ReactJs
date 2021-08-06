@@ -3,8 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
-// import { init, sendForm } from 'emailjs-com';
-// init('user_CaSe2dULRsCYGXJGCKmFu');
+import "./style/Contact.css";
 
 // 1-   add yup scheme here for the validation  ----------------------
 const schema = yup.object().shape({
@@ -21,7 +20,12 @@ export default function Contact() {
     });
 
     /* 3-  use the API for the auto email or manage the backend part -------------------------- */
+    const [statusMessage, setStatusMessage] = useState("Show Message here");
 
+
+
+
+    // send to EmailJs
     const onSubmit = (data) => {  
         console.log(data);
     
@@ -35,9 +39,21 @@ export default function Contact() {
             .then(
                 (result) => {
                     console.log(result.text);
+
+                    setStatusMessage("Message sent!");
+                    // statusMessage.className = "status-message success";
+                    // setTimeout(()=> {
+                    //     statusMessage.className = 'status-message'
+                    //     }, 5000)
                 },
                 (error) => {
                     console.log(error.text);
+
+                    setStatusMessage("Failed to send message! Please try again later.");
+                    // statusMessage.className = "status-message failure";
+                    //     setTimeout(()=> {
+                    //     statusMessage.className = 'status-message'
+                    // }, 5000)
                 }
             );
         reset();
@@ -123,7 +139,10 @@ export default function Contact() {
                     </div>
 
                     <div className="text-center">
-                        <div id="success"></div>
+                        <p className='status-message' id="show-message">{statusMessage}</p>
+                        <div id="success">
+                        </div>
+
                         <button
                             className="btn btn-primary btn-xl text-uppercase"
                             id="sendMessageButton"
