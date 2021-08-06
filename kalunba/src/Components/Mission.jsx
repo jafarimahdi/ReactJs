@@ -9,18 +9,21 @@ export default function Mission() {
          icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
          caption:
             "We believe in Equality and Humanity",
+         aos:"fade-right",
       },
       {
          text: "#3- Opportunity",
          icon: "fas fa-hand-holding-heart fa-stack-1x fa-inverse",
          caption:
             "Giving opportunity for people, who lost behind be like, giving new life as gift to them,  ",
+            aos:"fade-up",
       },
       {
          text: "#4- Community",
          icon: "fas fa-praying-hands fa-stack-1x fa-inverse",
          caption:
             "As Human being part of society and Community and ",
+            aos:"fade-left",
       },
    ];
    
@@ -34,7 +37,7 @@ export default function Mission() {
       <section className="page-section" id="mission" >
          
          <div className="container">
-            <div data-aos="fade-left" className="text-center">
+            <div data-aos="fade-down" className="text-center">
                <h2 className="section-heading text-uppercase">our mission</h2>
                <h3 className="section-subheading text-muted">
                   #1-  we believe in our work and the Change can happen.
@@ -43,7 +46,7 @@ export default function Mission() {
 
             <div className="row text-center">
                {data.map((item) => (
-                  <div data-aos="fade-up" className="col-md-4">
+                  <div data-aos={item.aos} className="col-md-4">
                      <span className="fa-stack fa-4x">
                         <i className="fa fa-circle fa-stack-2x text-primary"></i>
                         <i className={item.icon}></i>

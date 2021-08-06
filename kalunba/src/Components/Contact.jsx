@@ -20,7 +20,7 @@ export default function Contact() {
     });
 
     /* 3-  use the API for the auto email or manage the backend part -------------------------- */
-    const [statusMessage, setStatusMessage] = useState("Show Message here");
+    const [statusMessage, setStatusMessage] = useState("proof Message sent here");
 
 
 

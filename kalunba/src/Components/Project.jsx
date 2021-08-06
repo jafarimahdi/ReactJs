@@ -112,7 +112,7 @@ export default function Project() {
     });
 
     return (
-        <section className="page-section " id="project" >
+        <section className="page-section bg-light " id="project" >
             <div className="container">
                 <div data-aos="fade-right" className="text-center">
                     <h2 className="section-heading text-uppercase">Projects</h2>
@@ -181,14 +181,6 @@ export default function Project() {
                         </div>
                     ))}
                 </div>
-
-
-
-
-
-
-
-
 
                 {/* job searching part   */}
                 <h4 data-aos="slide-down"  className="text-center p-5">#C1- Job Market</h4>
