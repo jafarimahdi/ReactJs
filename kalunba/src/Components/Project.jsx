@@ -7,89 +7,41 @@ import "./style/Card.css";
 export default function Project() {
     const outDoor = [
         {
-            title: "#A2- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/1.jpg",
             aos:"fade-left",
         },
         {
-            title: "#A3- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/27.jpg",
             aos:"fade-right",
         },
         {
-            title: "#A4- title",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/26.jpg",
-            aos:"fade-left",
-        },
-        {
-            title: "#A5- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/8.jpg",
             aos:"fade-right",
         },
         {
-            title: "#A6- title",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/9.jpg",
-            aos:"fade-left",
-        },
-        {
-            title: "#A7- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/12.jpg",
             aos:"fade-right",
         },
 
         {
-            title: "#A8- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/15.jpg",
             aos:"fade-left",
         },
         {
-            title: "#A9- title",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/16.jpg",
-            aos:"fade-right",
-        },
-        {
-            title: "#A10- title",
-            caption: "Branding",
             pic: "pictures/kalunba/17.jpg",
             aos:"fade-left",
         },
         {
-            title: "#A11- title",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/18.jpg",
-            aos:"fade-right",
-        },
-        {
-            title: "#A12- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/19.jpg",
             aos:"fade-left",
         },
         {
-            title: "#A13- title",
-            caption: "write more about this card",
             pic: "pictures/kalunba/20.jpg",
             aos:"fade-right",
         },
     ];
 
     const education = [
-        {
-            title: " #B2-  Refugee children and their psychological problems",
-            caption:
-                "Our colleague Ákos Urbán took part in a roundtable discussion at the Verzió Film Festival.",
-            pic: "pictures/kalunba/23.jpg",
-            web: "https://www.verzio.org/hu/node/3314?fbclid=IwAR2_bK5eujybKrVFu9ouUaBFNKvZ3oDKxpRBtM9P0SE8hrEDE2GT0YI5N3w",
-            aos:"fade-up",
-        },
 
         {
             title: "#B3-  Easy Lessons",
@@ -160,62 +112,37 @@ export default function Project() {
     });
 
     return (
-        <section className="page-section bg-light" id="project">
+        <section className="page-section " id="project" >
             <div className="container">
                 <div data-aos="fade-right" className="text-center">
                     <h2 className="section-heading text-uppercase">Projects</h2>
-                    {/* <div className="col-md-6 col-sm-12 mb-5 p-5"> */}
-                    {/* <Cards /> */}
                     <h3 className="section-subheading text-muted">
                         #A1- Many of our Main project are for refugee kids and
                         to help them to find the comfort zone between home and
                         new society
                     </h3>
-                    {/* </div> */}
                 </div>
-
-                {/* first Project of the list  */}
-                <div className="card-group ">
+                     {/* new card gallery  */}
+                <div className="row">
+                    <div className="card-columns">
                     {outDoor.map((item) => (
-                        <div className="col-lg-4 col-sm-6 mb-4">
-                            <div
-                                // data-aos="fade-up-left"
-                                data-aos={item.aos}
-                                className="card border border-lg"
-                                style={{ maxWidth: "21rem;" }}
-                            >
-                                <img
-                                    src={item.pic}
-                                    className="card-img-top"
-                                    alt="..."
-                                    style={{
-                                        width: "100%",
-                                        height: "33vh",
-                                        objectFit: "cover",
-                                        position: "center",
-                                    }}
-                                />
-                                <section className="card-body">
-                                    <summery className="card-title">
-                                        {item.title}
-                                    </summery>
-
-                                    <details>
-                                        <p className="card-text">
-                                            {item.caption}
-                                        </p>
-                                    </details>
-                                </section>
+                        <div className="card" data-aos={item.aos} >
+                            <div className="card-body" style={{padding:"0", margin: "0"}}>
+                                <img src={item.pic} width="100%" />
                             </div>
                         </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
+                </div>
+                <div className="container">
 
-                {/* new line ---------------------- */}
+                {/* Education program ---------------------- */}
                 <h4 data-aos="slide-up" className="text-center p-5"> #B1- Our Education program</h4>
-                <div className="card-group  p-2">
+
+                <div className="card-group  ">
                     {education.map((item) => (
-                        <div className="col-lg-4 col-sm-6 mb-4">
+                        <div className="col-lg-3 col-sm-4 mb-4">
                             <div
                                 data-aos={item.aos}
                                 className="card rounded "
@@ -248,19 +175,26 @@ export default function Project() {
                                         >
                                             More
                                         </a>
-                                        {/* </div> */}
                                     </details>
                                 </section>
                             </div>
                         </div>
                     ))}
                 </div>
-                {/* job searching part   */}
 
+
+
+
+
+
+
+
+
+                {/* job searching part   */}
                 <h4 data-aos="slide-down"  className="text-center p-5">#C1- Job Market</h4>
-                <div className="card-group  rounded-lg p-2">
+                <div className="card-group rounded-lg p-2">
                     {job.map((item) => (
-                        <div className="col-lg-4 col-sm-6 mb-4">
+                        <div className="col-lg-3 col-sm-4 mb-4">
                             <div
                                 data-aos="fade-up-left"
                                 className="card rounded-lg "
@@ -293,7 +227,6 @@ export default function Project() {
                                         >
                                             More
                                         </a>
-                                        {/* </div> */}
                                     </details>
                                 </section>
                             </div>
