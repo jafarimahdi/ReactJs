@@ -12,7 +12,7 @@ import Cards from "./Components/Cards";
 
 function App() {
     return (
-        <div classNam="project">
+        <div classNam="container project">
             <Nav />
             <Loading />
             <Mission />
