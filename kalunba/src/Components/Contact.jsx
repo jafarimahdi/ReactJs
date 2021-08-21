@@ -20,7 +20,7 @@ export default function Contact() {
     });
 
     /* 3-  use the API for the auto email or manage the backend part -------------------------- */
-    const [statusMessage, setStatusMessage] = useState("proof Message sent here");
+    const [statusMessage, setStatusMessage] = useState(" ");
 
 
 
@@ -68,7 +68,7 @@ export default function Contact() {
                         Contact Us
                     </h2>
                     <h3 className="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                        We will be happy to hear from you.
                     </h3>
                 </div>
 

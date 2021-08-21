@@ -9,14 +9,14 @@ import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
 import Cards from "./Components/Cards";
+import "./assets/css/style.css";
 
 function App() {
     return (
-        <div classNam="container project">
+        <div classNam="container" id="parent">
             <Nav />
             <Loading />
             <Mission />
-            {/* <Cards/> */}
             <Project />
             <About />
             <Community />

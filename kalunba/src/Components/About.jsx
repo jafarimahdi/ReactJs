@@ -11,7 +11,7 @@ export default function About() {
             picture: "pictures/kalunba/15.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-            text_aos:"fade-left",
+            text_aos:"fade-down",
             image_aos:"fade-up",
         },
         {
@@ -21,7 +21,7 @@ export default function About() {
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
             text_aos:"fade-up",
-            image_aos:"fade-right",
+            image_aos:"fade-down",
         },
         {
             time: "#D4-  December 2015",
@@ -29,7 +29,7 @@ export default function About() {
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
             text_aos:"fade-up",
-            image_aos:"fade-right",
+            image_aos:"fade-down",
         },
         {
             time: "#D5-  July 2018",
@@ -37,7 +37,7 @@ export default function About() {
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
             text_aos:"fade-up",
-            image_aos:"fade-left",
+            image_aos:"fade-down",
         },
     ];
     useEffect(() => {

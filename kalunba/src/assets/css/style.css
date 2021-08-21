@@ -10411,8 +10411,12 @@ p {
     line-height: 1.75;
 }
 
+/* project/mission/about component .class  --------------- */
 .page-section {
-    padding: 6rem 0;
+    padding-top: 3rem;
+    box-sizing:border-box;
+    margin:0;
+    max-width:100vw;
 }
 .page-section h2.section-heading {
     font-size: 2rem;
@@ -10429,6 +10433,14 @@ p {
 @media (min-width: 768px) {
     section {
         padding: 9rem 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page-section {
+        padding: 2rem 0;
+        margin:0;
+        box-sizing:border-box;
+        max-width:100vw;
     }
 }
 ::-moz-selection {
@@ -10452,6 +10464,9 @@ img::selection {
 img::-moz-selection {
     background: transparent;
 }
+
+
+
 
 .btn-xl {
     padding: 1.25rem 2.5rem;
@@ -10478,6 +10493,7 @@ img::-moz-selection {
     background-size: 180% 180%;
     background-image: linear-gradient(325deg, #273e50, #9e976a);
     animation: gradient 6s ease infinite;
+    max-width: 100vw;
 }
 @keyframes gradient {
     0% {
@@ -10572,38 +10588,21 @@ header.masthead {
     margin-bottom: 0;
     padding-bottom: 0;
     width: 100vw;
-    height: 47vw;
+    height: 53vw;
     /* text-align: center; */
     /* background-attachment: sticky; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(53%);
-    animation: bright 5s ease infinite;
+    box-sizing: border-box;
 }
 
-@keyframes bright {
-    0% {
-        filter: brightness(53%);
-    }
-    50% {
-        filter: brightness(37%);
-    }
-    100% {
-        filter: brightness(53%);
+@media (min-width: 350px) {
+    header.masthead {
+        margin-top: 18vw;
     }
 }
-
-header.masthead .masthead-heading {
-    color: #fff;
-    position: absolute;
-    top: 37vw;
-    left: 5%;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 2.25rem;
-}
-
 @media (min-width: 580px) {
     header.masthead {
         margin-top: 12vw;
@@ -10612,12 +10611,6 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
     header.masthead {
         margin-top: 10vw;
-    }
-    header.masthead .masthead-heading {
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 4.5rem;
-        margin-bottom: 4rem;
     }
 }
 @media (min-width: 1024px) {
@@ -10682,6 +10675,7 @@ header.masthead .masthead-heading {
 #project .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-style: italic;
 } */
+
 .portfolio-modal .modal-dialog {
     margin: 1rem;
     max-width: 100vw;
@@ -10720,7 +10714,6 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
     opacity: 0.3;
 }
-
 
 /* contact component ------------------------------ */
 /* section#contact {
@@ -10793,11 +10786,10 @@ section#contact form#contactForm :-ms-input-placeholder {
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
- /* ----------------------------------------   */
- #show-message{
-     color:white;
- }
+/* ----------------------------------------   */
+#show-message {
+    color: white;
+}
 #success .status-message {
     opacity: 0;
 }
@@ -10806,8 +10798,19 @@ section#contact form#contactForm :-ms-input-placeholder {
     color: green;
 }
 
-
 #success .failure {
     opacity: 1;
     color: red;
+}
+
+/* project component card-columns  */
+#project #card-column {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+#parent{
+    /* max-width:50vw; */
+    /* margin-right:50%; */
 }
