@@ -1,4 +1,4 @@
-import './style/Community.css';
+import "./style/Community.css";
 
 export default function Community() {
     const ourTeam = [
@@ -30,7 +30,6 @@ export default function Community() {
     return (
         <section className="page-section bg-light" id="community">
             <div className="container">
-
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">
                         Our Amazing Team
@@ -40,11 +39,9 @@ export default function Community() {
                     </h3>
                 </div>
 
-
                 <div className="row">
                     {ourTeam.map((member) => (
-                       
-                       <div className="col-md-4">
+                        <div className="col col-lg-4">
                             <div className="team-member">
                                 <img
                                     className="mx-auto rounded-circle"
@@ -75,9 +72,6 @@ export default function Community() {
                         </div>
                     ))}
                 </div>
-
-
-
 
                 <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
