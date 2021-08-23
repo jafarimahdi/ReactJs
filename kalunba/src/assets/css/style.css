@@ -4382,6 +4382,7 @@ input[type="button"].btn-block {
         position: absolute;
     }
     .navbar-expand-sm .navbar-nav .nav-link {
+      
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
@@ -10540,6 +10541,8 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fed136;
 }
+
+
 
 @media (min-width: 992px) {
     #mainNav {
