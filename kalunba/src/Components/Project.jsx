@@ -109,24 +109,22 @@ export default function Project() {
     ];
 
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 1300 });
     });
 
     return (
-        <section className="page-section bg-light " id="project">
+        <section className="page-section bg-light" id="project">
 
 
 
             <div className="container">
-                <div className="row">
+                <div className="">
                     <div className="text-center my-5" data-aos="fade-down">
                         <h2 className="section-heading text-uppercase">
                             Projects
                         </h2>
                         <h3 className="section-subheading text-muted">
-                            #A1- Many of our Main project are for refugee kids
-                            and to help them to find the comfort zone between
-                            home and new society
+                            #A1- Lorem Ipsum is simply dummy text of the printing and typesetting industry
                         </h3>
                     </div>
                 </div>
@@ -199,14 +197,14 @@ export default function Project() {
                 {/* job searching part   */}
 
                 <h4 data-aos="slide-down" className="text-center py-5">
-                    #C1- Job Market
+                    #C1- Job 
                 </h4>
 
                 {/* make a new row   */}
 
                 <div className="row" style={{maxWidth:'100vw'}} >
 
-                    <div className="card-columns d-inline-block col-lg-7" style={{columnCount:'2'}}>
+                    <div className="card-columns col-lg-7" style={{columnCount:'2'}}>
                         {job.map((item) => (
                             <div
                             className="card rounded-lg"

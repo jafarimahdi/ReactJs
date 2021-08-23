@@ -34,7 +34,7 @@ export default function Mission() {
     });
 
     return (
-        // <section className="page-" id="mission" >
+        <section className="page-section" id="mission" >
 
         <div className="container">
             <div data-aos="fade-down" className="text-center my-5">
@@ -58,6 +58,6 @@ export default function Mission() {
                 ))}
             </div>
         </div>
-        // </section>
+         </section>
     );
 }
