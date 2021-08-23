@@ -41,7 +41,7 @@ export default function About() {
         },
     ];
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 1100 });
     });
 
     let count = 0;

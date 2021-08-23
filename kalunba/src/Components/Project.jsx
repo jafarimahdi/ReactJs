@@ -73,7 +73,7 @@ export default function Project() {
             title: "#B6-  Lines",
             caption: "write more about this card",
             pic: "pictures/kalunba/14.jpg",
-            aos: "fade-down",
+            aos: "fade-up",
         },
         {
             title: "#B7- 8 grade in Kalunba",
