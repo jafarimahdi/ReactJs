@@ -70,33 +70,39 @@ export default function Project() {
             aos: "fade-down",
         },
         {
-            title: "#B6-  Lines",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/14.jpg",
-            aos: "fade-up",
-        },
-        {
             title: "#B7- 8 grade in Kalunba",
             caption: "write more about this card",
             pic: "pictures/kalunba/25.jpg",
             aos: "fade-down",
         },
         {
-            title: "#B8- Hungarian Lesson",
+            title: "#B8- Hungarian Lesson for Adult",
             caption: "write more about this card",
             pic: "pictures/kalunba/21.jpg",
             aos: "fade-up",
+        },
+        {
+            title: "#B9- English Lesson for Kids & Adult",
+            caption: "write more about this card",
+            pic: "pictures/kalunba/21.jpg",
+            aos: "fade-up",
+        },
+        {
+            title: "#B9- Computer Lessons for Kids & Adult",
+            caption: "this course will run by our Volunteer and lessons preparing in two level",
+            pic: "pictures/kalunba/21.jpg",
+            aos: "fade-down",
         },
     ];
 
     const job = [
         {
-            title: "#C2-  job searching (BKV)",
+            title: "#C2-  job searching ",
             caption: "write more about this card",
             pic: "pictures/kalunba/24.jpg",
         },
         {
-            title: "#C3- visit factory",
+            title: "#C3- visit factory and work places",
             caption: "write more about this card",
             pic: "pictures/kalunba/5.jpg",
         },
