@@ -1,14 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 
 export default function Nav() {
+
     const items = ["mission", "project", "about", "community", "contact"];
+
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+    const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+    const closeMenu = () => setIsNavCollapsed(!isNavCollapsed);
 
     return (
         <div id="page-top">
             <nav
-                className="navbar navbar-expand-lg  fixed-top"
+                className="navbar navbar-expand-lg fixed-top"
                 id="mainNav"
             >
+
                 <div className="container" id="navContainer">
 
                     <a
@@ -17,32 +24,35 @@ export default function Nav() {
                     >
                         <img
                             src="pictures/kalunba/logo-rbg1.png"
-                            alt="kalunba logo"
+                            alt="kalunba Non Profit Kft"
                         />
                     </a>
 
+
                     <button
-                        className="navbar-toggler"
+                        className="custom-toggler navbar-toggler"
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarResponsive"
                         aria-controls="navbarResponsive"
-                        aria-expanded="false"
+                        aria-expanded={!isNavCollapsed ? true : false} 
                         aria-label="Toggle navigation"
+                        // onClick={handleNavCollapse}
+                        // onClick={closeMenu}
                     >
                         Menu
-                        <i className="fa fa-bars ml-1"></i>
+                        <i className="fa fa-bars ml-1"/>
                     </button>
 
-
-                    <div
+                    {/* <div
                         className="collapse navbar-collapse"
                         id="navbarResponsive"
-                    >
-                        <ul className="navbar-nav text-uppercase ml-auto ">
+                    > */}
+                        <ul className= {`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav text-uppercase ml-auto`} id="navbarResponsive">
                             {items.map((item) => (
-                                <li className="nav-item">
+                                <li className="nav-item" >
                                     <a
+                                        onClick={closeMenu}
                                         className="nav-link js-scroll-trigger"
                                         href={"#" + item}
                                     >
@@ -52,8 +62,8 @@ export default function Nav() {
                             ))}
                         </ul>
                     </div>
-                
-                </div>
+
+                {/* </div> */}
 
             </nav>
         </div>
