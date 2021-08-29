@@ -1,21 +1,34 @@
 export default function Footer() {
+
+    const links = [
+        {
+            link:'https:',
+            icon: 'fa fa-twitter'
+        },
+        {
+            link:'https:',
+            icon: 'fa fa-facebook-f'
+        },
+        {
+            link:'https:',
+            icon: 'fa fa-linkedin'
+        }
+    ];
     return (
         <footer className="footer py-4">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-4 text-lg-left">
-                        Copyright © KALUNBA NON-PROFIT ORG
+                        Copyright © KALUNBA NON-PROFIT
                     </div>
-                    <div className="col-lg-4 my-3 my-lg-0">
-                        <a className="btn btn-dark btn-social mx-2" href="#!">
-                            <i className="fa fa-twitter"></i>
+                    <div className="col-lg-4 my-3 my-lg-0" >
+
+                        {links.map((item) => (
+
+                        <a className="btn btn-dark btn-social mx-2" href={item.link} target="_blank" style={{backgroundColor:"#92967D"}}>
+                            <i className={item.icon}/>
                         </a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!">
-                            <i className="fa fa-facebook-f"></i>
-                        </a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!">
-                            <i className="fa fa-linkedin"></i>
-                        </a>
+                        ))}
                     </div>
                     <div className="col-lg-4 text-lg-right">
                         <a className="mr-3" href="#!">
