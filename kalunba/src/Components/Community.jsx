@@ -4,7 +4,7 @@ export default function Community() {
     const ourTeam = [
         {
             pic: "",
-            name: "#E2- jeff",
+            name: "#E2- jason",
             position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
@@ -20,7 +20,7 @@ export default function Community() {
         },
         {
             pic: "",
-            name: "#E4-  Kincso",
+            name: "#E4-  Katharin",
             position: "Volunteer",
             twitter: "#!",
             faceBook: "#!",
@@ -74,7 +74,7 @@ export default function Community() {
                 </div>
 
                 <div className="row">
-                    <div className="col-lg-8 mx-auto text-center">
+                    <div className="col-lg-8 m-auto text-center">
                         <p className="large text-muted">
                             #E5- Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Aut eaque, laboriosam veritatis,

@@ -41,7 +41,7 @@ export default function About() {
         },
     ];
     useEffect(() => {
-        Aos.init({ duration: 1100 });
+        Aos.init({ duration: 1000 });
     });
 
     let count = 0;
@@ -93,7 +93,7 @@ export default function About() {
                     ))}
 
                     <li className="timeline-inverted"data-aos="zoom-in">
-                        <div className="timeline-image ">
+                        <div className="timeline-image " style={{backgroundColor:"#BDD2B6"}}>
                             <h4>
                                 Be Part
                                 <br />

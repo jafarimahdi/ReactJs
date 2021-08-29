@@ -67,7 +67,7 @@ export default function Contact() {
                     <h2 className="section-heading text-uppercase">
                         Contact Us
                     </h2>
-                    <h3 className="section-subheading text-muted">
+                    <h3 className="section-subheading text-white">
                         We will be happy to hear from you.
                     </h3>
                 </div>
@@ -144,7 +144,8 @@ export default function Contact() {
                         </div>
 
                         <button
-                            className="btn btn-primary btn-xl text-uppercase"
+                            className="btn btn-xl text-uppercase rounded"
+                            style={{backgroundColor:"#92967D", color:"#FFFFFF"}}
                             id="sendMessageButton"
                             type="submit"
                         >
