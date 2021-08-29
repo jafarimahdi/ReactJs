@@ -6,17 +6,17 @@ export default function Nav() {
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-    const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+    // const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
     const closeMenu = () => setIsNavCollapsed(!isNavCollapsed);
 
     return (
         <div id="page-top">
             <nav
-                className="navbar navbar-expand-lg fixed-top"
+                className="navbar navbar-expand-lg fixed-top "
                 id="mainNav"
             >
 
-                <div className="container" id="navContainer">
+                 <div className="container justify-content-between" id="navContainer">  {/*fix the justify content for the navBar  */}
 
                     <a
                         className="navbar-brand js-scroll-trigger"
@@ -31,6 +31,7 @@ export default function Nav() {
 
                     <button
                         className="custom-toggler navbar-toggler"
+                        style={{backgroundColor:"#5C8D89"}}
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarResponsive"
@@ -44,11 +45,7 @@ export default function Nav() {
                         <i className="fa fa-bars ml-1"/>
                     </button>
 
-                    {/* <div
-                        className="collapse navbar-collapse"
-                        id="navbarResponsive"
-                    > */}
-                        <ul className= {`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav text-uppercase ml-auto`} id="navbarResponsive">
+                    <ul className= {`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav text-uppercase ml-auto`} id="navbarResponsive">
                             {items.map((item) => (
                                 <li className="nav-item" >
                                     <a
@@ -60,11 +57,9 @@ export default function Nav() {
                                     </a>
                                 </li>
                             ))}
-                        </ul>
-                    </div>
+                    </ul>
 
-                {/* </div> */}
-
+                </div>
             </nav>
         </div>
     );

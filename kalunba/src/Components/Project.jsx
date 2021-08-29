@@ -9,7 +9,7 @@ import "../assets/css/style.css";
 export default function Project() {
     const outDoor = [
         {
-            pic: "pictures/kalunba/1.jpg",
+            pic: "pictures/kalunba/29.jpg",
             aos: "fade-down",
         },
         {
@@ -25,14 +25,14 @@ export default function Project() {
             aos: "fade-up",
         },
 
-        {
-            pic: "pictures/kalunba/15.jpg",
-            aos: "fade-down",
-        },
-        {
-            pic: "pictures/kalunba/17.jpg",
-            aos: "fade-up",
-        },
+        // {
+        //     pic: "pictures/kalunba/15.jpg",
+        //     aos: "fade-down",
+        // },
+        // {
+        //     pic: "pictures/kalunba/17.jpg",
+        //     aos: "fade-up",
+        // },
         {
             pic: "pictures/kalunba/19.jpg",
             aos: "fade-down",
@@ -45,7 +45,25 @@ export default function Project() {
 
     const education = [
         {
-            title: "#B3- My Easy Lessons",
+            title: "#B2- Hungarian Lesson for Adult",
+            caption: "write more about this card",
+            pic: "pictures/kalunba/21.jpg",
+            aos: "fade-up",
+        },
+        {
+            title: "#B3- English Lesson for Kids & Adult",
+            caption: "write more about this card",
+            pic: "pictures/kalunba/21.jpg",
+            aos: "fade-up",
+        },
+        {
+            title: "#B4- Computer Lessons for Kids & Adult",
+            caption: "this course will run by our Volunteer and lessons preparing in two level",
+            pic: "pictures/kalunba/21.jpg",
+            aos: "fade-down",
+        },
+        {
+            title: "#B5- My Easy Lessons",
             caption:
                 "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises. In the interview, she says: 'I am especially grateful to Kalunba. They cared a lot. They did not only help us to learn the language but also to find ourselves in our new surroundings.'",
             pic: "pictures/kalunba/kafia.jpg",
@@ -54,7 +72,7 @@ export default function Project() {
         },
 
         {
-            title: "#B4-  Building on Person to Person Relationship",
+            title: "#B6-  Building on Person to Person Relationship",
             caption:
                 "The job is done well when refugee students are constantly starting ...",
             pic: "pictures/kalunba/22.jpg",
@@ -62,7 +80,7 @@ export default function Project() {
             aos: "fade-up",
         },
         {
-            title: "#B5-  Recognition of Kalunba Graduates",
+            title: "#B7-  Recognition of Kalunba Graduates",
             caption:
                 "In recognition of the recent graduates of the Interpretation course, ..",
             pic: "pictures/kalunba/31.jpg",
@@ -70,29 +88,12 @@ export default function Project() {
             aos: "fade-down",
         },
         {
-            title: "#B7- 8 grade in Kalunba",
+            title: "#B8- 8 grade in Kalunba",
             caption: "write more about this card",
             pic: "pictures/kalunba/25.jpg",
             aos: "fade-down",
         },
-        {
-            title: "#B8- Hungarian Lesson for Adult",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/21.jpg",
-            aos: "fade-up",
-        },
-        {
-            title: "#B9- English Lesson for Kids & Adult",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/21.jpg",
-            aos: "fade-up",
-        },
-        {
-            title: "#B9- Computer Lessons for Kids & Adult",
-            caption: "this course will run by our Volunteer and lessons preparing in two level",
-            pic: "pictures/kalunba/21.jpg",
-            aos: "fade-down",
-        },
+        
     ];
 
     const job = [
@@ -115,7 +116,7 @@ export default function Project() {
     ];
 
     useEffect(() => {
-        Aos.init({ duration: 1300 });
+        Aos.init({ duration: 1000 });
     });
 
     return (
@@ -157,7 +158,7 @@ export default function Project() {
             <div className="container">
                                 
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    #B1- Our Education program
+                    #B1- Our Education support
                 </h4>
 
                 {/* make a new row   */}
@@ -203,7 +204,7 @@ export default function Project() {
                 {/* job searching part   */}
 
                 <h4 data-aos="slide-down" className="text-center py-5">
-                    #C1- Job 
+                    #C1- Job & Housing programme
                 </h4>
 
                 {/* make a new row   */}

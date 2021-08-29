@@ -30,7 +30,7 @@ export default function Mission() {
 
     // --------------------------------------------------
     useEffect(() => {
-        Aos.init({ duration: 1500 });
+        Aos.init({ duration: 1000 });
     });
 
     return (
@@ -48,8 +48,8 @@ export default function Mission() {
             <div className="row">
                 {data.map((item) => (
                     <div className="col-md-4 text-center" data-aos={item.aos}>
-                        <span className="fa-stack fa-4x">
-                            <i className="fa fa-circle fa-stack-2x text-primary" />
+                        <span className="fa-stack fa-4x" >
+                            <i className="fa fa-circle fa-stack-2x " style={{color:"#BDD2B6"}}/>
                             <i className={item.icon} />
                         </span>
                         <h4 className="my-3">{item.text}</h4>
