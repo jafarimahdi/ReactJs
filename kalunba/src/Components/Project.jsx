@@ -21,14 +21,14 @@ export default function Project() {
             aos: "fade-down",
         },
         {
+            pic: "pictures/kalunba/32.jpg",
+            aos: "fade-down",
+        },
+        {
             pic: "pictures/kalunba/12.jpg",
             aos: "fade-up",
         },
 
-        // {
-        //     pic: "pictures/kalunba/15.jpg",
-        //     aos: "fade-down",
-        // },
         // {
         //     pic: "pictures/kalunba/17.jpg",
         //     aos: "fade-up",
@@ -47,7 +47,7 @@ export default function Project() {
         {
             title: "#B2- Hungarian Lesson for Adult",
             caption: "write more about this card",
-            pic: "pictures/kalunba/21.jpg",
+            pic: "pictures/kalunba/1.jpg",
             aos: "fade-up",
         },
         {
@@ -59,7 +59,7 @@ export default function Project() {
         {
             title: "#B4- Computer Lessons for Kids & Adult",
             caption: "this course will run by our Volunteer and lessons preparing in two level",
-            pic: "pictures/kalunba/21.jpg",
+            pic: "pictures/kalunba/34.jpg",
             aos: "fade-down",
         },
         {
@@ -91,6 +91,12 @@ export default function Project() {
             title: "#B8- 8 grade in Kalunba",
             caption: "write more about this card",
             pic: "pictures/kalunba/25.jpg",
+            aos: "fade-down",
+        },
+        {
+            title: "#B9- ",
+            caption: "write more about this card",
+            pic: "pictures/kalunba/33.jpg",
             aos: "fade-down",
         },
         
@@ -204,7 +210,7 @@ export default function Project() {
                 {/* job searching part   */}
 
                 <h4 data-aos="slide-down" className="text-center py-5">
-                    #C1- Job & Housing programme
+                    #C1- Job & Housing Support
                 </h4>
 
                 {/* make a new row   */}
