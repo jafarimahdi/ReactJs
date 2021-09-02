@@ -10507,14 +10507,7 @@ img::-moz-selection {
         background-position: 0% 50%;
     }
 }
-#mainNav .navbar-toggler {
-    padding: 0.75rem;
-    font-size: 0.75rem;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #fed136;
-    border: 0;
-}
+
 #mainNav .navbar-brand {
     color: #fed136;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -10541,7 +10534,14 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fed136;
 }
-
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fed136;
+    border: 0;
+}
 
 
 @media (min-width: 992px) {

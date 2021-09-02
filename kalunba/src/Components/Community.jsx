@@ -20,8 +20,8 @@ export default function Community() {
         },
         {
             pic: "",
-            name: "#E4-  Katharin",
-            position: "Volunteer",
+            name: "#E4- Angela",
+            position: "",
             twitter: "#!",
             faceBook: "#!",
             likedIn: "#!",

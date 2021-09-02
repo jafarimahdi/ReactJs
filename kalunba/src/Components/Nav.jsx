@@ -28,7 +28,6 @@ export default function Nav() {
                         />
                     </a>
 
-
                     <button
                         className="custom-toggler navbar-toggler"
                         style={{backgroundColor:"#5C8D89"}}
@@ -45,12 +44,12 @@ export default function Nav() {
                         <i className="fa fa-bars ml-1"/>
                     </button>
 
-                    <ul className= {`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav text-uppercase ml-auto`} id="navbarResponsive">
+                    <ul className= {`${isNavCollapsed ? 'collapse' : ''} navbar-collapse navbar-nav justify-content-end text-uppercase`} id="navbarResponsive">
                             {items.map((item) => (
-                                <li className="nav-item" >
+                                <li className="nav-item " >
                                     <a
                                         onClick={closeMenu}
-                                        className="nav-link js-scroll-trigger"
+                                        className="nav-link js-scroll-trigger text-white mr-auto p-3"
                                         href={"#" + item}
                                     >
                                         {item}

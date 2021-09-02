@@ -6,7 +6,7 @@ import "./style/Mission.css";
 export default function Mission() {
     const data = [
         {
-            text: " #2- Equality",
+            text: " #2- Homology",
             icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
             caption:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
