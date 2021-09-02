@@ -2,9 +2,7 @@ import react, { useEffect } from "react";
 import Aos from "aos";
 import Cards from "./Cards";
 import "aos/dist/aos.css";
-// import "./style/Card.css";
 import "../assets/css/style.css";
-// import "./style/Project.css";
 
 export default function Project() {
     const outDoor = [
@@ -28,17 +26,16 @@ export default function Project() {
             pic: "pictures/kalunba/12.jpg",
             aos: "fade-up",
         },
-
-        // {
-        //     pic: "pictures/kalunba/17.jpg",
-        //     aos: "fade-up",
-        // },
+        {
+            pic: "pictures/kalunba/36.jpg",
+            aos: "fade-up",
+        },
         {
             pic: "pictures/kalunba/19.jpg",
             aos: "fade-down",
         },
         {
-            pic: "pictures/kalunba/20.jpg",
+            pic: "pictures/kalunba/35.jpg",
             aos: "fade-up",
         },
     ];

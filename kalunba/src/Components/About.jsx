@@ -26,6 +26,7 @@ export default function About() {
         {
             time: "#D4-  December 2015",
             text: "Transition to Full Service",
+            picture: "pictures/kalunba/20.jpg",
             description:
                 " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
             text_aos:"fade-up",
