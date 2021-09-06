@@ -58,6 +58,6 @@
     7- import useState Hook for the popup and showing message after send button to user
 
     8- make place for tag to show the message for user <p>message sent</p>
-## Animation
+#### Scroll Animation
 
-. Animation with spring-react for the tags
+. scroll animation with aos package for the website 

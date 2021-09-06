@@ -4,6 +4,34 @@ import { Button } from "./Button";
 import "./Footer.scss";
 
 function Footer() {
+
+    const links=[
+        {
+            className:'', 
+            aria:'', 
+            icon:'',
+        },
+        {
+            className:'', 
+            aria:'', 
+            icon:'',
+        },
+        {
+            className:'', 
+            aria:'', 
+            icon:'',
+        },
+        {
+            className:'', 
+            aria:'', 
+            icon:'',
+        },
+        {
+            className:'', 
+            aria:'', 
+            icon:'',
+        },
+    ]
     return (
         <div className="footer-container">
             <section className="footer-subscription">
@@ -26,7 +54,7 @@ function Footer() {
                 </form>
             </section>
 
-            <div className="footer-links">
+            {/* <div className="footer-links">
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
                         <h2>About Us</h2>
@@ -61,7 +89,7 @@ function Footer() {
                         <Link to="/">Twitter</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="social-media-wrap">
 
