@@ -44,7 +44,7 @@ function Footer() {
                     product!
                 </p>
                 <p className="footer-subscription-text">
-                    You can unsubscribe any time
+                    You can Unsubscribe anytime
                 </p>
 
                 <form action="" className="input-areas">

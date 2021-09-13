@@ -1,13 +1,13 @@
 .navbar {
     position: sticky;
     background: linear-gradient(
-        10deg,
-        rgba(87, 87, 87, 0.788) 5%,
-        rgb(26, 23, 23) 80%
+        4deg,
+        #414345,
+        #232526
     );
     line-height: 8vh;
     height: 8vh;
-    font-size: clamp(15px, 2vw, 25px);
+    font-size: clamp(12px, 2vw, 23px);
     z-index: 2;
     margin: 0 auto;
     top: 2.5vh;
@@ -16,9 +16,9 @@
 
     .navbar-logo {
         margin: 10%;
-        color: white;
+        color: rgb(193, 190, 190);
         font-weight: bold;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     // ul

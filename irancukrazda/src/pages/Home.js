@@ -4,6 +4,7 @@ import Our_product from "../component/Our_product";
 import { Link } from "react-router-dom";
 import "../App.scss";
 
+
 function Home() {
     return (
         <>
@@ -11,12 +12,12 @@ function Home() {
 
             <div className="home-page">
                 <div className="hero-text">
-                    <h1>Iran Cukrazda</h1>
+                    <h3>Iran Cukrazda</h3>
                     <h5>DESERT SHOP</h5>
                 </div>
                 <About />
-                <div className="pang">
 
+                <div className="pang">
                     <div className="text">
                         <h5>
                             I Can Imagine Hell like this: Italian punctuality,
@@ -26,6 +27,7 @@ function Home() {
                         <p>PETER USTINOV</p>
                     </div>
                 </div>
+
                 <Our_product />
 
                 <Link to="/product" className="button-more">

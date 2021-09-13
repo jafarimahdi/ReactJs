@@ -7,6 +7,25 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const links = [
+        {
+            to: "/",
+            link: <i className="fas fa-home" />,
+        },
+        {
+            to: "/about",
+            link: "About",
+        },
+        {
+            to: "/product",
+            link: "Product",
+        },
+        {
+            to: "/contact",
+            link: "Contact",
+        },
+    ];
     return (
         <>
             <nav className="navbar">
@@ -15,46 +34,18 @@ function Navbar() {
                 </Link>
 
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className="nav-item ">
-                        <Link
-                            to="/"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            <i className="fas fa-home" />
-                        </Link>
-                    </li>
-
-                    <li className="nav-item">
-                        <Link
-                            to="/about"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            About
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
-                            to="/product"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            Product
-                        </Link>
-                    </li>
-
-                    <li className="nav-item">
-                        <Link
-                            to="/contact"
-                            className="nav-links"
-                            onClick={closeMobileMenu}
-                        >
-                            Contact
-                        </Link>
-                    </li>
+                    {links.map((item) => (
+                        <li className="nav-item ">
+                            <Link
+                                to={item.to}
+                                className="nav-links"
+                                onClick={closeMobileMenu}
+                            >
+                                {item.link}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
-
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />
                 </div>

@@ -23,7 +23,7 @@
     height: 100vh;
     position: fixed;
     z-index: -1;
-    margin-top: -5%;
+    margin-top: -4.9%;
 }
 
 //  ---------------------------------
@@ -35,9 +35,9 @@
     margin-top: 47%;
 
     .hero-text {
-        h1 {
+        h3 {
             position: absolute;
-            font-size: 10vw;
+            font-size: 9vw;
             margin-top: -21%;
             margin-left: 20%;
             z-index: 1;
@@ -52,17 +52,20 @@
             filter: drop-shadow(12px 12px 29px rgb(22, 21, 21));
         }
     }
+
     .pang {
         margin-top: 8vh;
         height: 30vh;
         background: linear-gradient(#fdfeff, #d39c95);
+        padding:1%;
+        margin:5% 0;
 
         .text {
             margin: 0 auto;
             width: 65vw;
             border-radius: 25px;
             border: 2px solid;
-            padding: 3%;
+            padding: 1%;
             transform: translateY(11%);
             h5 {
                 font-size: calc(9px + 1vw);
