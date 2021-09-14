@@ -11,7 +11,7 @@ export function About() {
                     <img src="./img-2/6.jpg" alt="" />
 
                     <section>
-                        <h1>About Us to know</h1>
+                        <h1>About Us</h1>
                         <p>
                             Iran Cukarzda is a place, where you can find
                             traditional and handmade Persian Sweets with unique

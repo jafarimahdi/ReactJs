@@ -19,11 +19,11 @@ function Home() {
 
                 <div className="pang">
                     <div className="text">
-                        <h5>
+                        <h6>
                             I Can Imagine Hell like this: Italian punctuality,
                             German humour, English Wine and a bite of Persian
                             Sweets
-                        </h5>
+                        </h6>
                         <p>PETER USTINOV</p>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
 
 .about,
 .contact {
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     background-size: cover;
     background-attachment: fixed;
@@ -54,24 +54,27 @@
     }
 
     .pang {
-        margin-top: 8vh;
-        height: 30vh;
-        background: linear-gradient(#fdfeff, #d39c95);
+        // margin-top: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background: linear-gradient(#fff, #93474745,#fff);
         padding:1%;
-        margin:5% 0;
+        margin:auto;
 
         .text {
-            margin: 0 auto;
+            margin: auto;
             width: 65vw;
             border-radius: 25px;
             border: 2px solid;
-            padding: 1%;
+            padding: 2%;
             transform: translateY(11%);
-            h5 {
-                font-size: calc(9px + 1vw);
+            h6 {
+                font-size: calc(11px + 1vw);
             }
             p {
-                margin-top: 6%;
+                margin-top: 4%;
                 font-size: calc(9px + 1vw);
             }
         }
@@ -82,8 +85,8 @@
             padding: 1% 2%;
             border-radius: 10px;
             margin-bottom: 5%;
-            font-size: clamp(14px, 2vw, 30px);
-            font-weight: 600;
+            font-size: clamp(12px, 2vw, 18px);
+            font-weight: 300;
 
             &:hover {
                 cursor: pointer;

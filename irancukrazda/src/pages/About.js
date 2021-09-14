@@ -9,7 +9,9 @@ export default function About() {
             <div
                 className="about"
                 style={{ backgroundImage: "url(img-2/16.jpg)" }}
-            ></div>
+            >
+
+            </div>
             <Line_break />
 
             <div className="about-page">
