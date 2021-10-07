@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Weather App created via React.js & Rest full API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tools been used for practice in the app
+1- Axios: as library to mange the response form API
 
-## Available Scripts
+2- Hooks: useEffect as reRendering the data in component
 
-In the project directory, you can run:
+3- Hooks: useState for managing the data and response from the API in our app
 
-### `yarn start`
+4- API: https://restcountries.eu/
+  Api for fetching the data from different countries
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5- API: https://www.openweathermap.org/api
+    Api for getting the weather forecast data! 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+6- using `PostMan` & `Thunder Clint` to test the request and response from API
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## What should the web app do?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It's up to you! We have some pointers though:
+* **Use at least _two_ free web `API`s.** Note that it's easier to look for APIs that don't require your app to sign in. Examples.:
+    * https://api.chucknorris.io/
+    * https://www.openweathermap.org/api
+    * https://keyvalue.xyz/
+    * https://restcountries.eu/
+    * etc... many more here: https://github.com/toddmotto/public-apis
+* **Combine the API results** somehow, ~~even~~ _especially if it's silly_. 
+* **Include user interaction.** Users should not only look at the app, but do something with it.
+* **No external documentation** should be needed to figure out how to use your app.
+* **Make the UI look somewhat aesthetically pleasing.** We'll briefly look through your stylesheets to see how maintainable they seem to be.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What to leave out?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The idea is to showcase how you handle (what you consider) the most important aspects of an app. We don't expect a polished experience, as it typically involves a lot of tedious work. Feel free to skip:
+* **Fiddling with styles** to make the app look the same in every browser.
+* **Non-essential features** requiring you to repeat what you've already shown.
 
-### `yarn eject`
+**Two examples**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+***Country heat, the game:*** An app that shows a random country from Europe (https://restcountries.eu/#api-endpoints-region) and the current temperature of its capital city (https://www.openweathermap.org/api). You also see that you have zero points now. You have to select another country from the dropdown. If it's warmer, you get 100 points, otherwise it's game over. In order to stop players picking the same hot country over and over, you don't allow selecting the same country twice.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+***Nameday notes:*** The app asks for a Hungarian name then gets the nameday(s) for it (https://api.abalin.net). If there is more than one, you can add the name and date to a list. You can keep adding people that way. When you click the save button it creates a new key-value store (https://keyvalue.xyz/) and stores the access-hash in the URL for bookmarking. Once the store is initialized, the app saves the list of people there. When you open the page with the bookmarked URL from another machine, you can still see the people with their namedays.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Supported browsers
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We are only interested in **evergreen** browsers. _We promise never to open your app with Internet Explorer._ If you wish to use webcomponents, go ahead, don't even worry about polyfills!
 
-## Learn More
+## Your development environment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Only perform changes inside the `/your-app` directory. Your app has to be a **static site**. We'll serve `/your-app/dist` with an `HTTP server` to try it out. You can use either of the following approaches to create it.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### A) No build step
 
-### Code Splitting
+It's perfectly fine to jump straight into manually coding for the browser. In this case simply put your files in the `your-app/dist` directory. You can also use popular `CDN`s to access `3rd party` modules if you think they are necessary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### B) Node.js + build / bundling tools
 
-### Analyzing the Bundle Size
+You can also use the latest stable `Node.js` to bundle your application. In this case we ask you to also send in your app build in the `dist` directory with your source code, so we don't have to build it ourselves.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How do we evaluate your app?
 
-### Making a Progressive Web App
+We'd like you to zip the project (`/your-app`) and send it to us. We are going to review **two areas**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 1. The user experience. We'll:
+1. Unpack the zip file and run an HTTP server on the `/your-app/dist` directory.
+1. Open your site with a browser and try to figure out what it does. _Don't spoil the fun by writing a user manual._
+1. Check on the `inspect -> network` tab which `API`s your app is using.
+1. Check that `Lighthouse` scores are 50+ in general, and 90+ for Accessibiliy. Being a `PWA` is appreciated, but not expected.
 
-### Advanced Configuration
+### 2. The source code. We'll:
+1. Check how easy it is to understand the source code with reading as few comments as possible. (Best if you do not need them at all.)
+1. Check the readability of your code.
+1. Get an impression of how easy it would be for people familiar with your technology stack to contribute to this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
