@@ -131,10 +131,10 @@ export default function Project() {
                 <div className="">
                     <div className="text-center my-5" data-aos="fade-down">
                         <h2 className="section-heading text-uppercase">
-                            Projects
+                            Our Support
                         </h2>
                         <h3 className="section-subheading text-muted">
-                            #A1- Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            As Community building the connection always was our goal
                         </h3>
                     </div>
                 </div>

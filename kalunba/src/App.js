@@ -9,6 +9,8 @@ import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
 import Cards from "./Components/Cards";
+import Erasmus from "./Components/Erasmus";
+
 import "./assets/css/style.css";
 
 function App() {
@@ -17,9 +19,10 @@ function App() {
             <Nav />
             <Loading />
             <Mission />
+            <Erasmus />
             <Project />
             <About />
-            <Community />
+            {/* <Community /> */}
             <Logos />
             <Contact />
             <Footer />
