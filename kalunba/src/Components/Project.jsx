@@ -55,18 +55,12 @@ export default function Project() {
             pic: "pictures/kalunba/21.jpg",
             aos: "fade-up",
         },
-        // {
-        //     title: "#B4- Computer Lessons for Kids & Adult",
-        //     caption: "this course will run by our Volunteer and lessons preparing in two level",
-        //     pic: "pictures/kalunba/34.jpg",
-        //     aos: "fade-down",
-        // },
         {
             title: "My Easy Lessons",
             caption:
-                "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises. In the interview, she says: 'I am especially grateful to Kalunba. They cared a lot. They did not only help us to learn the language but also to find ourselves in our new surroundings.'",
+                "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises.",
             pic: "pictures/kalunba/kafia.jpg",
-            web: "https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/?fbclid=IwAR2FhmXrUOwSFNpEKdhm5liMg770IHadtrtW5Sgces-DUb1tlVgXMawB4tY",
+            web: "https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/#biztonsagban",
             aos: "fade-down",
         },
 
@@ -108,8 +102,8 @@ export default function Project() {
             pic: "pictures/kalunba/5.jpg",
         },
         {
-            title: "chrisms Market",
-            caption: "write more about this card",
+            title: "Solidarity amidst Christmas Crowds",
+            caption: "For a couple of days, refugee women will be in the centre of attention at a Christmas market in the city centre of Budapest, at the booth of the Hungarian Reformed Church Aid. Zero-waste bags, handmade jewellery and home-made sweets are awaiting the visitors of the Christmas fair",
             pic: "pictures/kalunba/30.jpg",
             web: "http://regi.reformatus.hu/mutat/16912/?fbclid=IwAR3ehoQDdIs3TfwYKsGvA2slIBLQXlr5-8GibpQ_66pX8iNolqK0kG37qfI",
         },
@@ -163,7 +157,7 @@ export default function Project() {
                         <ul>
                             {education.map((item) => (
                                 <li>
-                                    <a href="">{item.title}</a>
+                                    <a href={item.web} target="_blank">{item.title}</a>
                                     <br />
                                     <p className="text-muted">{item.caption}</p>
                                 </li>
@@ -231,7 +225,7 @@ export default function Project() {
                         <ul>
                             {job.map((item) => (
                                 <li>
-                                    <a href="" target="_blank">{item.title}</a>
+                                    <a href={item.web} target="_blank">{item.title}</a>
                                     <br />
                                     <p className="text-muted">{item.caption}</p>
                                 </li>

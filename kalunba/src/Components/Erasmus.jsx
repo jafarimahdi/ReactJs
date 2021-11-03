@@ -7,9 +7,9 @@ export default function Erasmus() {
         <div className="container">
             <div className="text-center mb-5">
                 <h1>Project</h1>
-                <h5 className="text-muted">
+                <h6 className="text-muted">
                     As Community building the connection always was our Criterion
-                </h5>
+                </h6>
             </div>
 
             <div className="row m-4">
