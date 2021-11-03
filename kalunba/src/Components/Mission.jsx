@@ -6,19 +6,19 @@ import "./style/Mission.css";
 export default function Mission() {
     const data = [
         {
-            text: " Hope",
+            text: " HOPE",
             icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
             caption: "",
             aos: "fade-up",
         },
         {
-            text: "Opportunity",
+            text: "OPPORTUNELY",
             icon: "fas fa-hand-holding-heart fa-stack-1x fa-inverse",
             caption: "",
             aos: "fade-up",
         },
         {
-            text: "Community",
+            text: "SOLIDARITY",
             icon: "fas fa-praying-hands fa-stack-1x fa-inverse",
             caption: "",
             aos: "fade-up",

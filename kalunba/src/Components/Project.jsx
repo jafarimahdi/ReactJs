@@ -42,23 +42,23 @@ export default function Project() {
 
     const education = [
         {
-            title: "#B2- Hungarian Lesson for Adult",
-            caption: "write more about this card",
+            title: "#B2- Hungarian Lesson for Adult/Kids",
+            caption: "Our Hungarian classes for adult is start form bigener level, and it's focusing more on the work an daily life, for kids our focus on helping them with their school and studding materials ",
             pic: "pictures/kalunba/1.jpg",
             aos: "fade-up",
         },
         {
-            title: "#B3- English Lesson for Kids & Adult",
-            caption: "write more about this card",
+            title: "#B3- English Lesson for Kids",
+            caption: "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
             pic: "pictures/kalunba/21.jpg",
             aos: "fade-up",
         },
-        {
-            title: "#B4- Computer Lessons for Kids & Adult",
-            caption: "this course will run by our Volunteer and lessons preparing in two level",
-            pic: "pictures/kalunba/34.jpg",
-            aos: "fade-down",
-        },
+        // {
+        //     title: "#B4- Computer Lessons for Kids & Adult",
+        //     caption: "this course will run by our Volunteer and lessons preparing in two level",
+        //     pic: "pictures/kalunba/34.jpg",
+        //     aos: "fade-down",
+        // },
         {
             title: "#B5- My Easy Lessons",
             caption:
@@ -85,17 +85,17 @@ export default function Project() {
             aos: "fade-down",
         },
         {
-            title: "#B8- 8 grade in Kalunba",
-            caption: "write more about this card",
+            title: "8 grade in Kalunba",
+            caption: "study in the official school is always difficult for adult students and not easy to join, Kalunba with help of the partners, made this possibility to having the official classes for 8 grade",
             pic: "pictures/kalunba/25.jpg",
             aos: "fade-down",
         },
-        {
-            title: "#B9- ",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/33.jpg",
-            aos: "fade-down",
-        },
+        // {
+        //     title: "#B9- ",
+        //     caption: "write more about this card",
+        //     pic: "pictures/kalunba/33.jpg",
+        //     aos: "fade-down",
+        // },
         
     ];
 
@@ -161,7 +161,7 @@ export default function Project() {
             <div className="container">
                                 
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    #B1- Our Education support
+                    Education
                 </h4>
 
                 {/* make a new row   */}
@@ -207,7 +207,7 @@ export default function Project() {
                 {/* job searching part   */}
 
                 <h4 data-aos="slide-down" className="text-center py-5">
-                    #C1- Job & Housing Support
+                    <u>Job & Housing</u>
                 </h4>
 
                 {/* make a new row   */}
