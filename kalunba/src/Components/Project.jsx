@@ -134,7 +134,7 @@ export default function Project() {
                             Our Support
                         </h2>
                         <h3 className="section-subheading text-muted">
-                            As Community building the connection always was our goal
+                            {/* As Community building the connection always was our goal */}
                         </h3>
                     </div>
                 </div>

@@ -7,31 +7,34 @@ export default function Erasmus() {
         <div className="container">
             <div className="text-center mb-5">
                 <h1>Project</h1>
-                <h5>
-                    As Community building the connection always was our Wish
+                <h5 className="text-muted">
+                    As Community building the connection always was our Criterion
                 </h5>
             </div>
 
-            <div className="row">
-                <section className="col">
-                    <h1 className="text-center">Unity in Community</h1>
-                    <p>
-                        add a bit about the project in this part and intrude the
-                        work been done
+            <div className="row m-4">
+
+                <div className="col col-12 col-lg-5 m-2">
+                    <h3 className="text-center"><u>UNITY IN COMMUNITY</u></h3>
+                    <p className="text-muted">
+                    is a project conducted by four NGOs in Central Europe. Mareena from Bratislava, Slovakia; Be International from Brno, Czech Republic; Global 2000 from Vienna, Austria; and Kalunba from Budapest, Hungary. The project started in September 2019 and lasts until September 2021. The partners from Czech Republic, Hungary and Slovakia are involved in community projects with migrants in different areas (skill-sharing, intercultural dialogue, peer to peer learning). The partner from Austria is an environmental organisation running education programmes for community projects.
                     </p>
 
                     <div className="text-center download-file">
-                        <p>Download our Handbook</p>
-                        <a href="english-Handbook.pdf" target="_blank">
-                            <button>English</button>
+                        <p className=""><u>Download our Handbook</u></p>
+                        <a href="english-Handbook.pdf" target="_blank" className="m-1">
+                            <button><i class="fa fa-download" aria-hidden="true"> English</i></button> 
                         </a>
-                        <a href="hu-Handbook.pdf" target="_blank">
-                            <button>Hungarian</button>
+
+                        <a href="hu-Handbook.pdf" target="_blank" className="m-1">
+                            <button><i class="fa fa-download" aria-hidden="true"> Hangaring</i></button>
                         </a>
+
                     </div>
-                </section>
+                </div>
+
                 <ReactPlayer
-                    className="col youtube-video"
+                    className="col col-12 col-lg-6 m-2"
                     url={["https://youtu.be/IeiGzGiKSI0"]}
                     controls="true"
                     style={{ width: "100%" }}
