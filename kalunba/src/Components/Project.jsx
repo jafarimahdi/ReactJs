@@ -42,14 +42,16 @@ export default function Project() {
 
     const education = [
         {
-            title: "#B2- Hungarian Lesson for Adult/Kids",
-            caption: "Our Hungarian classes for adult is start form bigener level, and it's focusing more on the work an daily life, for kids our focus on helping them with their school and studding materials ",
+            title: "Hungarian Lesson for Adult/Kids",
+            caption:
+                "Our Hungarian classes for adult is start form bigener level, and it's focusing more on the work an daily life, for kids our focus on helping them with their school and studding materials ",
             pic: "pictures/kalunba/1.jpg",
             aos: "fade-up",
         },
         {
-            title: "#B3- English Lesson for Kids",
-            caption: "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
+            title: "English Lesson for Kids",
+            caption:
+                "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
             pic: "pictures/kalunba/21.jpg",
             aos: "fade-up",
         },
@@ -60,7 +62,7 @@ export default function Project() {
         //     aos: "fade-down",
         // },
         {
-            title: "#B5- My Easy Lessons",
+            title: "My Easy Lessons",
             caption:
                 "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises. In the interview, she says: 'I am especially grateful to Kalunba. They cared a lot. They did not only help us to learn the language but also to find ourselves in our new surroundings.'",
             pic: "pictures/kalunba/kafia.jpg",
@@ -69,7 +71,7 @@ export default function Project() {
         },
 
         {
-            title: "#B6-  Building on Person to Person Relationship",
+            title: "Building on Person to Person Relationship",
             caption:
                 "The job is done well when refugee students are constantly starting ...",
             pic: "pictures/kalunba/22.jpg",
@@ -77,7 +79,7 @@ export default function Project() {
             aos: "fade-up",
         },
         {
-            title: "#B7-  Recognition of Kalunba Graduates",
+            title: "Recognition of Kalunba Graduates",
             caption:
                 "In recognition of the recent graduates of the Interpretation course, ..",
             pic: "pictures/kalunba/31.jpg",
@@ -86,32 +88,27 @@ export default function Project() {
         },
         {
             title: "8 grade in Kalunba",
-            caption: "study in the official school is always difficult for adult students and not easy to join, Kalunba with help of the partners, made this possibility to having the official classes for 8 grade",
+            caption:
+                "study in the official school is always difficult for adult students and not easy to join, Kalunba with help of the partners, made this possibility to having the official classes for 8 grade",
             pic: "pictures/kalunba/25.jpg",
             aos: "fade-down",
         },
-        // {
-        //     title: "#B9- ",
-        //     caption: "write more about this card",
-        //     pic: "pictures/kalunba/33.jpg",
-        //     aos: "fade-down",
-        // },
         
     ];
 
     const job = [
         {
-            title: "#C2-  job searching ",
+            title: "job searching ",
             caption: "write more about this card",
             pic: "pictures/kalunba/24.jpg",
         },
         {
-            title: "#C3- visit factory and work places",
-            caption: "write more about this card",
+            // title: "#C3- visit factory and work places",
+            // caption: "write more about this card",
             pic: "pictures/kalunba/5.jpg",
         },
         {
-            title: "#C4- chrisms Market",
+            title: "chrisms Market",
             caption: "write more about this card",
             pic: "pictures/kalunba/30.jpg",
             web: "http://regi.reformatus.hu/mutat/16912/?fbclid=IwAR3ehoQDdIs3TfwYKsGvA2slIBLQXlr5-8GibpQ_66pX8iNolqK0kG37qfI",
@@ -124,14 +121,11 @@ export default function Project() {
 
     return (
         <section className="page-section bg-light" id="project">
-
-
-
             <div className="container">
                 <div className="">
                     <div className="text-center my-5" data-aos="fade-down">
                         <h2 className="section-heading text-uppercase">
-                            Our Support
+                            <u>Our Support</u>
                         </h2>
                         <h3 className="section-subheading text-muted">
                             {/* As Community building the connection always was our goal */}
@@ -154,19 +148,17 @@ export default function Project() {
                         ))}
                     </div>
                 </div>
-            </div> 
+            </div>
 
-
-                {/* Education program ---------------------- */}
+            {/* Education program ---------------------- */}
             <div className="container">
-                                
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    Education
+                    <u> Education</u>
                 </h4>
 
                 {/* make a new row   */}
 
-                <div className="row " style={{maxWidth:'100vw'}} >
+                <div className="row " style={{ maxWidth: "100vw" }}>
                     <div className="text col-lg-5 p-2">
                         <ul>
                             {education.map((item) => (
@@ -179,7 +171,10 @@ export default function Project() {
                         </ul>
                     </div>
 
-                    <div className="card-columns d-inline-block col-lg-7" style={{columnCount:"2"}}>
+                    <div
+                        className="card-columns d-inline-block col-lg-7"
+                        style={{ columnCount: "2" }}
+                    >
                         {education.map((item) => (
                             <div className="card" data-aos={item.aos}>
                                 <div
@@ -193,7 +188,7 @@ export default function Project() {
                                         width="100%"
                                     />
                                     <div className="card-text">
-                                        <small className="text-muted">
+                                        <small className="text-muted pl-3">
                                             {item.title}
                                         </small>
                                     </div>
@@ -203,7 +198,6 @@ export default function Project() {
                     </div>
                 </div>
 
-
                 {/* job searching part   */}
 
                 <h4 data-aos="slide-down" className="text-center py-5">
@@ -212,22 +206,23 @@ export default function Project() {
 
                 {/* make a new row   */}
 
-                <div className="row" style={{maxWidth:'100vw'}} >
-
-                    <div className="card-columns col-lg-7" style={{columnCount:'2'}}>
+                <div className="row" style={{ maxWidth: "100vw" }}>
+                    <div
+                        className="card-columns col-lg-7"
+                        style={{ columnCount: "2" }}
+                    >
                         {job.map((item) => (
-                            <div
-                            className="card rounded-lg"
-                                data-aos="fade-up"
-                            >
-                                <div className="card-body" style={{ padding: "0", margin: "0" }}>
+                            <div className="card rounded-lg" data-aos="fade-up">
+                                <div
+                                    className="card-body"
+                                    style={{ padding: "0", margin: "0" }}
+                                >
                                     <img
                                         src={item.pic}
                                         className="card-img-top"
                                         alt="..."
-                                        width= "100%"
+                                        width="100%"
                                     />
-                                    
                                 </div>
                             </div>
                         ))}
@@ -236,7 +231,7 @@ export default function Project() {
                         <ul>
                             {job.map((item) => (
                                 <li>
-                                    <a href="">{item.title}</a>
+                                    <a href="" target="_blank">{item.title}</a>
                                     <br />
                                     <p className="text-muted">{item.caption}</p>
                                 </li>
