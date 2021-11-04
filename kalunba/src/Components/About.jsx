@@ -37,7 +37,7 @@ export default function About() {
             text: "Phase Two Expansion",
             picture: "pictures/kalunba/36.jpg",
             description:
-                " we are honor to could keep our program and have support for more then 300 people and help with the Education, accommodation, Job and them Integration and help them to find Home again.",
+                " We are honor to could keep our service and help people in need, with the Education, accommodation, Job and them Integration and help them to find Home again.",
             text_aos: "fade-up",
             image_aos: "fade-down",
         },

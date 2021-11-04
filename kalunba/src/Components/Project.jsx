@@ -86,7 +86,6 @@ export default function Project() {
             web: "https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/#biztonsagban",
             aos: "fade-down",
         },
-        
     ];
 
     const job = [
@@ -102,7 +101,8 @@ export default function Project() {
         },
         {
             title: "Solidarity amidst Christmas Crowds",
-            caption: "For a couple of days, refugee women will be in the centre of attention at a Christmas market in the city centre of Budapest, at the booth of the Hungarian Reformed Church Aid. Zero-waste bags, handmade jewellery and home-made sweets are awaiting the visitors of the Christmas fair",
+            caption:
+                "For a couple of days, refugee women will be in the centre of attention at a Christmas market in the city centre of Budapest, at the booth of the Hungarian Reformed Church Aid. Zero-waste bags, handmade jewellery and home-made sweets are awaiting the visitors of the Christmas fair",
             pic: "pictures/kalunba/30.jpg",
             web: "http://regi.reformatus.hu/mutat/16912/?fbclid=IwAR3ehoQDdIs3TfwYKsGvA2slIBLQXlr5-8GibpQ_66pX8iNolqK0kG37qfI",
         },
@@ -156,7 +156,9 @@ export default function Project() {
                         <ul>
                             {education.map((item) => (
                                 <li>
-                                    <a href={item.web} target="_blank">{item.title}</a>
+                                    <a href={item.web} target="_blank">
+                                        {item.title}
+                                    </a>
                                     <br />
                                     <p className="text-muted">{item.caption}</p>
                                 </li>
@@ -191,15 +193,15 @@ export default function Project() {
                     </div>
                 </div>
 
-                {/* job searching part   */}
+                {/* job searching part --------------------------------------------------  */}
 
-                <h4 data-aos="slide-down" className="text-center py-5">
+                {/* <h4 data-aos="slide-down" className="text-center py-5">
                     <u>Job & Housing</u>
-                </h4>
+                </h4> */}
 
                 {/* make a new row   */}
 
-                <div className="row" style={{ maxWidth: "100vw" }}>
+                {/* <div className="row" style={{ maxWidth: "100vw" }}>
                     <div
                         className="card-columns col-lg-7"
                         style={{ columnCount: "2" }}
@@ -231,7 +233,7 @@ export default function Project() {
                             ))}
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
