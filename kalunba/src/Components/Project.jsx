@@ -52,18 +52,16 @@ export default function Project() {
             title: "English Lesson for Kids",
             caption:
                 "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
-            pic: "pictures/kalunba/21.jpg",
+            pic: "pictures/kalunba/4.jpg",
             aos: "fade-up",
         },
         {
-            title: "My Easy Lessons",
+            title: "8 grade in Kalunba",
             caption:
-                "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises.",
-            pic: "pictures/kalunba/kafia.jpg",
-            web: "https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/#biztonsagban",
+                "study in the official school is always difficult for adult students and not easy to join, Kalunba with help of the partners, made this possibility to having the official classes for 8 grade",
+            pic: "pictures/kalunba/25.jpg",
             aos: "fade-down",
         },
-
         {
             title: "Building on Person to Person Relationship",
             caption:
@@ -81,10 +79,11 @@ export default function Project() {
             aos: "fade-down",
         },
         {
-            title: "8 grade in Kalunba",
+            title: "Easy Lessons",
             caption:
-                "study in the official school is always difficult for adult students and not easy to join, Kalunba with help of the partners, made this possibility to having the official classes for 8 grade",
-            pic: "pictures/kalunba/25.jpg",
+                "Kafiya, was one of the students in Kalunba's after-school programme. She also attended Hungarian as a Foreign Language classes at Kalunba. Now she is on her way to a life and a career full of promises.",
+            pic: "pictures/kalunba/kafia.jpg",
+            web: "https://secretstories.hu/interjuk/kafiya-mahdi-rea-milla-interju/#biztonsagban",
             aos: "fade-down",
         },
         
@@ -147,7 +146,7 @@ export default function Project() {
             {/* Education program ---------------------- */}
             <div className="container">
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    <u> Education</u>
+                    <u> EDUCATION</u>
                 </h4>
 
                 {/* make a new row   */}

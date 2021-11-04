@@ -6,39 +6,40 @@ import "./style/About.css";
 export default function About() {
     const data = [
         {
-            time: "#D2-  2013 - 2014",
-            text: "Our Humble Beginnings",
+            time: "2013",
+            text: "Our Beginnings",
             picture: "pictures/kalunba/15.jpg",
             description:
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-            text_aos:"fade-down",
-            image_aos:"fade-up",
+                "Our small help form the church and having some event and program for our neighbors, foreigner and Refugees, encourage us to start our journey in this path",
+            text_aos: "fade-down",
+            image_aos: "fade-up",
         },
         {
-            time: "#D3-  March 2014",
+            time: "2014",
             text: "A Community is Born",
             picture: "pictures/kalunba/17.jpg",
             description:
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-            text_aos:"fade-up",
-            image_aos:"fade-down",
+                " we decieded to work more on the idea and have more and several event and activity for our community",
+            text_aos: "fade-up",
+            image_aos: "fade-down",
         },
         {
-            time: "#D4-  December 2015",
+            time: "2015",
             text: "Transition to Full Service",
             picture: "pictures/kalunba/20.jpg",
             description:
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-            text_aos:"fade-up",
-            image_aos:"fade-down",
+                " Due to the situation in 2015 in Budapest, we start to have more attention, and could help more refuges with accommodation and others need",
+            text_aos: "fade-up",
+            image_aos: "fade-down",
         },
         {
-            time: "#D5-  July 2018",
+            time: "2018",
             text: "Phase Two Expansion",
+            picture: "pictures/kalunba/36.jpg",
             description:
-                " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-            text_aos:"fade-up",
-            image_aos:"fade-down",
+                " we are honor to could keep our program and have support for more then 300 people and help with the Education, accommodation, Job and them Integration and help them to find Home again.",
+            text_aos: "fade-up",
+            image_aos: "fade-down",
         },
     ];
     useEffect(() => {
@@ -53,7 +54,7 @@ export default function About() {
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">About</h2>
                     <h3 className="section-subheading text-muted">
-                        #D1- Our Community History and How we are here
+                        Our Community History and How we are here
                     </h3>
                 </div>
 
@@ -64,7 +65,10 @@ export default function About() {
                                 count % 2 === 0 ? "timeline-inverted" : ""
                             }
                         >
-                            <div className="timeline-image" data-aos={item.image_aos}>
+                            <div
+                                className="timeline-image"
+                                data-aos={item.image_aos}
+                            >
                                 <img
                                     className="rounded-circle img-fluid"
                                     src={item.picture}
@@ -77,7 +81,10 @@ export default function About() {
                                 />
                             </div>
 
-                            <div className="timeline-panel" data-aos={item.text_aos}>
+                            <div
+                                className="timeline-panel"
+                                data-aos={item.text_aos}
+                            >
                                 <div className="timeline-heading">
                                     <h4>{item.time}</h4>
                                     <h4 className="subheading">{item.text}</h4>
@@ -93,8 +100,11 @@ export default function About() {
                         </li>
                     ))}
 
-                    <li className="timeline-inverted"data-aos="zoom-in">
-                        <div className="timeline-image " style={{backgroundColor:"#BDD2B6"}}>
+                    <li className="timeline-inverted" data-aos="zoom-in">
+                        <div
+                            className="timeline-image "
+                            style={{ backgroundColor: "#BDD2B6" }}
+                        >
                             <h4>
                                 Be Part
                                 <br />

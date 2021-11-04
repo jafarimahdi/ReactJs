@@ -27,7 +27,7 @@ export default function Erasmus() {
                         </a>
 
                         <a href="hu-Handbook.pdf" target="_blank" className="m-1">
-                            <button><i class="fa fa-download" aria-hidden="true"> Hangaring</i></button>
+                            <button><i class="fa fa-download" aria-hidden="true"> Hungarian</i></button>
                         </a>
 
                     </div>
