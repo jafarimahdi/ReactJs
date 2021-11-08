@@ -19,10 +19,10 @@ function App() {
             <Nav />
             <Loading />
             <Mission />
-            <Erasmus />
             <Project />
             <About />
             {/* <Community /> */}
+            <Erasmus />
             <Logos />
             <Contact />
             <Footer />

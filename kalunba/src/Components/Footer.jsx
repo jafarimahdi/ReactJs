@@ -6,12 +6,8 @@ export default function Footer() {
             icon: 'fa fa-twitter'
         },
         {
-            link:'https:',
+            link:'https://www.facebook.com/kalunbacharity',
             icon: 'fa fa-facebook-f'
-        },
-        {
-            link:'https:',
-            icon: 'fa fa-linkedin'
         }
     ];
     return (
@@ -30,6 +26,8 @@ export default function Footer() {
                         </a>
                         ))}
                     </div>
+
+
                     <div className="col-lg-4 text-lg-right">
                         <a className="mr-3" href="#!">
                             Privacy Policy

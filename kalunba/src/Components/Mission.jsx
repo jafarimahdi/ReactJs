@@ -6,21 +6,21 @@ import "./style/Mission.css";
 export default function Mission() {
     const data = [
         {
-            text: " HOPE",
+            text: " COMMUNITY",
             icon: "fas fa-fist-raised fa-stack-1x fa-inverse",
-            caption: "",
+            caption: "Assisting in the creation of a supportive, loving, and compassionate environment from which clientele gain vital networks and assistance, for both practical and psychosocial needs.",
             aos: "fade-up",
         },
         {
-            text: "OPPORTUNELY",
+            text: "EMPLOYMENT",
             icon: "fas fa-hand-holding-heart fa-stack-1x fa-inverse",
-            caption: "",
+            caption: "Helping those in need, wherever they are along their educational journey, to receive Hungarian language lessons, further their education, and gain job training in order to be productive and valuable members of society.",
             aos: "fade-up",
         },
         {
-            text: "SOLIDARITY",
+            text: "SAFE HOMES",
             icon: "fas fa-praying-hands fa-stack-1x fa-inverse",
-            caption: "",
+            caption: "Aiding families upon their arrival to secure housing that not only provides shelter, but is also a place to gather and make their own, leading to more full, well rounded, and independent lives.",
             aos: "fade-up",
         },
     ];

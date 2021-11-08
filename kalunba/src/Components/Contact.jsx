@@ -10,25 +10,27 @@ const schema = yup.object().shape({
     name: yup.string().required(),
     lastname: yup.string().required(),
     email: yup.string().email().required(),
-    text: yup.string().required()
+    text: yup.string().required(),
 });
 
 export default function Contact() {
     /*2-  form and validation  react-hook-form  -------------------------------------*/
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({
-        resolver: yupResolver(schema)
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+        reset,
+    } = useForm({
+        resolver: yupResolver(schema),
     });
 
     /* 3-  use the API for the auto email or manage the backend part -------------------------- */
     const [statusMessage, setStatusMessage] = useState(" ");
 
-
-
-
     // send to EmailJs
-    const onSubmit = (data) => {  
+    const onSubmit = (data) => {
         console.log(data);
-    
+
         emailjs
             .sendForm(
                 "service_wtbcyyk",
@@ -49,7 +51,9 @@ export default function Contact() {
                 (error) => {
                     console.log(error.text);
 
-                    setStatusMessage("Failed to send message! Please try again later.");
+                    setStatusMessage(
+                        "Failed to send message! Please try again later."
+                    );
                     // statusMessage.className = "status-message failure";
                     //     setTimeout(()=> {
                     //     statusMessage.className = 'status-message'
@@ -63,13 +67,38 @@ export default function Contact() {
     return (
         <section className="page-section" id="contact">
             <div className="container">
-                <div className="text-center">
+                <div className="text-center my-3">
                     <h2 className="section-heading text-uppercase">
                         Contact Us
                     </h2>
                     <h3 className="section-subheading text-white">
-                        We will be happy to hear from you.
+                        Our community center in Budapest is currently operating
+                        with limited personal access due to the pandemic. Please
+                        contact us online at:
                     </h3>
+                    <div className="contact">
+                        <a
+                            className="btn text-white mx-2"
+                            href=" https://www.facebook.com/kalunbacharity"
+                            target="_blank"
+                            style={{ backgroundColor: "#6C757D" }}
+                        >
+                            <i className="fa fa-facebook-f" />
+                        </a>
+
+                        <a
+                            className="btn text-muted"
+                            href="mailto:kalunbameeting@gmail.com"
+                            type="email"
+                            style={{ backgroundColor: "white" }}
+                        >
+                            <i className="fa fa-envelope" />
+                        </a>
+                    </div>
+
+                    <p className="section-subheading text-white">
+                        or, leave a message for us
+                    </p>
                 </div>
 
                 <form
@@ -80,8 +109,7 @@ export default function Contact() {
                 >
                     <div className="row align-items-stretch mb-5">
                         <div className="col-md-6">
-                            <div className="form-group">
-                            </div>
+                            <div className="form-group"></div>
 
                             <div className="form-group">
                                 <input
@@ -92,7 +120,7 @@ export default function Contact() {
                                     {...register("name")}
                                 />
                                 <p className="help-block text-danger">
-                                {errors.name?.message}
+                                    {errors.name?.message}
                                 </p>
                             </div>
 
@@ -139,13 +167,17 @@ export default function Contact() {
                     </div>
 
                     <div className="text-center">
-                        <p className='status-message' id="show-message">{statusMessage}</p>
-                        <div id="success">
-                        </div>
+                        <p className="status-message" id="show-message">
+                            {statusMessage}
+                        </p>
+                        <div id="success"></div>
 
                         <button
                             className="btn btn-xl text-uppercase rounded"
-                            style={{backgroundColor:"#92967D", color:"#FFFFFF"}}
+                            style={{
+                                backgroundColor: "#92967D",
+                                color: "#FFFFFF",
+                            }}
                             id="sendMessageButton"
                             type="submit"
                         >
