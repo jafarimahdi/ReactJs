@@ -9,10 +9,10 @@ export default function Erasmus() {
                 <h1>
                     <u>UNITY IN COMMUNITY</u>
                 </h1>
-                <h6 className="text-muted">
+                {/* <h6 className="text-muted">
                     As Community building the connection always was our
                     Criterion
-                </h6>
+                </h6> */}
             </div>
 
             <div className="row m-4">
@@ -134,10 +134,10 @@ export default function Erasmus() {
                     </p>
                     <div className="text-center">
                         <h6>
-                            <u>Download the Methodology in English.</u>
+                            <u>Download the Methodology</u>
                         </h6>
                         <a
-                            href="hu-Handbook.pdf"
+                            href="Methodology.pdf"
                             target="_blank"
                             className="m-1"
                         >
@@ -146,7 +146,7 @@ export default function Erasmus() {
                                     className="fa fa-download"
                                     aria-hidden="true"
                                 >
-                                    change the file
+                                    English
                                 </i>
                             </button>
                         </a>
@@ -174,10 +174,10 @@ export default function Erasmus() {
                     </p>
                     <div className="text-center">
                         <h6>
-                            <u>Download in English here</u>
+                            <u>Download the CommUnity Study</u>
                         </h6>
                         <a
-                            href="hu-Handbook.pdf"
+                            href="CommUnity-Study.pdf"
                             target="_blank"
                             className="m-1"
                         >
@@ -186,7 +186,7 @@ export default function Erasmus() {
                                     className="fa fa-download"
                                     aria-hidden="true"
                                 >
-                                    change the file
+                                    English
                                 </i>
                             </button>
                         </a>
