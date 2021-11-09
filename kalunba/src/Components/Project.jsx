@@ -88,26 +88,6 @@ export default function Project() {
         },
     ];
 
-    const job = [
-        {
-            title: "job searching ",
-            caption: "write more about this card",
-            pic: "pictures/kalunba/24.jpg",
-        },
-        {
-            // title: "#C3- visit factory and work places",
-            // caption: "write more about this card",
-            pic: "pictures/kalunba/5.jpg",
-        },
-        {
-            title: "Solidarity amidst Christmas Crowds",
-            caption:
-                "For a couple of days, refugee women will be in the centre of attention at a Christmas market in the city centre of Budapest, at the booth of the Hungarian Reformed Church Aid. Zero-waste bags, handmade jewellery and home-made sweets are awaiting the visitors of the Christmas fair",
-            pic: "pictures/kalunba/30.jpg",
-            web: "http://regi.reformatus.hu/mutat/16912/?fbclid=IwAR3ehoQDdIs3TfwYKsGvA2slIBLQXlr5-8GibpQ_66pX8iNolqK0kG37qfI",
-        },
-    ];
-
     useEffect(() => {
         Aos.init({ duration: 1000 });
     });
@@ -115,20 +95,8 @@ export default function Project() {
     return (
         <section className="page-section bg-light" id="project">
             <div className="container">
-                <div className="">
-                    <div className="text-center my-5" data-aos="fade-down">
-                        <h2 className="section-heading text-uppercase">
-                            <u>Our Support</u>
-                        </h2>
-                        <h3 className="section-subheading text-muted">
-                            {/* As Community building the connection always was our goal */}
-                        </h3>
-                    </div>
-                </div>
-
-                {/* new card gallery  */}
-
-                <div className="row py-5" id="card-column">
+                
+                <div className="row py-4" id="card-column">
                     <div className="card-columns col-12">
                         {outDoor.map((item) => (
                             <div className="card" data-aos={item.aos}>
@@ -141,29 +109,95 @@ export default function Project() {
                         ))}
                     </div>
                 </div>
+
+                <div className="text-center my-5" data-aos="fade-down">
+                    <h2 className="section-heading text-uppercase">
+                        <u>KALUNBA</u>
+                    </h2>
+                    <p>
+                        Through its activities, Kalunba strengthens a culture of
+                        tolerance, promotes human rights and protects
+                        minorities. The organization runs a community centre for
+                        refugees and third country nationals in the heart of
+                        Budapest, providing a variety of services such as
+                        housing, language classes, tutoring and employment
+                        services. Kalunba aims to ensure sustained employability
+                        and to create a friendly and supportive community with a
+                        meeting place for all. It uses a holistic approach to
+                        provide an opportunity for successful, full integration,
+                        in cooperation with the Reformed Church in Hungary and
+                        other European and North American Protestant Churches.
+                        An after school tutoring programme, providing specific
+                        and tailored solutions, has also been set up in an
+                        attempt to assist and encourage the Hungarian school
+                        system to respond to the needs of refugee children.
+                    </p>
+                </div>
             </div>
 
             {/* Education program ---------------------- */}
             <div className="container">
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    <u> EDUCATION</u>
+                    <u> History</u>
                 </h4>
-
                 {/* make a new row   */}
-
                 <div className="row " style={{ maxWidth: "100vw" }}>
                     <div className="text col-lg-5 p-2">
-                        <ul>
-                            {education.map((item) => (
-                                <li>
-                                    <a href={item.web} target="_blank">
-                                        {item.title}
-                                    </a>
-                                    <br />
-                                    <p className="text-muted">{item.caption}</p>
-                                </li>
-                            ))}
-                        </ul>
+                        <p>
+                            Our previous entity, the Refugee Mission of the
+                            Reformed Church in Hungary has been assisting
+                            refugees since 2006 in various forms and via various
+                            programs on the fields of housing, employment,
+                            culture, legal protection and education, the
+                            activities were funded by the European Refugee Fund
+                            and our international Protestant Church Partners.
+                        </p>
+                        <p>
+                            In 2013 we received a prize from Eurodiaconia for
+                            our migrant inclusion programmes, and a prize for
+                            equal opportunities from the Ministry of Human
+                            Resources. In 2011, our education programme was
+                            presented in the UNHCR Report on Education. In 2014,
+                            Eurodiaconia presented our program assisting refugee
+                            women find employment as a best practice in its
+                            report. In 2015 September 27, Eurodiaconia will
+                            present our community center for migrants and
+                            refugees as a good practice.
+                        </p>
+                        <p>
+                            Kaunba was set up in 2014 Spring, upon its funding
+                            in close cooperation with the St Columba Scottish
+                            Mission Kalunba started to provide free Hungarian
+                            lessons to migrants regardless of their protection
+                            status. St Columbas provided also for the initial
+                            office, lecture and community space for Kalunba’s
+                            activities, even after Kalunba was able to provide
+                            for its own community space the historical building
+                            of the congregation remained to haven for all the
+                            big celebrations and community events such as
+                            Christmas and Eid parties.
+                        </p>
+                        <p>
+                            On April 24 2015 Kalunba Charity received its first
+                            contract by Office of Immigration and Nationality to
+                            manage the integration of resettled refugees as part
+                            of the National Resettlement Program in Hungary.
+                        </p>
+                        <p>
+                            Between 2015-2018 Kalunba implemented large scale
+                            projects via the Asylum, Migration and Integration
+                            Fund of the European Union: housing, employment,
+                            Hungarian language school, movement therapy for
+                            children with learning difficulties, community
+                            development.
+                        </p>
+                        <p>
+                            Our current multi-year grants are provided via the
+                            HEKS/EPER the aid organization of Swiss Protestant
+                            Churches and Bread for the World the globally active
+                            development and relief agency of the Protestant
+                            Churches in Germany.
+                        </p>
                     </div>
 
                     <div
@@ -176,64 +210,24 @@ export default function Project() {
                                     className="card-body"
                                     style={{ padding: "0", margin: "0" }}
                                 >
-                                    <img
-                                        className="card-img-top"
-                                        src={item.pic}
-                                        alt="Card image cap"
-                                        width="100%"
-                                    />
-                                    <div className="card-text">
-                                        <small className="text-muted pl-3">
-                                            {item.title}
-                                        </small>
-                                    </div>
+                                    <a href={item.web} target="_blank">
+                                        <img
+                                            className="card-img-top"
+                                            src={item.pic}
+                                            alt="Card image cap"
+                                            width="100%"
+                                        />
+                                        <div className="card-text">
+                                            <small className="text-muted pl-3">
+                                                {item.title}
+                                            </small>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
-
-                {/* job searching part --------------------------------------------------  */}
-
-                {/* <h4 data-aos="slide-down" className="text-center py-5">
-                    <u>Job & Housing</u>
-                </h4> */}
-
-                {/* make a new row   */}
-
-                {/* <div className="row" style={{ maxWidth: "100vw" }}>
-                    <div
-                        className="card-columns col-lg-7"
-                        style={{ columnCount: "2" }}
-                    >
-                        {job.map((item) => (
-                            <div className="card rounded-lg" data-aos="fade-up">
-                                <div
-                                    className="card-body"
-                                    style={{ padding: "0", margin: "0" }}
-                                >
-                                    <img
-                                        src={item.pic}
-                                        className="card-img-top"
-                                        alt="..."
-                                        width="100%"
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="text col-lg-5 p-2">
-                        <ul>
-                            {job.map((item) => (
-                                <li>
-                                    <a href={item.web} target="_blank">{item.title}</a>
-                                    <br />
-                                    <p className="text-muted">{item.caption}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div> */}
             </div>
         </section>
     );
