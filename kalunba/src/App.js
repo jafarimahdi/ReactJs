@@ -20,7 +20,7 @@ function App() {
             <Loading />
             <Mission />
             <Project />
-            <About />
+            {/* <About /> */}
             {/* <Community /> */}
             <Erasmus />
             <Logos />
