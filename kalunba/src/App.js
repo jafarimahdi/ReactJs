@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import Logos from "./Components/Logos";
 import Cards from "./Components/Cards";
 import Erasmus from "./Components/Erasmus";
+import Partner from "./Components/Partner";
 
 import "./assets/css/style.css";
 
@@ -22,6 +23,7 @@ function App() {
             <Project />
             {/* <About /> */}
             {/* <Community /> */}
+            <Partner/>
             <Erasmus />
             <Logos />
             <Contact />
