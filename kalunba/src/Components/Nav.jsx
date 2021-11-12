@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Nav() {
-    const items = ["mission", "project", "about", "unity in community", "contact"];
+    const items = ["mission", "project", "about us", "unity in community", "contact"];
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 

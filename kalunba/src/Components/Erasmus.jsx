@@ -5,7 +5,7 @@ import "./style/Erasmuse.css";
 export default function Erasmus() {
     return (
         <div className="container" id="unity in community">
-            <div className="text-center m-5">
+            <div className="text-center m-5" >
                 <h1>
                     <u>UNITY IN COMMUNITY</u>
                 </h1>
@@ -50,7 +50,9 @@ export default function Erasmus() {
                     className="col col-12 my-5"
                     url={["https://youtu.be/IeiGzGiKSI0"]}
                     controls="true"
-                    style={{ width: "100%" }}
+                    // style={{ width: "100%", height:"100%" }}
+                    width= "85vw"
+                    height="66vh"
                 />
                 <div className="handbook">
                     <h3>Project Handbook</h3>

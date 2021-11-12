@@ -48,13 +48,13 @@ export default function Project() {
             pic: "pictures/kalunba/1.jpg",
             aos: "fade-up",
         },
-        {
-            title: "English Lesson for Kids",
-            caption:
-                "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
-            pic: "pictures/kalunba/4.jpg",
-            aos: "fade-up",
-        },
+        // {
+        //     title: "English Lesson for Kids",
+        //     caption:
+        //         "with the help of our international volunteers, we teach kids general life English and school English, depending in their need and grade ",
+        //     pic: "pictures/kalunba/4.jpg",
+        //     aos: "fade-up",
+        // },
         {
             title: "8 grade in Kalunba",
             caption:
@@ -95,7 +95,7 @@ export default function Project() {
     return (
         <section className="page-section bg-light" id="project">
             <div className="container">
-                
+
                 <div className="row py-4" id="card-column">
                     <div className="card-columns col-12">
                         {outDoor.map((item) => (
@@ -110,7 +110,7 @@ export default function Project() {
                     </div>
                 </div>
 
-                <div className="text-center my-5" data-aos="fade-down">
+                <div className="text-center my-5" data-aos="fade-down" id="about us">
                     <h2 className="section-heading text-uppercase">
                         <u>KALUNBA</u>
                     </h2>
@@ -138,7 +138,7 @@ export default function Project() {
             {/* Education program ---------------------- */}
             <div className="container">
                 <h4 data-aos="slide-up" className="text-center my-5">
-                    <u> History</u>
+                    <u> About Us</u>
                 </h4>
                 {/* make a new row   */}
                 <div className="row " style={{ maxWidth: "100vw" }}>
