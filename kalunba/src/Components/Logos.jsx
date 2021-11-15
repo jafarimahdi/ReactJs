@@ -2,8 +2,8 @@ export default function Logos() {
 
     const logos = [
         { pic: "pictures/kalunba/logo-rbg.png" },
-        { pic: "pictures/kalunba/scottishmission.jpg" },
-        { pic: "pictures/kalunba/reformatus.png" },
+        { pic: "pictures/kalunba/102.png" },
+        { pic: "pictures/kalunba/101.png" },
     ];
     return (
         <section className="page-section bg-light" id="community">
