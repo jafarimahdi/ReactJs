@@ -7,11 +7,12 @@ import AddEdit from "./pages/AddEdit";
 import View from "./pages/View";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
+import Header from "./components/Header";
+        
 function App() {
     return (
         <BrowserRouter> 
+        <Header/>
             <div className="App">
             <ToastContainer position="top-center"/>
 
